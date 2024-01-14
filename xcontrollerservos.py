@@ -46,7 +46,7 @@ while stop == 0:
         servo12angle = servo12.get_physical_angle()
       
         height = joy1.get_axis(1)
-        femur = joy1.get_axis(0)
+        femur = joy1.get_axis(3)
         print("axis1height: ", height)
         print("femur: ", femur)
         if height > 0.5:
