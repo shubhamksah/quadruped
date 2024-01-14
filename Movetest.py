@@ -51,6 +51,7 @@ while stop == 0:
       
         heightup = joy1.get_button(3)
         heightdown = joy1.get_button(0)
+        movetime = 500
 
         if heightup == 1:
             print("Height up")
