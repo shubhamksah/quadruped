@@ -38,7 +38,7 @@ increment10 = 10
 
 try:
 
-    movetime = 1000
+    movetime = 400
 
     servo1angle -= increment40
     servo4angle += increment40
@@ -87,13 +87,13 @@ try:
 
     time.sleep(0.5)
 
-    servo3angle += increment10
+    servo3angle -= increment10
     servo6angle -= increment10
     servo9angle -= increment10
     servo12angle += increment10
 
     servo3.move(servo3angle,movetime,False,False)
-    # servo6.move(servo6angle,movetime,False,False)
+    servo6.move(servo6angle,movetime,False,False)
     # servo9.move(servo9angle,movetime,False,False)
     # servo12.move(servo12angle,movetime,False,False)
 
