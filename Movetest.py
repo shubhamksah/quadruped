@@ -83,15 +83,19 @@ try:
 
     time.sleep(1)
 
+    servoresetmodule.resetservo(servo1,servo2,servo3,servo4,servo5,servo6,servo7,servo8,servo9,servo10,servo11,servo12)
+
+    time.sleep(1)
+
     servo3angle += increment10
     servo6angle -= increment10
     servo9angle -= increment10
     servo12angle += increment10
 
     servo3.move(servo3angle,movetime,False,False)
-    servo6.move(servo6angle,movetime,False,False)
-    servo9.move(servo9angle,movetime,False,False)
-    servo12.move(servo12angle,movetime,False,False)
+    # servo6.move(servo6angle,movetime,False,False)
+    # servo9.move(servo9angle,movetime,False,False)
+    # servo12.move(servo12angle,movetime,False,False)
 
     servo1angle = servo1.get_physical_angle()
     print("servo1angle: ", servo1angle )
