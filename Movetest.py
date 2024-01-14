@@ -54,6 +54,8 @@ try:
 
     servoresetmodule.resetservo(servo1,servo2,servo3,servo4,servo5,servo6,servo7,servo8,servo9,servo10,servo11,servo12)
 
+    time.sleep(1)
+    
     servo1angle = servo1.get_physical_angle()
     servo2angle = servo2.get_physical_angle()
     servo3angle = servo3.get_physical_angle()
@@ -83,6 +85,8 @@ try:
 
     servoresetmodule.resetservo(servo1,servo2,servo3,servo4,servo5,servo6,servo7,servo8,servo9,servo10,servo11,servo12)
 
+    time.sleep(1)
+
     servo1angle = servo1.get_physical_angle()
     servo2angle = servo2.get_physical_angle()
     servo3angle = servo3.get_physical_angle()
@@ -109,6 +113,8 @@ try:
     time.sleep(1)
 
     servoresetmodule.resetservo(servo1,servo2,servo3,servo4,servo5,servo6,servo7,servo8,servo9,servo10,servo11,servo12)
+
+    time.sleep(1)
 
     servo1angle = servo1.get_physical_angle()
     servo2angle = servo2.get_physical_angle()
