@@ -10,7 +10,7 @@ joy1 = pygame.joystick.Joystick(0)
 joy1.init()
 
 stop = 1
-while stop:
+while stop == 1:
     try:
         pygame.event.pump()
 
@@ -27,7 +27,7 @@ while stop:
         servo11 = LX16A(11)
         servo12 = LX16A(12)
 
-        buttons = [joy1.get_button(0), joy1.get_button(1),joy1.get_button(2),joy1.get_button(3),joy1.get_button(4), joy1.get_button(0)]
+        buttons = [joy1.get_button(0), joy1.get_button(1),joy1.get_button(2),joy1.get_button(3),joy1.get_button(4), joy1.get_button(5)]
         print("buttons: ", buttons)
         axis = [joy1.get_axis(0),joy1.get_axis(1),joy1.get_axis(2),joy1.get_axis(3),joy1.get_axis(4),joy1.get_axis(5)]
         print("axis: ", axis)
@@ -46,11 +46,18 @@ while stop:
         servo12angle = servo12.get_physical_angle()
       
         height = joy1.get_axis(1)
+        print("axis1height: ", height)
         if height < -0.5:
+            print("height up")
             servo1angle += 5
             servo4angle += 5
             servo7angle += 5
             servo10angle += 5
+
+            print("moving servo1angle to: ", servo1angle)
+            print("moving servo4angle to: ", servo4angle)
+            print("moving servo7angle to: ", servo7angle)
+            print("moving servo10angle to: ", servo10angle)
 
             servo1.move(servo1angle,1000,False,False)
             servo4.move(servo4angle,1000,False,False)
@@ -58,10 +65,16 @@ while stop:
             servo10.move(servo10angle,1000,False,False)
         
         if height > 0.5:
+            print("height down")
             servo1angle -= 5
             servo4angle -= 5
             servo7angle -= 5
             servo10angle -= 5
+
+            print("moving servo1angle to: ", servo1angle)
+            print("moving servo4angle to: ", servo4angle)
+            print("moving servo7angle to: ", servo7angle)
+            print("moving servo10angle to: ", servo10angle)
 
             servo1.move(servo1angle,1000,False,False)
             servo4.move(servo4angle,1000,False,False)
@@ -69,31 +82,33 @@ while stop:
             servo10.move(servo10angle,1000,False,False) 
 
         servo1angle = servo1.get_physical_angle()
-        print("sevo1angle: ", servo1angle )
+        print("servo1angle: ", servo1angle )
         servo2angle = servo2.get_physical_angle()
-        print("sevo2angle: ", servo2angle )
+        print("servo2angle: ", servo2angle )
         servo3angle = servo3.get_physical_angle()
-        print("sevo3angle: ", servo3angle )
+        print("servo3angle: ", servo3angle )
         servo4angle = servo4.get_physical_angle()
-        print("sevo4angle: ", servo4angle )
+        print("servo4angle: ", servo4angle )
         servo5angle = servo5.get_physical_angle()
-        print("sevo5angle: ", servo5angle )
+        print("servo5angle: ", servo5angle )
         servo6angle = servo6.get_physical_angle()
-        print("sevo6angle: ", servo6angle )
+        print("servo6angle: ", servo6angle )
         servo7angle = servo7.get_physical_angle()
-        print("sevo7angle: ", servo7angle )
+        print("servo7angle: ", servo7angle )
         servo8angle = servo8.get_physical_angle()
-        print("sevo8angle: ", servo8angle )
+        print("servo8angle: ", servo8angle )
         servo9angle = servo9.get_physical_angle()
-        print("sevo9angle: ", servo9angle )
+        print("servo9angle: ", servo9angle )
         servo10angle = servo10.get_physical_angle()
-        print("sevo10angle: ", servo10angle )
+        print("servo10angle: ", servo10angle )
         servo11angle = servo11.get_physical_angle()
-        print("sevo11angle: ", servo11angle )
+        print("servo11angle: ", servo11angle )
         servo12angle = servo12.get_physical_angle()
-        print("sevo12angle: ", servo12angle )
+        print("servo12angle: ", servo12angle )
 
-        stop = joy1.get_button(0) -1
+        time.sleep(2)
+
+        stop = joy1.get_button(0) - 1
 
     finally:
         if stop == 0:
