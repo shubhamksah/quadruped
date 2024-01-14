@@ -46,7 +46,9 @@ while stop == 0:
         servo12angle = servo12.get_physical_angle()
       
         height = joy1.get_axis(1)
+        femur = joy1.get_axis(0)
         print("axis1height: ", height)
+        print("femur: ", femur)
         if height > 0.5:
             print("height up")
             servo1angle -= 5
@@ -93,6 +95,53 @@ while stop == 0:
             servo4.move(servo4angle,500,False,False)
             servo7.move(servo7angle,500,False,False)
             servo10.move(servo10angle,500,False,False) 
+
+        if femur > 0.5:
+            print("moving positive")
+            servo2angle -= 5
+            servo5angle += 5
+            servo8angle += 5
+            servo11angle -= 5
+
+            print("moving servo2angle to: ", servo1angle)
+            print("moving servo5angle to: ", servo4angle)
+            print("moving servo8angle to: ", servo7angle)
+            print("moving servo11angle to: ", servo10angle)
+
+            servo2.move(servo2angle,500,False,False)
+            servo5.move(servo5angle,500,False,False)
+            servo8.move(servo8angle,500,False,False)
+            servo11.move(servo11angle,500,False,False)
+
+        servo1angle = servo1.get_physical_angle()
+        servo2angle = servo2.get_physical_angle()
+        servo3angle = servo3.get_physical_angle()
+        servo4angle = servo4.get_physical_angle()
+        servo5angle = servo5.get_physical_angle()
+        servo6angle = servo6.get_physical_angle()
+        servo7angle = servo7.get_physical_angle()
+        servo8angle = servo8.get_physical_angle()
+        servo9angle = servo9.get_physical_angle()
+        servo10angle = servo10.get_physical_angle()
+        servo11angle = servo11.get_physical_angle()
+        servo12angle = servo12.get_physical_angle()
+
+        if femur < -0.5:
+            print("moving negative")
+            servo2angle += 5
+            servo5angle -= 5
+            servo8angle -= 5
+            servo11angle += 5
+
+            print("moving servo2angle to: ", servo2angle)
+            print("moving servo5angle to: ", servo5angle)
+            print("moving servo8angle to: ", servo8angle)
+            print("moving servo11angle to: ", servo11angle)
+
+            servo2.move(servo2angle,500,False,False)
+            servo5.move(servo5angle,500,False,False)
+            servo8.move(servo8angle,500,False,False)
+            servo11.move(servo11angle,500,False,False) 
 
         servo1angle = servo1.get_physical_angle()
         print("servo1angle: ", servo1angle )
