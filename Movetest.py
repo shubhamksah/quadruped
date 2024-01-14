@@ -33,17 +33,17 @@ servo10angle = servo10.get_physical_angle()
 servo11angle = servo11.get_physical_angle()
 servo12angle = servo12.get_physical_angle()
 
-increment = 40
-increment2 = 40
+increment40 = 40
+increment10 = 10
 
 try:
 
     movetime = 1000
 
-    servo1angle -= increment
-    servo4angle += increment
-    servo7angle += increment
-    servo10angle -= increment
+    servo1angle -= increment40
+    servo4angle += increment40
+    servo7angle += increment40
+    servo10angle -= increment40
 
     servo1.move(servo1angle,movetime,False,False)
     servo4.move(servo4angle,movetime,False,False)
@@ -69,19 +69,29 @@ try:
     servo11angle = servo11.get_physical_angle()
     servo12angle = servo12.get_physical_angle()
 
-    servo1angle += increment2
-    servo4angle -= increment2
-    servo7angle -= increment2
-    servo10angle += increment2
+    servo1angle += increment40
+    servo4angle -= increment40
+    servo7angle -= increment40
+    servo10angle += increment40
 
-    time.sleep(2)
+    time.sleep(1)
 
     servo1.move(servo1angle,movetime,False,False)
     servo4.move(servo4angle,movetime,False,False)
     servo7.move(servo7angle,movetime,False,False)
     servo10.move(servo10angle,movetime,False,False) 
 
+    time.sleep(1)
 
+    servo3angle += increment10
+    servo6angle -= increment10
+    servo9angle -= increment10
+    servo12angle += increment10
+
+    servo3.move(servo3angle,movetime,False,False)
+    servo6.move(servo6angle,movetime,False,False)
+    servo9.move(servo9angle,movetime,False,False)
+    servo12.move(servo12angle,movetime,False,False)
 
     servo1angle = servo1.get_physical_angle()
     print("servo1angle: ", servo1angle )
