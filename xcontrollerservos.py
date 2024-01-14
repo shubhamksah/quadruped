@@ -49,7 +49,7 @@ while stop == 0:
         servo11angle = servo11.get_physical_angle()
         servo12angle = servo12.get_physical_angle()
       
-        angleincrement = 1
+        angleincrement = 5
         movetime=500
       
         height = joy1.get_axis(1)
