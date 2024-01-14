@@ -50,7 +50,7 @@ while stop == 0:
         servo12angle = servo12.get_physical_angle()
       
         angleincrement = 1
-        movetime=100
+        movetime=1
       
         height = joy1.get_axis(1)
         femur = joy1.get_axis(3)
