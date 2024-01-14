@@ -34,7 +34,7 @@ servo11angle = servo11.get_physical_angle()
 servo12angle = servo12.get_physical_angle()
 
 increment = 30
-increment2 = 30
+increment2 = 60
 
 try:
 
