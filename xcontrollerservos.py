@@ -63,13 +63,26 @@ while stop == 0:
             servo4.move(servo4angle,1000,False,False)
             servo7.move(servo7angle,1000,False,False)
             servo10.move(servo10angle,1000,False,False)
-        
+
+        servo1angle = servo1.get_physical_angle()
+        servo2angle = servo2.get_physical_angle()
+        servo3angle = servo3.get_physical_angle()
+        servo4angle = servo4.get_physical_angle()
+        servo5angle = servo5.get_physical_angle()
+        servo6angle = servo6.get_physical_angle()
+        servo7angle = servo7.get_physical_angle()
+        servo8angle = servo8.get_physical_angle()
+        servo9angle = servo9.get_physical_angle()
+        servo10angle = servo10.get_physical_angle()
+        servo11angle = servo11.get_physical_angle()
+        servo12angle = servo12.get_physical_angle()
+
         if height > 0.5:
             print("height down")
-            servo1angle += 5
-            servo4angle -= 5
-            servo7angle -= 5
-            servo10angle += 5
+            servo1angle -= 5
+            servo4angle += 5
+            servo7angle += 5
+            servo10angle -= 5
 
             print("moving servo1angle to: ", servo1angle)
             print("moving servo4angle to: ", servo4angle)
