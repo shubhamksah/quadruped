@@ -55,10 +55,10 @@ while stop == 0:
 
         if heightup == 1:
             print("Height up")
-            servo1angle += 20
-            servo4angle -= 20
-            servo7angle -= 20
-            servo10angle += 20
+            servo1angle += 10
+            servo4angle -= 10
+            servo7angle -= 10
+            servo10angle += 10
 
             print("moving servo1angle to: ", servo1angle)
             print("moving servo4angle to: ", servo4angle)
@@ -72,10 +72,10 @@ while stop == 0:
         
         if heightdown == 1:
             print("height down")
-            servo1angle -= 20
-            servo4angle += 20
-            servo7angle += 20
-            servo10angle -= 20
+            servo1angle -= 10
+            servo4angle += 10
+            servo7angle += 10
+            servo10angle -= 10
 
             print("moving servo1angle to: ", servo1angle)
             print("moving servo4angle to: ", servo4angle)
@@ -114,7 +114,7 @@ while stop == 0:
         servo12angle = servo12.get_physical_angle()
         print("servo12angle: ", servo12angle )
 
-        time.sleep(3)
+        # time.sleep(3)
 
         stop = joy1.get_button(5)
 
