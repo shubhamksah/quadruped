@@ -188,10 +188,10 @@ try:
     servo11angle = servo11.get_physical_angle()
     servo12angle = servo12.get_physical_angle()
 
-    servo2angle += increment20
-    servo5angle -= increment20
-    servo8angle -= increment20
-    servo11angle += increment20
+    servo2angle += increment40
+    servo5angle -= increment40
+    servo8angle -= increment40
+    servo11angle += increment40
 
     servo2.move(servo2angle,movetime,False,False)
     servo5.move(servo5angle,movetime,False,False)
