@@ -91,7 +91,7 @@ while stop == 0:
             servo9.move(servo9angle)
             servo10.move(servo10angle)
             servo11.move(servo11angle)
-            servo12.move(servo11angle)          
+            servo12.move(servo12angle)          
 
 
         servo1angle = servo1.get_physical_angle()
@@ -148,7 +148,7 @@ while stop == 0:
             servo9.move(servo9angle)
             servo10.move(servo10angle)
             servo11.move(servo11angle)
-            servo12.move(servo11angle)
+            servo12.move(servo12angle)
 
         if femur > 0.5:
             print("moving positive")
@@ -191,7 +191,7 @@ while stop == 0:
             servo9.move(servo9angle)
             servo10.move(servo10angle)
             servo11.move(servo11angle)
-            servo12.move(servo11angle)
+            servo12.move(servo12angle)
 
         servo1angle = servo1.get_physical_angle()
         servo2angle = servo2.get_physical_angle()
@@ -247,7 +247,7 @@ while stop == 0:
             servo9.move(servo9angle)
             servo10.move(servo10angle)
             servo11.move(servo11angle)
-            servo12.move(servo11angle)
+            servo12.move(servo12angle)
   
 
 
