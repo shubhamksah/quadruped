@@ -38,7 +38,7 @@ increment10 = 10
 
 try:
 
-    movetime = 400
+    movetime = 1000
 
     servo1angle -= increment40
     servo4angle += increment40
@@ -50,11 +50,11 @@ try:
     servo7.move(servo7angle,movetime,False,False)
     servo10.move(servo10angle,movetime,False,False)
 
-    time.sleep(0.5)
+    time.sleep(1)
 
     servoresetmodule.resetservo(servo1,servo2,servo3,servo4,servo5,servo6,servo7,servo8,servo9,servo10,servo11,servo12)
 
-    time.sleep(0.5)
+    time.sleep(1)
 
     servo1angle = servo1.get_physical_angle()
     servo2angle = servo2.get_physical_angle()
@@ -74,18 +74,18 @@ try:
     servo7angle -= increment40
     servo10angle += increment40
 
-    time.sleep(0.5)
+    time.sleep(1)
 
     servo1.move(servo1angle,movetime,False,False)
     servo4.move(servo4angle,movetime,False,False)
     servo7.move(servo7angle,movetime,False,False)
     servo10.move(servo10angle,movetime,False,False) 
 
-    time.sleep(0.5)
+    time.sleep(1)
 
     servoresetmodule.resetservo(servo1,servo2,servo3,servo4,servo5,servo6,servo7,servo8,servo9,servo10,servo11,servo12)
 
-    time.sleep(0.5)
+    time.sleep(1)
 
     servo3angle -= increment10
     servo6angle -= increment10
@@ -94,7 +94,7 @@ try:
 
     servo3.move(servo3angle,movetime,False,False)
     servo6.move(servo6angle,movetime,False,False)
-    # servo9.move(servo9angle,movetime,False,False)
+    servo9.move(servo9angle,movetime,False,False)
     # servo12.move(servo12angle,movetime,False,False)
 
     servo1angle = servo1.get_physical_angle()
