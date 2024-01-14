@@ -2,6 +2,7 @@ from math import sin, cos
 from pylx16a.lx16a import *
 import time
 import pygame
+import servoresetmodule
 
 LX16A.initialize("/dev/ttyUSB0", 0.1)
 
@@ -21,6 +22,8 @@ servo9 = LX16A(9)
 servo10 = LX16A(10)
 servo11 = LX16A(11)
 servo12 = LX16A(12)
+
+servoresetmodule.resetservo(servo1,servo2,servo3,servo4,servo5,servo6,servo7,servo8,servo9,servo10,servo11,servo12)
 
 stop = 0
 while stop == 0:
@@ -161,7 +164,7 @@ while stop == 0:
         servo12angle = servo12.get_physical_angle()
         print("servo12angle: ", servo12angle )
 
-        time.sleep(3)
+        # time.sleep(3)
 
         stop = joy1.get_button(0)
 
