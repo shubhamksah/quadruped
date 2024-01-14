@@ -51,14 +51,14 @@ while stop == 0:
       
         heightup = joy1.get_button(3)
         heightdown = joy1.get_button(0)
-        movetime = 500
+        movetime = 1000
 
         if heightup == 1:
             print("Height up")
-            servo1angle -= 5
-            servo4angle += 5
-            servo7angle += 5
-            servo10angle -= 5
+            servo1angle += 20
+            servo4angle -= 20
+            servo7angle -= 20
+            servo10angle += 20
 
             print("moving servo1angle to: ", servo1angle)
             print("moving servo4angle to: ", servo4angle)
@@ -72,10 +72,10 @@ while stop == 0:
         
         if heightdown == 1:
             print("height down")
-            servo1angle += 5
-            servo4angle -= 5
-            servo7angle -= 5
-            servo10angle += 5
+            servo1angle -= 5
+            servo4angle += 5
+            servo7angle += 5
+            servo10angle -= 5
 
             print("moving servo1angle to: ", servo1angle)
             print("moving servo4angle to: ", servo4angle)
