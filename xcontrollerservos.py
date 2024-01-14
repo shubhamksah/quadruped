@@ -50,7 +50,7 @@ while stop == 0:
         servo12angle = servo12.get_physical_angle()
       
         angleincrement = 1
-        movetime=1
+        movetime=500
       
         height = joy1.get_axis(1)
         femur = joy1.get_axis(3)
@@ -68,10 +68,10 @@ while stop == 0:
             print("moving servo7angle to: ", servo7angle)
             print("moving servo10angle to: ", servo10angle)
 
-            servo1.move(servo1angle,False,False)
-            servo4.move(servo4angle,False,False)
-            servo7.move(servo7angle,False,False)
-            servo10.move(servo10angle,False,False)      
+            servo1.move(servo1angle,movetime,False,False)
+            servo4.move(servo4angle,movetime,False,False)
+            servo7.move(servo7angle,movetime,False,False)
+            servo10.move(servo10angle,movetime,False,False)      
 
 
         servo1angle = servo1.get_physical_angle()
@@ -99,10 +99,10 @@ while stop == 0:
             print("moving servo7angle to: ", servo7angle)
             print("moving servo10angle to: ", servo10angle)
 
-            servo1.move(servo1angle,False,False)
-            servo4.move(servo4angle,False,False)
-            servo7.move(servo7angle,False,False)
-            servo10.move(servo10angle,False,False) 
+            servo1.move(servo1angle,movetime,False,False)
+            servo4.move(servo4angle,movetime,False,False)
+            servo7.move(servo7angle,movetime,False,False)
+            servo10.move(servo10angle,movetime,False,False) 
 
         if femur > 0.5:
             print("moving positive")
@@ -116,10 +116,10 @@ while stop == 0:
             print("moving servo8angle to: ", servo7angle)
             print("moving servo11angle to: ", servo10angle)
 
-            servo2.move(servo2angle,False,False)
-            servo5.move(servo5angle,False,False)
-            servo8.move(servo8angle,False,False)
-            servo11.move(servo11angle,False,False)
+            servo2.move(servo2angle,movetime,False,False)
+            servo5.move(servo5angle,movetime,False,False)
+            servo8.move(servo8angle,movetime,False,False)
+            servo11.move(servo11angle,movetime,False,False)
 
             
 
@@ -135,10 +135,10 @@ while stop == 0:
             print("moving servo8angle to: ", servo8angle)
             print("moving servo11angle to: ", servo11angle)
 
-            servo2.move(servo2angle,False,False)
-            servo5.move(servo5angle,False,False)
-            servo8.move(servo8angle,False,False)
-            servo11.move(servo11angle,False,False) 
+            servo2.move(servo2angle,movetime,False,False)
+            servo5.move(servo5angle,movetime,False,False)
+            servo8.move(servo8angle,movetime,False,False)
+            servo11.move(servo11angle,movetime,False,False) 
   
 
 
