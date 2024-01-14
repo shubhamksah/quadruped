@@ -34,7 +34,7 @@ servo11angle = servo11.get_physical_angle()
 servo12angle = servo12.get_physical_angle()
 
 increment40 = 40
-increment10 = 10
+increment20 = 20
 
 try:
 
@@ -53,8 +53,6 @@ try:
     time.sleep(1)
 
     servoresetmodule.resetservo(servo1,servo2,servo3,servo4,servo5,servo6,servo7,servo8,servo9,servo10,servo11,servo12)
-
-    time.sleep(1)
 
     servo1angle = servo1.get_physical_angle()
     servo2angle = servo2.get_physical_angle()
@@ -85,12 +83,50 @@ try:
 
     servoresetmodule.resetservo(servo1,servo2,servo3,servo4,servo5,servo6,servo7,servo8,servo9,servo10,servo11,servo12)
 
+    servo1angle = servo1.get_physical_angle()
+    servo2angle = servo2.get_physical_angle()
+    servo3angle = servo3.get_physical_angle()
+    servo4angle = servo4.get_physical_angle()
+    servo5angle = servo5.get_physical_angle()
+    servo6angle = servo6.get_physical_angle()
+    servo7angle = servo7.get_physical_angle()
+    servo8angle = servo8.get_physical_angle()
+    servo9angle = servo9.get_physical_angle()
+    servo10angle = servo10.get_physical_angle()
+    servo11angle = servo11.get_physical_angle()
+    servo12angle = servo12.get_physical_angle()
+
+    servo3angle -= increment20
+    servo6angle -= increment20
+    servo9angle += increment20
+    servo12angle += increment20
+
+    servo3.move(servo3angle,movetime,False,False)
+    servo6.move(servo6angle,movetime,False,False)
+    servo9.move(servo9angle,movetime,False,False)
+    servo12.move(servo12angle,movetime,False,False)
+
     time.sleep(1)
 
-    servo3angle -= increment10
-    servo6angle -= increment10
-    servo9angle += increment10
-    servo12angle += increment10
+    servoresetmodule.resetservo(servo1,servo2,servo3,servo4,servo5,servo6,servo7,servo8,servo9,servo10,servo11,servo12)
+
+    servo1angle = servo1.get_physical_angle()
+    servo2angle = servo2.get_physical_angle()
+    servo3angle = servo3.get_physical_angle()
+    servo4angle = servo4.get_physical_angle()
+    servo5angle = servo5.get_physical_angle()
+    servo6angle = servo6.get_physical_angle()
+    servo7angle = servo7.get_physical_angle()
+    servo8angle = servo8.get_physical_angle()
+    servo9angle = servo9.get_physical_angle()
+    servo10angle = servo10.get_physical_angle()
+    servo11angle = servo11.get_physical_angle()
+    servo12angle = servo12.get_physical_angle()
+
+    servo3angle += increment20
+    servo6angle += increment20
+    servo9angle -= increment20
+    servo12angle -= increment20
 
     servo3.move(servo3angle,movetime,False,False)
     servo6.move(servo6angle,movetime,False,False)
