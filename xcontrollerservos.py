@@ -47,20 +47,21 @@ while stop:
       
         height = joy1.get_axis(1)
         if height < -0.5:
-            servo1angle + 5
-            servo4angle + 5
-            servo7angle + 5
-            servo10angle + 5
+            servo1angle += 5
+            servo4angle += 5
+            servo7angle += 5
+            servo10angle += 5
 
             servo1.move(servo1angle,1000,False,False)
             servo4.move(servo4angle,1000,False,False)
             servo7.move(servo7angle,1000,False,False)
             servo10.move(servo10angle,1000,False,False)
+        
         if height > 0.5:
-            servo1angle - 5
-            servo4angle - 5
-            servo7angle - 5
-            servo10angle - 5
+            servo1angle -= 5
+            servo4angle -= 5
+            servo7angle -= 5
+            servo10angle -= 5
 
             servo1.move(servo1angle,1000,False,False)
             servo4.move(servo4angle,1000,False,False)
