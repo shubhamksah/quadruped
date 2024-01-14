@@ -57,6 +57,8 @@ while stop:
         servo12angle = servo12.get_physical_angle()
         print("sevo12angle: ", servo12angle )
 
+        time.sleep(4)
+
         stop = joy1.get_button(0) -1
 
     finally:
