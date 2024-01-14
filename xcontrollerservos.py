@@ -47,7 +47,7 @@ while stop == 0:
       
         height = joy1.get_axis(1)
         print("axis1height: ", height)
-        if height < -0.5:
+        if height > 0.5:
             print("height up")
             servo1angle -= 5
             servo4angle += 5
@@ -77,7 +77,7 @@ while stop == 0:
         servo11angle = servo11.get_physical_angle()
         servo12angle = servo12.get_physical_angle()
 
-        if height > 0.5:
+        if height < -0.5:
             print("height down")
             servo1angle += 5
             servo4angle -= 5
