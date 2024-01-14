@@ -49,10 +49,10 @@ while stop == 0:
         print("axis1height: ", height)
         if height < -0.5:
             print("height up")
-            servo1angle += 5
+            servo1angle -= 5
             servo4angle += 5
             servo7angle += 5
-            servo10angle += 5
+            servo10angle -= 5
 
             print("moving servo1angle to: ", servo1angle)
             print("moving servo4angle to: ", servo4angle)
@@ -66,10 +66,10 @@ while stop == 0:
         
         if height > 0.5:
             print("height down")
-            servo1angle -= 5
+            servo1angle += 5
             servo4angle -= 5
             servo7angle -= 5
-            servo10angle -= 5
+            servo10angle += 5
 
             print("moving servo1angle to: ", servo1angle)
             print("moving servo4angle to: ", servo4angle)
