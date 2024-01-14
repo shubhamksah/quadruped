@@ -20,10 +20,10 @@ try:
     servo12 = LX16A(12)
 
     servo1.move(125.52,1000,False,False)
-    servo2.move(176.4,1000,False,False)
+    servo2.move(186.4,1000,False,False)
     servo3.move(121.92,1000,False,False)
     servo4.move(121.44,1000,False,False)
-    servo5.move(78,1000,False,False)
+    servo5.move(68,1000,False,False)
     servo6.move(124.08,1000,False,False)
     servo7.move(114.24,1000,False,False)
     servo8.move(109.44,1000,False,False)
