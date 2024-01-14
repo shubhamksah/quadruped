@@ -105,5 +105,5 @@ try:
 
     times += 1
 
-except times = 7
+except times == 7:
     quit()
