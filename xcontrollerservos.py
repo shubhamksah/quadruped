@@ -9,8 +9,8 @@ pygame.init()
 joy1 = pygame.joystick.Joystick(0)
 joy1.init()
 
-stop = 1
-while stop == 1:
+stop = 0
+while stop == 0:
     try:
         pygame.event.pump()
 
@@ -108,8 +108,8 @@ while stop == 1:
 
         time.sleep(2)
 
-        stop = joy1.get_button(0) - 1
+        stop = joy1.get_button(0)
 
     finally:
-        if stop == 0:
+        if stop == 1:
             print("STOP")
