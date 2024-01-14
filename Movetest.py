@@ -159,10 +159,10 @@ try:
     servo11angle = servo11.get_physical_angle()
     servo12angle = servo12.get_physical_angle()
 
-    servo2angle -= increment10
-    servo5angle += increment10
-    servo8angle += increment10
-    servo11angle -= increment10
+    servo2angle -= increment20
+    servo5angle += increment20
+    servo8angle += increment20
+    servo11angle -= increment20
 
     servo2.move(servo2angle,movetime,False,False)
     servo5.move(servo5angle,movetime,False,False)
@@ -188,10 +188,10 @@ try:
     servo11angle = servo11.get_physical_angle()
     servo12angle = servo12.get_physical_angle()
 
-    servo2angle += increment10
-    servo5angle -= increment10
-    servo8angle -= increment10
-    servo11angle += increment10
+    servo2angle += increment20
+    servo5angle -= increment20
+    servo8angle -= increment20
+    servo11angle += increment20
 
     servo2.move(servo2angle,movetime,False,False)
     servo5.move(servo5angle,movetime,False,False)
