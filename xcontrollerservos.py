@@ -32,6 +32,19 @@ while stop == 0:
         axis = [joy1.get_axis(0),joy1.get_axis(1),joy1.get_axis(2),joy1.get_axis(3),joy1.get_axis(4),joy1.get_axis(5)]
         print("axis: ", axis)
 
+        servo1.enable_torque()
+        servo2.enable_torque()
+        servo3.enable_torque()
+        servo4.enable_torque()
+        servo5.enable_torque()
+        servo6.enable_torque()
+        servo7.enable_torque()
+        servo8.enable_torque()
+        servo9.enable_torque()
+        servo10.enable_torque()
+        servo11.enable_torque()
+        servo12.enable_torque()
+
         servo1angle = servo1.get_physical_angle()
         servo2angle = servo2.get_physical_angle()
         servo3angle = servo3.get_physical_angle()
@@ -65,6 +78,7 @@ while stop == 0:
             servo4.move(servo4angle,500,False,False)
             servo7.move(servo7angle,500,False,False)
             servo10.move(servo10angle,500,False,False)
+
 
         servo1angle = servo1.get_physical_angle()
         servo2angle = servo2.get_physical_angle()
