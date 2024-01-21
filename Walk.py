@@ -38,7 +38,7 @@ try:
     
     servoresetmodule.resetservo(servo1,servo2,servo3,servo4,servo5,servo6,servo7,servo8,servo9,servo10,servo11,servo12)
 
-    ikalgorithm = algorithm.inverse_kinematics_2dof(54,70)
+    ikalgorithm = algorithm.inverse_kinematics_2dof(74,70)
 
     femurposition1 = ikalgorithm [0]
     tibiaposition1 = ikalgorithm [1]
@@ -48,7 +48,7 @@ try:
 
     print(-(tibiaposition1 - servo1angle))
 
-    servo1.move(-(tibiaposition1 - servo1angle), movetime, False, False)
+    servo1.move(servo1angle-(tibiaposition1 - servo1angle), movetime, False, False)
     servo2.move()
     servo4.move()
     servo5.move()
