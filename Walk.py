@@ -46,7 +46,9 @@ try:
     print("Femur: ", femurposition1)
     print("Tibia: ", tibiaposition1)
 
-    servo1.move(-(tibiaposition1 - servo1angle), movetime, False, False)
+    print(-(tibiaposition1 - servo1angle))
+
+    # servo1.move(-(tibiaposition1 - servo1angle), movetime, False, False)
     servo2.move()
     servo4.move()
     servo5.move()
