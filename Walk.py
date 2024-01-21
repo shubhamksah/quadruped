@@ -36,7 +36,7 @@ try:
     
     servoresetmodule.resetservo(servo1,servo2,servo3,servo4,servo5,servo6,servo7,servo8,servo9,servo10,servo11,servo12)
 
-    ikalgorithm = algorithm.inverse_kinematics_2dof(124,70)
+    ikalgorithm = algorithm.inverse_kinematics_2dof(11S4,70)
 
     femurposition1 = ikalgorithm [0]
     tibiaposition1 = ikalgorithm [1]
