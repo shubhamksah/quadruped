@@ -32,6 +32,8 @@ servo10angle = servo10.get_physical_angle()
 servo11angle = servo11.get_physical_angle()
 servo12angle = servo12.get_physical_angle()
 
+movetime = 1000
+
 try:
     
     servoresetmodule.resetservo(servo1,servo2,servo3,servo4,servo5,servo6,servo7,servo8,servo9,servo10,servo11,servo12)
@@ -44,7 +46,7 @@ try:
     print("Femur: ", femurposition1)
     print("Tibia: ", tibiaposition1)
 
-    servo1.move()
+    servo1.move(-(tibiaposition1 - servo1angle), movetime, False, False)
     servo2.move()
     servo4.move()
     servo5.move()
