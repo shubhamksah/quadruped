@@ -25,10 +25,10 @@ try:
     servo4.move(121.44,1000,False,False)
     servo5.move(84.72,1000,False,False)
     servo6.move(124.08,1000,False,False)
-    servo7.move(124.24,1000,False,False)
+    servo7.move(104.24,1000,False,False)
     servo8.move(122.4,1000,False,False)
     servo9.move(110.88,1000,False,False)
-    servo10.move(121.52,1000,False,False)
+    servo10.move(141.52,1000,False,False)
     servo11.move(153.12,1000,False,False)
     servo12.move(141.84,1000,False,False)
 
