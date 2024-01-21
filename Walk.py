@@ -49,13 +49,9 @@ try:
     print(-(tibiaposition1 - servo1angle))
 
     servo1.move((servo1angle-(tibiaposition1 - servo1angle)), movetime, False, False)
-    servo2.move()
-    servo4.move()
-    servo5.move()
-    servo7.move()
-    servo8.move()
-    servo10.move()
-    servo11.move()
+    servo4.move((servo4angle+(tibiaposition1 - servo4angle)), movetime, False, False)
+    servo7.move((servo7angle + (tibiaposition1 - servo7angle)), movetime, False, False)
+    servo10.move((servo10angle - (tibiaposition1 - servo10angle)), movetime, False, False)
 
 except ServoTimeoutError as e:
     print(f"Servo {e.id_} is not responding. Exiting...")
