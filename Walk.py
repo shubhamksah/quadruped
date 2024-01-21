@@ -19,8 +19,6 @@ servo10 = LX16A(10)
 servo11 = LX16A(11)
 servo12 = LX16A(12)
 
-servoresetmodule.resetservo(servo1,servo2,servo3,servo4,servo5,servo6,servo7,servo8,servo9,servo10,servo11,servo12)
-
 servo1angle = servo1.get_physical_angle()
 servo2angle = servo2.get_physical_angle()
 servo3angle = servo3.get_physical_angle()
@@ -36,6 +34,8 @@ servo12angle = servo12.get_physical_angle()
 
 try:
     
+    servoresetmodule.resetservo(servo1,servo2,servo3,servo4,servo5,servo6,servo7,servo8,servo9,servo10,servo11,servo12)
+
     ikalgorithm = algorithm.inverse_kinematics_2dof(124,70)
 
     femurposition1 = ikalgorithm [0]
