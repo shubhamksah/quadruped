@@ -18,7 +18,18 @@ servo10 = LX16A(10)
 servo11 = LX16A(11)
 servo12 = LX16A(12)
 
-# servoresetmodule.resetservo(servo1,servo2,servo3,servo4,servo5,servo6,servo7,servo8,servo9,servo10,servo11,servo12)
+servo1.move(85.52,1000,False,False)
+servo2.move(169.92,1000,False,False)
+servo3.move(121.92,1000,False,False)
+servo4.move(161.44,1000,False,False)
+servo5.move(84.72,1000,False,False)
+servo6.move(124.08,1000,False,False)
+servo7.move(154.24,1000,False,False)
+servo8.move(122.4,1000,False,False)
+servo9.move(110.88,1000,False,False)
+servo10.move(91.52,1000,False,False)
+servo11.move(153.12,1000,False,False)
+servo12.move(141.84,1000,False,False)
 
 servo1angle = servo1.get_physical_angle()
 servo2angle = servo2.get_physical_angle()
@@ -53,7 +64,18 @@ try:
 
     time.sleep(1)
 
-    # servoresetmodule.resetservo(servo1,servo2,servo3,servo4,servo5,servo6,servo7,servo8,servo9,servo10,servo11,servo12)
+    servo1.move(85.52,1000,False,False)
+    servo2.move(169.92,1000,False,False)
+    servo3.move(121.92,1000,False,False)
+    servo4.move(161.44,1000,False,False)
+    servo5.move(84.72,1000,False,False)
+    servo6.move(124.08,1000,False,False)
+    servo7.move(154.24,1000,False,False)
+    servo8.move(122.4,1000,False,False)
+    servo9.move(110.88,1000,False,False)
+    servo10.move(91.52,1000,False,False)
+    servo11.move(153.12,1000,False,False)
+    servo12.move(141.84,1000,False,False)
 
     time.sleep(1)
 
@@ -84,7 +106,18 @@ try:
 
     time.sleep(1)
 
-    servoresetmodule.resetservo(servo1,servo2,servo3,servo4,servo5,servo6,servo7,servo8,servo9,servo10,servo11,servo12)
+    servo1.move(85.52,1000,False,False)
+    servo2.move(169.92,1000,False,False)
+    servo3.move(121.92,1000,False,False)
+    servo4.move(161.44,1000,False,False)
+    servo5.move(84.72,1000,False,False)
+    servo6.move(124.08,1000,False,False)
+    servo7.move(154.24,1000,False,False)
+    servo8.move(122.4,1000,False,False)
+    servo9.move(110.88,1000,False,False)
+    servo10.move(91.52,1000,False,False)
+    servo11.move(153.12,1000,False,False)
+    servo12.move(141.84,1000,False,False)
 
     time.sleep(1)
 
@@ -113,7 +146,18 @@ try:
 
     time.sleep(1)
 
-    # servoresetmodule.resetservo(servo1,servo2,servo3,servo4,servo5,servo6,servo7,servo8,servo9,servo10,servo11,servo12)
+    servo1.move(85.52,1000,False,False)
+    servo2.move(169.92,1000,False,False)
+    servo3.move(121.92,1000,False,False)
+    servo4.move(161.44,1000,False,False)
+    servo5.move(84.72,1000,False,False)
+    servo6.move(124.08,1000,False,False)
+    servo7.move(154.24,1000,False,False)
+    servo8.move(122.4,1000,False,False)
+    servo9.move(110.88,1000,False,False)
+    servo10.move(91.52,1000,False,False)
+    servo11.move(153.12,1000,False,False)
+    servo12.move(141.84,1000,False,False)
 
     time.sleep(1)
 
@@ -142,7 +186,18 @@ try:
 
     time.sleep(1)
 
-    # servoresetmodule.resetservo(servo1,servo2,servo3,servo4,servo5,servo6,servo7,servo8,servo9,servo10,servo11,servo12)
+    servo1.move(85.52,1000,False,False)
+    servo2.move(169.92,1000,False,False)
+    servo3.move(121.92,1000,False,False)
+    servo4.move(161.44,1000,False,False)
+    servo5.move(84.72,1000,False,False)
+    servo6.move(124.08,1000,False,False)
+    servo7.move(154.24,1000,False,False)
+    servo8.move(122.4,1000,False,False)
+    servo9.move(110.88,1000,False,False)
+    servo10.move(91.52,1000,False,False)
+    servo11.move(153.12,1000,False,False)
+    servo12.move(141.84,1000,False,False)
 
     time.sleep(1)
 
@@ -171,7 +226,18 @@ try:
 
     time.sleep(1)
 
-    # servoresetmodule.resetservo(servo1,servo2,servo3,servo4,servo5,servo6,servo7,servo8,servo9,servo10,servo11,servo12)
+    servo1.move(85.52,1000,False,False)
+    servo2.move(169.92,1000,False,False)
+    servo3.move(121.92,1000,False,False)
+    servo4.move(161.44,1000,False,False)
+    servo5.move(84.72,1000,False,False)
+    servo6.move(124.08,1000,False,False)
+    servo7.move(154.24,1000,False,False)
+    servo8.move(122.4,1000,False,False)
+    servo9.move(110.88,1000,False,False)
+    servo10.move(91.52,1000,False,False)
+    servo11.move(153.12,1000,False,False)
+    servo12.move(141.84,1000,False,False)
 
     time.sleep(1)
 
@@ -200,7 +266,18 @@ try:
 
     time.sleep(1)
 
-    # servoresetmodule.resetservo(servo1,servo2,servo3,servo4,servo5,servo6,servo7,servo8,servo9,servo10,servo11,servo12)
+    servo1.move(85.52,1000,False,False)
+    servo2.move(169.92,1000,False,False)
+    servo3.move(121.92,1000,False,False)
+    servo4.move(161.44,1000,False,False)
+    servo5.move(84.72,1000,False,False)
+    servo6.move(124.08,1000,False,False)
+    servo7.move(154.24,1000,False,False)
+    servo8.move(122.4,1000,False,False)
+    servo9.move(110.88,1000,False,False)
+    servo10.move(91.52,1000,False,False)
+    servo11.move(153.12,1000,False,False)
+    servo12.move(141.84,1000,False,False)
 
     time.sleep(1)
 
@@ -229,7 +306,18 @@ try:
 
     time.sleep(1)
 
-    # servoresetmodule.resetservo(servo1,servo2,servo3,servo4,servo5,servo6,servo7,servo8,servo9,servo10,servo11,servo12)
+    servo1.move(85.52,1000,False,False)
+    servo2.move(169.92,1000,False,False)
+    servo3.move(121.92,1000,False,False)
+    servo4.move(161.44,1000,False,False)
+    servo5.move(84.72,1000,False,False)
+    servo6.move(124.08,1000,False,False)
+    servo7.move(154.24,1000,False,False)
+    servo8.move(122.4,1000,False,False)
+    servo9.move(110.88,1000,False,False)
+    servo10.move(91.52,1000,False,False)
+    servo11.move(153.12,1000,False,False)
+    servo12.move(141.84,1000,False,False)
 
     time.sleep(1)
 
@@ -258,7 +346,18 @@ try:
 
     time.sleep(1)
 
-    # servoresetmodule.resetservo(servo1,servo2,servo3,servo4,servo5,servo6,servo7,servo8,servo9,servo10,servo11,servo12)
+    servo1.move(85.52,1000,False,False)
+    servo2.move(169.92,1000,False,False)
+    servo3.move(121.92,1000,False,False)
+    servo4.move(161.44,1000,False,False)
+    servo5.move(84.72,1000,False,False)
+    servo6.move(124.08,1000,False,False)
+    servo7.move(154.24,1000,False,False)
+    servo8.move(122.4,1000,False,False)
+    servo9.move(110.88,1000,False,False)
+    servo10.move(91.52,1000,False,False)
+    servo11.move(153.12,1000,False,False)
+    servo12.move(141.84,1000,False,False)
 
     time.sleep(1)
 
