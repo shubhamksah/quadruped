@@ -66,7 +66,10 @@ try:
             axis = [joy1.get_axis(0),joy1.get_axis(1),joy1.get_axis(2),joy1.get_axis(3),joy1.get_axis(4),joy1.get_axis(5)]
 
             if joy1.get_axis(0) < -0.5:
-                FL_TIBIA.move(10,1000,True,False)
+                FL_TIBIA.move(10,100,True,False)
+                time.sleep(0.5)
+            if joy1.get_axis(0) > 0.5:
+                FL_TIBIA.move(10,100,False,False)
                 time.sleep(0.5)
             
             t = joy1.get_button(0)
