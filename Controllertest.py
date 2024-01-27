@@ -75,7 +75,7 @@ try:
                 BR_TIBIA.move(10,1000,True,False)
                 BL_TIBIA.move(10,1000,True,False)
 
-            stop=joy1.get_buttom(0)
+            stop=joy1.get_button(0)
 
         finally:
             if t == 1:
