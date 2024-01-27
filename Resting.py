@@ -14,6 +14,8 @@ BL_TIBIA = LX16A(10)
 BL_FEMUR = LX16A(11)
 BL_HIP = LX16A(12)
 
+LX16A.initialize("/dev/ttyUSB0", 0.1)
+
 try:
 
     FL_TIBIA.move(125,1000,False,False)
