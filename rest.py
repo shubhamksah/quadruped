@@ -2,7 +2,7 @@ from math import sin, cos
 from pylx16a.lx16a import *
 import time
 
-LX16A.initialize("/dev/serial0", 0.1)
+LX16A.initialize("/dev/ttyAMA0", 0.1)
 
 try:
 
