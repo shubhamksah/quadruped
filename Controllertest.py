@@ -1,5 +1,7 @@
 from pylx16a.lx16a import *
+import pygame
 import time
+import subprocess
 
 def standing_position(FL_TIBIA,FL_FEMUR,FL_HIP,FR_TIBIA,FR_FEMUR,FR_HIP,BR_TIBIA,BR_FEMUR,BR_HIP,BL_TIBIA,BL_FEMUR,BL_HIP):
 
@@ -37,6 +39,10 @@ def resting_position(FL_TIBIA,FL_FEMUR,FL_HIP,FR_TIBIA,FR_FEMUR,FR_HIP,BR_TIBIA,
 
 t = 0
 
+pygame.init()
+joy1 = pygame.joystick.Joystick(0)
+joy1.init()
+
 LX16A.initialize("/dev/ttyUSB0", 0.1)
 
 try:
@@ -54,12 +60,28 @@ try:
     BL_FEMUR = LX16A(11)
     BL_HIP = LX16A(12)
     
-    FL_TIBIA.move(20,1000,True,False)
+    while t == 0:
+        try:
+            pygame.event.pump()
+            buttons = [joy1.get_button(0),joy1.get_button(1),joy1.get_button(2),joy1.get_button(3),joy1.get_button(4),joy1.get_button(5)]
+            axis = [joy1.get_axis(0),joy1.get_axis(1),joy1.get_axis(2),joy1.get_axis(3),joy1.get_axis(4),joy1.get_axis(5)]
+            pygame.time.Clock().tick(0)
+            subprocess.call ("clear")
 
+            tibia = joy1.get_axis(0)
+            if tibia < -0.5 :
+                FL_TIBIA.move(10,1000,True,False)
+                FR_TIBIA.move(10,1000,True,False)
+                BR_TIBIA.move(10,1000,True,False)
+                BL_TIBIA.move(10,1000,True,False)
 
+            stop=joy1.get_buttom(0)
 
+        finally:
+            if stop == 1:
+                print("STOP")
 
-
+    
 except ServoTimeoutError as e:
     print(f"Servo {e.id_} is not responding. Exiting...")
     quit()
