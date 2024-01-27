@@ -78,7 +78,7 @@ try:
             stop=joy1.get_buttom(0)
 
         finally:
-            if stop == 1:
+            if t == 1:
                 print("STOP")
 
     
