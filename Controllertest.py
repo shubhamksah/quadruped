@@ -66,7 +66,6 @@ try:
             buttons = [joy1.get_button(0),joy1.get_button(1),joy1.get_button(2),joy1.get_button(3),joy1.get_button(4),joy1.get_button(5)]
             axis = [joy1.get_axis(0),joy1.get_axis(1),joy1.get_axis(2),joy1.get_axis(3),joy1.get_axis(4),joy1.get_axis(5)]
             pygame.time.Clock().tick(0)
-            subprocess.call ("clear")
 
             tibia = joy1.get_axis(0)
             if tibia < -0.5 :
