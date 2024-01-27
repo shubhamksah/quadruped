@@ -32,7 +32,7 @@ try:
     BL_FEMUR.move(153.12,1000,False,False)
     BL_HIP.move(141.84,1000,False,False)
 
-    time.sleep(10)
+    time.sleep(1000)
 
     standing.standing_position(FL_TIBIA,FL_FEMUR,FL_HIP,FR_TIBIA,FR_FEMUR,FR_HIP,BR_TIBIA,BR_FEMUR,BR_HIP,BL_TIBIA,BL_FEMUR,BL_HIP)
 
