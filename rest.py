@@ -58,6 +58,8 @@ try:
 
     standing_position(FL_TIBIA,FL_FEMUR,FL_HIP,FR_TIBIA,FR_FEMUR,FR_HIP,BR_TIBIA,BR_FEMUR,BR_HIP,BL_TIBIA,BL_FEMUR,BL_HIP)
 
+    time.sleep(1)
+
     FL_TIBIAangle = FL_TIBIA.get_physical_angle()
     print("sevo1angle: ", FL_TIBIAangle )
     FL_FEMURangle = FL_FEMUR.get_physical_angle()
