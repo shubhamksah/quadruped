@@ -69,7 +69,9 @@ try:
                 FL_TIBIA.move(10,100,True,False)
                 time.sleep(0.5)
             if joy1.get_axis(1) > 0.5:
-                FL_TIBIA.move(-10,100,True,False)
+                FL_TIBIA_ANGLE = FL_TIBIA.get_physical_angle()
+                FL_TIBIA_MOVE = FL_TIBIA_ANGLE - 10
+                FL_TIBIA.move(FL_TIBIA_MOVE,100,True,False)
                 time.sleep(0.5)
             
             t = joy1.get_button(0)
