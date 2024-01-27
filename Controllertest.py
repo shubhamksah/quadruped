@@ -1,7 +1,6 @@
 from pylx16a.lx16a import *
 import pygame
 import time
-import subprocess
 
 def standing_position(FL_TIBIA,FL_FEMUR,FL_HIP,FR_TIBIA,FR_FEMUR,FR_HIP,BR_TIBIA,BR_FEMUR,BR_HIP,BL_TIBIA,BL_FEMUR,BL_HIP):
 
@@ -65,13 +64,12 @@ try:
             pygame.event.pump()
             buttons = [joy1.get_button(0),joy1.get_button(1),joy1.get_button(2),joy1.get_button(3),joy1.get_button(4),joy1.get_button(5)]
             axis = [joy1.get_axis(0),joy1.get_axis(1),joy1.get_axis(2),joy1.get_axis(3),joy1.get_axis(4),joy1.get_axis(5)]
-            pygame.time.Clock().tick(0)
 
             tibia = joy1.get_axis(0)
             if tibia < -0.5 :
                 print("up")
 
-            stop=joy1.get_button(0)
+            t = joy1.get_button(0)
 
         finally:
             if t == 1:
