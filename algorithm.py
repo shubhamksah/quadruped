@@ -1,9 +1,6 @@
 import math
 
 def inverse_kinematics_2dof(x,y):
-    
-    # x = cx
-    # y = 70
 
     q1 = 70
     q2 = 114
