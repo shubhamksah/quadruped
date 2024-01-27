@@ -1,5 +1,6 @@
 from pylx16a.lx16a import *
 import standing
+import time
 
 LX16A.initialize("/dev/ttyUSB0", 0.1)
 
@@ -30,6 +31,8 @@ try:
     BL_TIBIA.move(91.52,1000,False,False)
     BL_FEMUR.move(153.12,1000,False,False)
     BL_HIP.move(141.84,1000,False,False)
+
+    time.sleep(10)
 
     standing.standing_position(FL_TIBIA,FL_FEMUR,FL_HIP,FR_TIBIA,FR_FEMUR,FR_HIP,BR_TIBIA,BR_FEMUR,BR_HIP,BL_TIBIA,BL_FEMUR,BL_HIP)
 
