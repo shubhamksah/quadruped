@@ -69,7 +69,7 @@ try:
 
             tibia = joy1.get_axis(0)
             if tibia < -0.5 :
-                FL_TIBIA.move(10,1000,True,False)
+                print("up")
 
             stop=joy1.get_button(0)
 
