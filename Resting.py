@@ -1,22 +1,22 @@
 from pylx16a.lx16a import *
 import time
 
-FL_TIBIA = LX16A(1)
-FL_FEMUR = LX16A(2)
-FL_HIP = LX16A(3)
-FR_TIBIA = LX16A(4)
-FR_FEMUR = LX16A(5)
-FR_HIP = LX16A(6)
-BR_TIBIA = LX16A(7)
-BR_FEMUR = LX16A(8)
-BR_HIP = LX16A(9)
-BL_TIBIA = LX16A(10)
-BL_FEMUR = LX16A(11)
-BL_HIP = LX16A(12)
-
 LX16A.initialize("/dev/ttyUSB0", 0.1)
 
 try:
+
+    FL_TIBIA = LX16A(1)
+    FL_FEMUR = LX16A(2)
+    FL_HIP = LX16A(3)
+    FR_TIBIA = LX16A(4)
+    FR_FEMUR = LX16A(5)
+    FR_HIP = LX16A(6)
+    BR_TIBIA = LX16A(7)
+    BR_FEMUR = LX16A(8)
+    BR_HIP = LX16A(9)
+    BL_TIBIA = LX16A(10)
+    BL_FEMUR = LX16A(11)
+    BL_HIP = LX16A(12)
 
     FL_TIBIA.move(125,1000,False,False)
     FL_FEMUR.move(143,1000,False,False)
