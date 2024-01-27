@@ -25,7 +25,7 @@ try:
     servo4.move(120,1000,False,False)
     servo5.move(115,1000,False,False)
     servo6.move(124,1000,False,False)
-    servo7.move(110,1000,False,False)
+    servo7.move(112,1000,False,False)
     servo8.move(152,1000,False,False)
     servo9.move(115,1000,False,False)
     servo10.move(141,1000,False,False)
