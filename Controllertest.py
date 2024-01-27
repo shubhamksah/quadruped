@@ -65,8 +65,8 @@ try:
             buttons = [joy1.get_button(0),joy1.get_button(1),joy1.get_button(2),joy1.get_button(3),joy1.get_button(4),joy1.get_button(5)]
             axis = [joy1.get_axis(0),joy1.get_axis(1),joy1.get_axis(2),joy1.get_axis(3),joy1.get_axis(4),joy1.get_axis(5)]
 
-            print(buttons(0),buttons(1),buttons(2),buttons(3),buttons(4),buttons(5))
-            print(axis(0),axis(1),axis(2),axis(3),axis(4),axis(5))
+            print(joy1.get_button(0),joy1.get_button(1),joy1.get_button(2),joy1.get_button(3),joy1.get_button(4),joy1.get_button(5))
+            print(joy1.get_axis(0),joy1.get_axis(1),joy1.get_axis(2),joy1.get_axis(3),joy1.get_axis(4),joy1.get_axis(5))
             t = joy1.get_button(0)
 
         finally:
