@@ -83,6 +83,33 @@ try:
                 FL_TIBIA.move(FL_TIBIA_MOVE,25,False,False)
                 BL_TIBIA.move(BL_TIBIA_MOVE,25,False,False)
                 time.sleep(0.05)
+            if joy1.get_button(2) == 1:
+                FL_TIBIA.move(85.52,1000,False,False)
+                FL_FEMUR.move(169.92,1000,False,False)
+                FL_HIP.move(121.92,1000,False,False)
+                FR_TIBIA.move(161.44,1000,False,False)
+                FR_FEMUR.move(84.72,1000,False,False)
+                FR_HIP.move(124.08,1000,False,False)
+                BR_TIBIA.move(154.24,1000,False,False)
+                BR_FEMUR.move(122.4,1000,False,False)
+                BR_HIP.move(110.88,1000,False,False)
+                BL_TIBIA.move(91.52,1000,False,False)
+                BL_FEMUR.move(153.12,1000,False,False)
+                BL_HIP.move(141.84,1000,False,False)
+            
+            if joy1.get_button(1) == 1:
+                FL_TIBIA.move(85.52,1000,False,False)
+                FL_FEMUR.move(169.92,1000,False,False)
+                FL_HIP.move(121.92,1000,False,False)
+                FR_TIBIA.move(161.44,1000,False,False)
+                FR_FEMUR.move(84.72,1000,False,False)
+                FR_HIP.move(124.08,1000,False,False)
+                BR_TIBIA.move(154.24,1000,False,False)
+                BR_FEMUR.move(122.4,1000,False,False)
+                BR_HIP.move(110.88,1000,False,False)
+                BL_TIBIA.move(91.52,1000,False,False)
+                BL_FEMUR.move(153.12,1000,False,False)
+                BL_HIP.move(141.84,1000,False,False)
             
             t = joy1.get_button(0)
 
