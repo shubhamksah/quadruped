@@ -77,7 +77,7 @@ try:
                 BL_TIBIA.move(BL_TIBIA_MOVE,25,False,False)
                 time.sleep(0.025)
 
-            if joy1.get_axis(0) > 0.5:
+            if joy1.get_axis(0) < -0.5:
                 FL_FEMUR_ANGLE = FL_FEMUR.get_physical_angle()
                 BL_FEMUR_ANGLE = BL_FEMUR.get_physical_angle()
                 FL_FEMUR_MOVE = FL_FEMUR_ANGLE - 5
@@ -86,12 +86,28 @@ try:
                 BL_FEMUR.move(BL_FEMUR_MOVE,25,False,False)
                 time.sleep(0.025)
 
-            if joy1.get_axis(0) < -0.5:
+            if joy1.get_axis(0) > 0.5:
                 FR_FEMUR_ANGLE = FR_FEMUR.get_physical_angle()
                 BR_FEMUR_ANGLE = BR_FEMUR.get_physical_angle()
                 FL_FEMUR.move(5,50,True,False)
                 BL_FEMUR.move(5,50,True,False)
                 time.sleep(0.07)
+
+            if joy1.get_axis(3) > 0.5:
+                FR_HIP_ANGLE = FR_HIP.get_physical_angle()
+                BR_HIP_ANGLE = BR_HIP.get_physical_angle()
+                FL_HIP.move(5,50,True,False)
+                BL_HIP.move(5,50,True,False)
+                time.sleep(0.07)
+
+            if joy1.get_axis(3) < 0.5:
+                FL_HIP_ANGLE = FL_HIP.get_physical_angle()
+                BL_HIP_ANGLE = BL_HIP.get_physical_angle()
+                FL_HIP_MOVE = FL_HIP_ANGLE - 5
+                BL_HIP_MOVE = BL_HIP_ANGLE - 5
+                FL_HIP.move(FL_HIP_MOVE,25,False,False)
+                BL_HIP.move(BL_HIP_MOVE,25,False,False)
+                time.sleep(0.025)
 
             if joy1.get_button(1) > 0.5:
 
@@ -107,8 +123,6 @@ try:
                 BL_TIBIA.move(91.52,1000,False,False)
                 BL_FEMUR.move(153.12,1000,False,False)
                 BL_HIP.move(141.84,1000,False,False)
-
-                print("Resting")
             
             if joy1.get_button(3) > 0.5:
                 
@@ -125,8 +139,6 @@ try:
                 BL_FEMUR.move(126,1000,False,False)
                 BL_HIP.move(141,1000,False,False)
 
-                print("Standing")
-                        
             t = joy1.get_button(0)
 
         finally:
