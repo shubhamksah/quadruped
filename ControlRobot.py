@@ -93,7 +93,7 @@ try:
                 BL_FEMUR.move(5,50,True,False)
                 time.sleep(0.07)
 
-            if joy1.get_axis(3) > 0.8:
+            if joy1.get_axis(2) > 0.8:
                 FR_HIP_ANGLE = FR_HIP.get_physical_angle()
                 BR_HIP_ANGLE = BR_HIP.get_physical_angle()
                 BL_HIP_MOVE = BL_HIP_ANGLE - 5
@@ -102,7 +102,7 @@ try:
                 # BL_HIP.move(BL_HIP_MOVE,50,False,False)
                 time.sleep(0.07)
 
-            if joy1.get_axis(3) < -0.8:
+            if joy1.get_axis(2) < -0.8:
                 FL_HIP_ANGLE = FL_HIP.get_physical_angle()
                 BL_HIP_ANGLE = BL_HIP.get_physical_angle()
                 FL_HIP_MOVE = FL_HIP_ANGLE - 5
