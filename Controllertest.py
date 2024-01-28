@@ -69,18 +69,20 @@ try:
                 FR_TIBIA_ANGLE = FR_TIBIA.get_physical_angle()
                 BR_TIBIA_ANGLE = BR_TIBIA.get_physical_angle()
                 FL_TIBIA.move(5,50,True,False)
-                # FR_TIBIA.move((FR_TIBIA_ANGLE - 5),10,True,False)
-                # BR_TIBIA.move((BR_TIBIA_ANGLE -5),10,True,False)
                 BL_TIBIA.move(5,50,True,False)
                 time.sleep(0.05)
-            # if joy1.get_axis(1) > 0.5:
-            #     FL_TIBIA_ANGLE = FL_TIBIA.get_physical_angle()
-            #     BL_TIBIA_ANGLE = BL_TIBIA.get_physical_angle()
-            #     FL_TIBIA.move((FL_TIBIA_ANGLE - 5),10,False,False)
-            #     FR_TIBIA.move(5,10,False,False)
-            #     BR_TIBIA.move(5,10,False,False)
-            #     BL_TIBIA.move((BL_TIBIA_ANGLE - 5),10,False,False)
-            #     time.sleep(0.5)
+            if joy1.get_axis(1) > 0.5:
+                FL_TIBIA_ANGLE = FL_TIBIA.get_physical_angle()
+                BL_TIBIA_ANGLE = BL_TIBIA.get_physical_angle()
+                print("FL Angle: ", FL_TIBIA_ANGLE)
+                print("BL Angle: ", BL_TIBIA_ANGLE)
+                FL_TIBIA_MOVE = FL_TIBIA_ANGLE - 5
+                BL_TIBIA_MOVE = BL_TIBIA_ANGLE - 5
+                print("FL Move: ", FL_TIBIA_MOVE)
+                print("BL MOVE: ", BL_TIBIA_MOVE)
+                # FL_TIBIA.move(FL_TIBIA_MOVE,10,False,False)
+                # BL_TIBIA.move(BL_TIBIA_MOVE,10,False,False)
+                time.sleep(0.5)
             
             t = joy1.get_button(0)
 
