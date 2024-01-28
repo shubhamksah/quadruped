@@ -80,8 +80,8 @@ try:
                 BL_TIBIA_MOVE = BL_TIBIA_ANGLE - 5
                 print("FL Move: ", FL_TIBIA_MOVE)
                 print("BL MOVE: ", BL_TIBIA_MOVE)
-                FL_TIBIA.move(FL_TIBIA_MOVE,50,False,False)
-                BL_TIBIA.move(BL_TIBIA_MOVE,50,False,False)
+                FL_TIBIA.move(FL_TIBIA_MOVE,25,False,False)
+                BL_TIBIA.move(BL_TIBIA_MOVE,25,False,False)
                 time.sleep(0.05)
             
             t = joy1.get_button(0)
