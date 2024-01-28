@@ -100,7 +100,7 @@ try:
                 BL_HIP.move(5,50,True,False)
                 time.sleep(0.07)
 
-            if joy1.get_axis(3) < 0.5:
+            if joy1.get_axis(3) < -0.5:
                 FL_HIP_ANGLE = FL_HIP.get_physical_angle()
                 BL_HIP_ANGLE = BL_HIP.get_physical_angle()
                 FL_HIP_MOVE = FL_HIP_ANGLE - 5
