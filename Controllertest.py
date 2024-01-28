@@ -72,7 +72,7 @@ try:
                 # FR_TIBIA.move((FR_TIBIA_ANGLE - 5),10,True,False)
                 # BR_TIBIA.move((BR_TIBIA_ANGLE -5),10,True,False)
                 BL_TIBIA.move(5,10,True,False)
-                time.sleep(0.2)
+                time.sleep(0.1)
             # if joy1.get_axis(1) > 0.5:
             #     FL_TIBIA_ANGLE = FL_TIBIA.get_physical_angle()
             #     BL_TIBIA_ANGLE = BL_TIBIA.get_physical_angle()
