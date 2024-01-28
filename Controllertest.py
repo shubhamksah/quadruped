@@ -65,14 +65,14 @@ try:
             buttons = [joy1.get_button(0),joy1.get_button(1),joy1.get_button(2),joy1.get_button(3),joy1.get_button(4),joy1.get_button(5)]
             axis = [joy1.get_axis(0),joy1.get_axis(1),joy1.get_axis(2),joy1.get_axis(3),joy1.get_axis(4),joy1.get_axis(5)]
 
-            while joy1.get_axis(1) < -0.5:
+            if joy1.get_axis(1) < -0.5:
                 FR_TIBIA_ANGLE = FR_TIBIA.get_physical_angle()
                 BR_TIBIA_ANGLE = BR_TIBIA.get_physical_angle()
                 FL_TIBIA.move(10,5,True,False)
                 # FR_TIBIA.move((FR_TIBIA_ANGLE - 5),10,True,False)
                 # BR_TIBIA.move((BR_TIBIA_ANGLE -5),10,True,False)
                 BL_TIBIA.move(10,5,True,False)
-                time.sleep(0.5)
+
             # if joy1.get_axis(1) > 0.5:
             #     FL_TIBIA_ANGLE = FL_TIBIA.get_physical_angle()
             #     BL_TIBIA_ANGLE = BL_TIBIA.get_physical_angle()
