@@ -83,7 +83,7 @@ try:
                 FL_TIBIA.move(FL_TIBIA_MOVE,25,False,False)
                 BL_TIBIA.move(BL_TIBIA_MOVE,25,False,False)
                 time.sleep(0.05)
-            if joy1.get_button(2) > 0.5:
+            if joy1.get_button(3) > 0.5:
                 FL_TIBIA.move(85.52,1000,False,False)
                 FL_FEMUR.move(169.92,1000,False,False)
                 FL_HIP.move(121.92,1000,False,False)
