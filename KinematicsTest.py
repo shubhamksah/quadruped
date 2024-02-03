@@ -60,6 +60,7 @@ try:
     TIBIA_MOVE = 80 - angle[1]
 
     print(TIBIA_MOVE)
+    print(FL_TIBIA.get_physical_angle())
 
     FL_FEMUR.move(FEMUR_MOVE,1000,False,False)
 
