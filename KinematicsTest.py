@@ -57,8 +57,11 @@ try:
     print(angle[1])
 
     FEMUR_MOVE = 143 - angle[0]
+    TIBIA_MOVE = 80 - angle[1]
 
-    # FL_FEMUR.move(FEMUR_MOVE,1000,False,False)
+    print(TIBIA_MOVE)
+
+    FL_FEMUR.move(FEMUR_MOVE,1000,False,False)
 
 except ServoTimeoutError as e:
     print(f"Servo {e.id_} is not responding. Exiting...")
