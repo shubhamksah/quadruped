@@ -54,6 +54,7 @@ try:
 
     angle = algorithm.inverse_kinematics_2dof(x,y)
     print(angle[0])
+    print(angle[1])
 
     FEMUR_MOVE = 143 - angle[0]
 
