@@ -53,7 +53,7 @@ try:
     y=70
 
     angle = algorithm.inverse_kinematics_2dof(x,y)
-    print(algorithm.Femur_angle)
+    print(algorithm.inverse_kinematics_2dog(1))
 
 except ServoTimeoutError as e:
     print(f"Servo {e.id_} is not responding. Exiting...")
