@@ -62,52 +62,54 @@ try:
             axis = [joy1.get_axis(0),joy1.get_axis(1),joy1.get_axis(2),joy1.get_axis(3),joy1.get_axis(4),joy1.get_axis(5)]
 
             if joy1.get_axis(1) < -0.5:
-                FR_TIBIA_ANGLE = FR_TIBIA.get_physical_angle()
-                BR_TIBIA_ANGLE = BR_TIBIA.get_physical_angle()
-                FL_TIBIA.move(5,50,True,False)
-                BL_TIBIA.move(5,50,True,False)
-                time.sleep(0.07)
-
-            if joy1.get_axis(1) > 0.5:
                 FL_TIBIA_ANGLE = FL_TIBIA.get_physical_angle()
                 BL_TIBIA_ANGLE = BL_TIBIA.get_physical_angle()
-                FL_TIBIA_MOVE = FL_TIBIA_ANGLE - 5
-                BL_TIBIA_MOVE = BL_TIBIA_ANGLE - 5
-                FL_TIBIA.move(FL_TIBIA_MOVE,25,False,False)
-                BL_TIBIA.move(BL_TIBIA_MOVE,25,False,False)
-                time.sleep(0.025)
-
-            if joy1.get_axis(0) < -0.5:
-                FL_FEMUR_ANGLE = FL_FEMUR.get_physical_angle()
-                BL_FEMUR_ANGLE = BL_FEMUR.get_physical_angle()
-                FL_FEMUR_MOVE = FL_FEMUR_ANGLE - 5
-                BL_FEMUR_MOVE = BL_FEMUR_ANGLE - 5
-                FL_FEMUR.move(FL_FEMUR_MOVE,25,False,False)
-                BL_FEMUR.move(BL_FEMUR_MOVE,25,False,False)
-                time.sleep(0.025)
-
-            if joy1.get_axis(0) > 0.5:
-                FR_FEMUR_ANGLE = FR_FEMUR.get_physical_angle()
-                BR_FEMUR_ANGLE = BR_FEMUR.get_physical_angle()
-                FL_FEMUR.move(5,50,True,False)
-                BL_FEMUR.move(5,50,True,False)
-                time.sleep(0.07)
-
-            if joy1.get_axis(2) > 0.8:
-                FR_HIP_ANGLE = FR_HIP.get_physical_angle()
-                BR_HIP_ANGLE = BR_HIP.get_physical_angle()
-                BL_HIP_MOVE = BL_HIP_ANGLE - 5
-                FL_HIP.move(5,100,True,False)
-                BL_HIP.move(BL_HIP_MOVE,100,False,False)
+                FL_TIBIA_MOVE = FL_TIBIA_ANGLE + 5
+                BL_TIBIA_MOVE = BL_TIBIA_ANGLE + 5
+                FL_TIBIA.move(FL_TIBIA_MOVE,50,True,False)
+                BL_TIBIA.move(BL_TIBIA_MOVE5,50,True,False)
                 time.sleep(0.05)
 
-            if joy1.get_axis(2) < -0.8:
-                FL_HIP_ANGLE = FL_HIP.get_physical_angle()
-                BL_HIP_ANGLE = BL_HIP.get_physical_angle()
-                FL_HIP_MOVE = FL_HIP_ANGLE - 5
-                FL_HIP.move(FL_HIP_MOVE,100,False,False)
-                BL_HIP.move(5,100,True,False)
-                time.sleep(0.05)
+            # if joy1.get_axis(1) > 0.5:
+            #     FL_TIBIA_ANGLE = FL_TIBIA.get_physical_angle()
+            #     BL_TIBIA_ANGLE = BL_TIBIA.get_physical_angle()
+            #     FL_TIBIA_MOVE = FL_TIBIA_ANGLE - 5
+            #     BL_TIBIA_MOVE = BL_TIBIA_ANGLE - 5
+            #     FL_TIBIA.move(FL_TIBIA_MOVE,25,False,False)
+            #     BL_TIBIA.move(BL_TIBIA_MOVE,25,False,False)
+            #     time.sleep(0.025)
+
+            # if joy1.get_axis(0) < -0.5:
+            #     FL_FEMUR_ANGLE = FL_FEMUR.get_physical_angle()
+            #     BL_FEMUR_ANGLE = BL_FEMUR.get_physical_angle()
+            #     FL_FEMUR_MOVE = FL_FEMUR_ANGLE - 5
+            #     BL_FEMUR_MOVE = BL_FEMUR_ANGLE - 5
+            #     FL_FEMUR.move(FL_FEMUR_MOVE,25,False,False)
+            #     BL_FEMUR.move(BL_FEMUR_MOVE,25,False,False)
+            #     time.sleep(0.025)
+
+            # if joy1.get_axis(0) > 0.5:
+            #     FR_FEMUR_ANGLE = FR_FEMUR.get_physical_angle()
+            #     BR_FEMUR_ANGLE = BR_FEMUR.get_physical_angle()
+            #     FL_FEMUR.move(5,50,True,False)
+            #     BL_FEMUR.move(5,50,True,False)
+            #     time.sleep(0.07)
+
+            # if joy1.get_axis(2) > 0.8:
+            #     FR_HIP_ANGLE = FR_HIP.get_physical_angle()
+            #     BR_HIP_ANGLE = BR_HIP.get_physical_angle()
+            #     BL_HIP_MOVE = BL_HIP_ANGLE - 5
+            #     FL_HIP.move(5,100,True,False)
+            #     BL_HIP.move(BL_HIP_MOVE,100,False,False)
+            #     time.sleep(0.05)
+
+            # if joy1.get_axis(2) < -0.8:
+            #     FL_HIP_ANGLE = FL_HIP.get_physical_angle()
+            #     BL_HIP_ANGLE = BL_HIP.get_physical_angle()
+            #     FL_HIP_MOVE = FL_HIP_ANGLE - 5
+            #     FL_HIP.move(FL_HIP_MOVE,100,False,False)
+            #     BL_HIP.move(5,100,True,False)
+            #     time.sleep(0.05)
 
             if joy1.get_button(1) > 0.5:
 
