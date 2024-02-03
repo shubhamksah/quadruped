@@ -79,7 +79,7 @@ try:
                 BL_TIBIA.move(BL_TIBIA_MOVE,50,False,False)
                 time.sleep(0.05)
 
-            if joy1.get_axis(0) < -0.5:
+            if joy1.get_axis(2) < -0.5:
                 FL_FEMUR_ANGLE = FL_FEMUR.get_physical_angle()
                 BL_FEMUR_ANGLE = BL_FEMUR.get_physical_angle()
                 FL_FEMUR_MOVE = FL_FEMUR_ANGLE - 5
@@ -88,7 +88,7 @@ try:
                 BL_FEMUR.move(BL_FEMUR_MOVE,50,False,False)
                 time.sleep(0.05)
 
-            if joy1.get_axis(0) > 0.5:
+            if joy1.get_axis(2) > 0.5:
                 FL_FEMUR_ANGLE = FL_FEMUR.get_physical_angle()
                 BL_FEMUR_ANGLE = BL_FEMUR.get_physical_angle()
                 FL_FEMUR_MOVE = FL_FEMUR_ANGLE + 5
