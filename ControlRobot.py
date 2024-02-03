@@ -124,6 +124,7 @@ try:
         finally:
             if t == 1:
                 print("STOP")
+                resting_position(FL_TIBIA,FL_FEMUR,FL_HIP,FR_TIBIA,FR_FEMUR,FR_HIP,BR_TIBIA,BR_FEMUR,BR_HIP,BL_TIBIA,BL_FEMUR,BL_HIP)
 
     
 except ServoTimeoutError as e:
