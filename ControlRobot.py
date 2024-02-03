@@ -97,21 +97,23 @@ try:
                 BL_FEMUR.move(BL_FEMUR_MOVE,50,False,False)
                 time.sleep(0.05)
 
-            # if joy1.get_axis(2) > 0.8:
-            #     FR_HIP_ANGLE = FR_HIP.get_physical_angle()
-            #     BR_HIP_ANGLE = BR_HIP.get_physical_angle()
-            #     BL_HIP_MOVE = BL_HIP_ANGLE - 5
-            #     FL_HIP.move(5,100,True,False)
-            #     BL_HIP.move(BL_HIP_MOVE,100,False,False)
-            #     time.sleep(0.05)
+            if joy1.get_axis(3) > 0.8:
+                FL_HIP_ANGLE = FL_HIP.get_physical_angle()
+                BL_HIP_ANGLE = BL_HIP.get_physical_angle()
+                FL_HIP_MOVE = FL_HIP_ANGLE + 2
+                BL_HIP_MOVE = BL_HIP_ANGLE - 2
+                FL_HIP.move(FL_HIP_MOVE,50,False,False)
+                BL_HIP.move(BL_HIP_MOVE,50,False,False)
+                time.sleep(0.05)
 
-            # if joy1.get_axis(2) < -0.8:
-            #     FL_HIP_ANGLE = FL_HIP.get_physical_angle()
-            #     BL_HIP_ANGLE = BL_HIP.get_physical_angle()
-            #     FL_HIP_MOVE = FL_HIP_ANGLE - 5
-            #     FL_HIP.move(FL_HIP_MOVE,100,False,False)
-            #     BL_HIP.move(5,100,True,False)
-            #     time.sleep(0.05)
+            if joy1.get_axis(3) < -0.8:
+                FL_HIP_ANGLE = FL_HIP.get_physical_angle()
+                BL_HIP_ANGLE = BL_HIP.get_physical_angle()
+                FL_HIP_MOVE = FL_HIP_ANGLE - 2
+                BL_HIP_MOVE = BL_HIP_ANGLE + 2
+                FL_HIP.move(FL_HIP_MOVE,50,False,False)
+                BL_HIP.move(BL_HIP_MOVE,50,False,False)
+                time.sleep(0.05)
 
             if joy1.get_button(1) > 0.5:
 
