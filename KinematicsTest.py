@@ -49,7 +49,7 @@ try:
     BL_FEMUR = LX16A(11)
     BL_HIP = LX16A(12)
 
-    x=50
+    x=100.6
     y=150.6
 
     angle = algorithm.inverse_kinematics_2dof(x,y)
