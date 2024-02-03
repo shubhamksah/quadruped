@@ -58,7 +58,7 @@ try:
 
     FEMUR_MOVE = 143 - angle[0]
 
-    FL_FEMUR.move(FEMUR_MOVE,1000,False,False)
+    # FL_FEMUR.move(FEMUR_MOVE,1000,False,False)
 
 except ServoTimeoutError as e:
     print(f"Servo {e.id_} is not responding. Exiting...")
