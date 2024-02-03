@@ -56,6 +56,9 @@ try:
     print(angle[0])
     print(angle[1])
 
+    print(FL_FEMUR.get_physical_angle())
+    print(FL_TIBIA.get_physical_angle())
+
     # FL_FEMUR_MOVE = 143 + angle[0]
     # FL_TIBIA_MOVE = 86+(75 - angle[1])
 
