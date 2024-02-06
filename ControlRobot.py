@@ -25,10 +25,10 @@ def resting_position(FL_TIBIA,FL_FEMUR,FL_HIP,FR_TIBIA,FR_FEMUR,FR_HIP,BR_TIBIA,
     FR_TIBIA.move(161.44,1000,False,False)
     FR_FEMUR.move(84.72,1000,False,False)
     FR_HIP.move(124.08,1000,False,False)
-    BR_TIBIA.move(145,1000,False,False)
+    BR_TIBIA.move(154.24,1000,False,False)
     BR_FEMUR.move(122.4,1000,False,False)
     BR_HIP.move(110.88,1000,False,False)
-    BL_TIBIA.move(101.52,1000,False,False)
+    BL_TIBIA.move(91.52,1000,False,False)
     BL_FEMUR.move(153.12,1000,False,False)
     BL_HIP.move(141.84,1000,False,False)
 
