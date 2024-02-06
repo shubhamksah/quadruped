@@ -68,8 +68,8 @@ try:
                 BR_TIBIA_ANGLE = BR_TIBIA.get_physical_angle()
                 FL_TIBIA_MOVE = FL_TIBIA_ANGLE + 5
                 BL_TIBIA_MOVE = BL_TIBIA_ANGLE + 5
-                FR_TIBIA_MOVE = FR_TIBIA_MOVE - 5
-                BR_TIBIA_MOVE = BR_TIBIA_MOVE - 5
+                FR_TIBIA_MOVE = FR_TIBIA_ANGLE - 5
+                BR_TIBIA_MOVE = BR_TIBIA_ANGLE - 5
                 FL_TIBIA.move(FL_TIBIA_MOVE,50,False,False)
                 BL_TIBIA.move(BL_TIBIA_MOVE,50,False,False)
                 FR_TIBIA.move(FR_TIBIA_MOVE,50,False,False)
