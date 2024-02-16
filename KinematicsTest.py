@@ -50,7 +50,7 @@ try:
     BL_HIP = LX16A(12)
 
     x=100
-    y=155
+    y=145
 
     angle =algorithm.inverse_kinematics_2dof(x,y)
     print(angle[0])
@@ -77,7 +77,7 @@ try:
     FR_FEMUR.move(115,1000,False,False)
 
     x = 0
-    y = 160
+    y = 155
 
     angle =algorithm.inverse_kinematics_2dof(x,y)
 
