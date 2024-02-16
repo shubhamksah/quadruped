@@ -21,7 +21,4 @@ def inverse_kinematics_2dof(x,y):
     Tibia_angle = math.degrees(theta2)
     Femur_angle = math.degrees(theta1)
 
-    # print("Femur Angle: ", Femur_angle)
-    # print("Tibia angle: ", Tibia_angle)
-    
-    return (Femur_angle,Tibia_angle)
+    return(Tibia_angle,Femur_angle)
