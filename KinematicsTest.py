@@ -22,7 +22,7 @@ try:
     FL_TIBIA.move(135,1000,False,False)
     FL_FEMUR.move(143,1000,False,False)
     FL_HIP.move(121.5,1000,False,False)
-    FR_TIBIA.move(114,1000,False,False)
+    FR_TIBIA.move(110,1000,False,False)
     FR_FEMUR.move(115,1000,False,False)
     FR_HIP.move(124,1000,False,False)
     BR_TIBIA.move(114,1000,False,False)
