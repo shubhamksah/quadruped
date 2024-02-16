@@ -68,6 +68,8 @@ try:
     FL_FEMUR.move(143,1000,False,False)
     FL_TIBIA.move(124.8,1000,False,False)
 
+    time.sleep(1)
+
     FL_FEMUR.move(FL_FEMUR_MOVE,1000,False,False)
     FL_TIBIA.move(FL_TIBIA_MOVE,1000,False,False)
 
