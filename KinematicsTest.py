@@ -50,7 +50,7 @@ try:
     BL_HIP = LX16A(12)
 
     x=60
-    y=150
+    y=160
 
     angle =algorithm.inverse_kinematics_2dof(x,y)
     print(angle[0])
