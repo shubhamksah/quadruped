@@ -59,7 +59,6 @@ try:
     FL_FEMUR.move(143,1000,False,False)
     FL_TIBIA.move(124.8,1000,False,False)
 
-
     print("Tibia: ", FL_TIBIA.get_physical_angle())
     print("FEMUR: ", FL_FEMUR.get_physical_angle())
 
@@ -69,10 +68,10 @@ try:
     print("Tibia: ", FL_TIBIA_MOVE)
     print("Femur: ", FL_FEMUR_MOVE)
 
-    time.sleep(1)
+    # time.sleep(2)
 
-    FL_FEMUR.move(FL_FEMUR_MOVE,1000,False,False)
-    FL_TIBIA.move(FL_TIBIA_MOVE,1000,False,False)
+    # FL_FEMUR.move(FL_FEMUR_MOVE,1000,False,False)
+    # FL_TIBIA.move(FL_TIBIA_MOVE,1000,False,False)
 
     # time.sleep(1)
 
