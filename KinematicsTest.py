@@ -78,6 +78,8 @@ try:
     x = 40
     y = 165
 
+    angle =algorithm.inverse_kinematics_2dof(x,y)
+
     FL_FEMUR_MOVE = 143 - angle[1]
     FL_TIBIA_MOVE = 124.8 - (angle[0]-45)
 
