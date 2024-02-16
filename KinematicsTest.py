@@ -19,7 +19,8 @@ try:
     BL_TIBIA = LX16A(10)
     BL_FEMUR = LX16A(11)
     BL_HIP = LX16A(12)
-
+    
+    a = 1
     while (a < 10):
         FL_TIBIA.move(125,movetime,False,False)
         FL_FEMUR.move(190,movetime,False,False)
