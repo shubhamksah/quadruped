@@ -32,7 +32,7 @@ try:
     BL_FEMUR.move(126,1000,False,False)
     BL_HIP.move(141,1000,False,False)
 
-    time.sleep(0.1)
+    time.sleep(1)
 
     FL_TIBIA.move(125,1000,False,False)
     FL_FEMUR.move(190,1000,False,False)
@@ -47,7 +47,7 @@ try:
     BL_FEMUR.move(126,1000,False,False)
     BL_HIP.move(141,1000,False,False)
 
-    time.sleep(.1)
+    time.sleep(1)
 
     FL_TIBIA.move(149,1000,False,False)
     FL_FEMUR.move(134,1000,False,False)
