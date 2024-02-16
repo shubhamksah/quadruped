@@ -68,10 +68,10 @@ try:
     print("Tibia: ", FL_TIBIA_MOVE)
     print("Femur: ", FL_FEMUR_MOVE)
 
-    # time.sleep(2)
+    time.sleep(2)
 
-    # FL_FEMUR.move(FL_FEMUR_MOVE,1000,False,False)
-    # FL_TIBIA.move(FL_TIBIA_MOVE,1000,False,False)
+    FL_FEMUR.move(FL_FEMUR_MOVE,1000,False,False)
+    FL_TIBIA.move(FL_TIBIA_MOVE,1000,False,False)
 
     # time.sleep(1)
 
