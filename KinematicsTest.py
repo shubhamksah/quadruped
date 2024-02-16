@@ -34,7 +34,7 @@ try:
 
     time.sleep(1)
 
-    FL_TIBIA.move(107,1000,False,False)
+    FL_TIBIA.move(143,1000,False,False)
     FL_FEMUR.move(189,1000,False,False)
     FL_HIP.move(121.5,1000,False,False)
     FR_TIBIA.move(120,1000,False,False)
