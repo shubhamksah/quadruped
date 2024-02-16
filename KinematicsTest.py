@@ -63,6 +63,21 @@ try:
     BL_FEMUR.move(172,movetime,False,False)
     BL_HIP.move(141,movetime,False,False)
 
+    time.sleep(3)
+
+    FL_TIBIA.move(125,movetime,False,False)
+    FL_FEMUR.move(190,movetime,False,False)
+    FL_HIP.move(121.5,movetime,False,False)
+    FR_TIBIA.move(127,movetime,False,False)
+    FR_FEMUR.move(68,movetime,False,False)
+    FR_HIP.move(124,movetime,False,False)
+    BR_TIBIA.move(116,movetime,False,False)
+    BR_FEMUR.move(105,movetime,False,False)
+    BR_HIP.move(115,movetime,False,False)
+    BL_TIBIA.move(129,movetime,False,False)
+    BL_FEMUR.move(173,movetime,False,False)
+    BL_HIP.move(141,movetime,False,False)
+
     # time.sleep(3)
 
     # FL_TIBIA.move(149,movetime,False,False)
