@@ -50,7 +50,7 @@ try:
     BL_HIP = LX16A(12)
 
     x=100
-    y=150
+    y=155
 
     angle =algorithm.inverse_kinematics_2dof(x,y)
     print(angle[0])
@@ -68,8 +68,6 @@ try:
     print("Tibia: ", FL_TIBIA_MOVE)
     print("Femur: ", FL_FEMUR_MOVE)
 
-    time.sleep(2)
-
     FL_FEMUR.move(FL_FEMUR_MOVE,1000,False,False)
     FL_TIBIA.move(FL_TIBIA_MOVE,1000,False,False)
 
@@ -79,7 +77,7 @@ try:
     FR_FEMUR.move(115,1000,False,False)
 
     x = 0
-    y = 155
+    y = 160
 
     angle =algorithm.inverse_kinematics_2dof(x,y)
 
