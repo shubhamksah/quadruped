@@ -59,7 +59,7 @@ try:
     print("Tibia: ", FL_TIBIA.get_physical_angle())
     print("FEMUR: ", FL_FEMUR.get_physical_angle())
 
-    FL_FEMUR_MOVE = 143 + angle[1]
+    FL_FEMUR_MOVE = 143 - angle[1]
     FL_TIBIA_MOVE = 124.8 - (angle[0]-45)
 
     print("Tibia: ", FL_TIBIA_MOVE)
@@ -68,8 +68,8 @@ try:
     FL_FEMUR.move(143,1000,False,False)
     FL_TIBIA.move(124.8,1000,False,False)
 
-    FL_FEMUR.move(FL_FEMUR_MOVE,1000,False,False)
-    FL_TIBIA.move(FL_TIBIA_MOVE,1000,False,False)
+    # FL_FEMUR.move(FL_FEMUR_MOVE,1000,False,False)
+    # FL_TIBIA.move(FL_TIBIA_MOVE,1000,False,False)
 
 except ServoTimeoutError as e:
     print(f"Servo {e.id_} is not responding. Exiting...")
