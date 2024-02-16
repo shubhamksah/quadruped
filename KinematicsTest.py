@@ -73,7 +73,10 @@ try:
     FL_FEMUR.move(FL_FEMUR_MOVE,1000,False,False)
     FL_TIBIA.move(FL_TIBIA_MOVE,1000,False,False)
 
-    # time.sleep(1)
+    time.sleep(1)
+
+    FR_TIBIA.move(120,1000,False,False)
+    FR_FEMUR.move(115,1000,False,False)
 
     # x = 40
     # y = 165
