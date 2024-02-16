@@ -73,6 +73,17 @@ try:
     FL_FEMUR.move(FL_FEMUR_MOVE,1000,False,False)
     FL_TIBIA.move(FL_TIBIA_MOVE,1000,False,False)
 
+    time.sleep(1)
+
+    x = 40
+    y = 165
+
+    FL_FEMUR_MOVE = 143 - angle[1]
+    FL_TIBIA_MOVE = 124.8 - (angle[0]-45)
+
+    FL_FEMUR.move(FL_FEMUR_MOVE,1000,False,False)
+    FL_TIBIA.move(FL_TIBIA_MOVE,1000,False,False)
+
 except ServoTimeoutError as e:
     print(f"Servo {e.id_} is not responding. Exiting...")
     quit()
