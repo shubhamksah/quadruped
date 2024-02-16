@@ -49,7 +49,7 @@ try:
     BL_FEMUR = LX16A(11)
     BL_HIP = LX16A(12)
 
-    x=0
+    x=100
     y=145
 
     angle =algorithm.inverse_kinematics_2dof(x,y)
@@ -67,25 +67,6 @@ try:
 
     print("Tibia: ", FL_TIBIA_MOVE)
     print("Femur: ", FL_FEMUR_MOVE)
-
-    # FL_FEMUR.move(FL_FEMUR_MOVE,1000,False,False)
-    # FL_TIBIA.move(FL_TIBIA_MOVE,1000,False,False)
-
-    # time.sleep(2)
-
-    # FR_TIBIA.move(120,1000,False,False)
-    # FR_FEMUR.move(115,1000,False,False)
-
-    # x = 0
-    # y = 155
-
-    # angle =algorithm.inverse_kinematics_2dof(x,y)
-
-    # FL_FEMUR_MOVE = 143 - angle[1]
-    # FL_TIBIA_MOVE = 124.8 + (45 - angle[0] - angle[1])
-
-    # FL_FEMUR.move(FL_FEMUR_MOVE,1000,False,False)
-    # FL_TIBIA.move(FL_TIBIA_MOVE,1000,False,False)
 
 except ServoTimeoutError as e:
     print(f"Servo {e.id_} is not responding. Exiting...")
