@@ -56,8 +56,8 @@ try:
     print(angle[0])
     print(angle[1])
 
-    FL_FEMUR.move(143,1000,False,False)
-    FL_TIBIA.move(124.8,1000,False,False)
+    # FL_FEMUR.move(143,1000,False,False)
+    # FL_TIBIA.move(124.8,1000,False,False)
 
     print(FL_TIBIA.get_physical_angle())
     print(FL_FEMUR.get_physical_angle())
@@ -79,7 +79,7 @@ try:
     FR_FEMUR.move(115,1000,False,False)
 
     x = 0
-    y = 160
+    y = 155
 
     angle =algorithm.inverse_kinematics_2dof(x,y)
 
