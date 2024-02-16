@@ -3,7 +3,7 @@ import math
 try:
 
     x = 0
-    y = 155
+    y = 150.6
 
     q1 = 70
     q2 = 114
@@ -23,6 +23,9 @@ try:
 
     Tibia_angle = math.degrees(theta2)
     Femur_angle = math.degrees(theta1)
+
+    print("TIBIA: ", Tibia_angle)
+    print("FEMUR: ", Femur_angle)
 
     TIBIA = (45 - Tibia_angle - Femur_angle)
     FEMUR = Femur_angle
