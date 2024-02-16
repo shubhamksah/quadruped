@@ -78,16 +78,16 @@ try:
     FR_TIBIA.move(120,1000,False,False)
     FR_FEMUR.move(115,1000,False,False)
 
-    # x = 40
-    # y = 165
+    x = 40
+    y = 155
 
-    # angle =algorithm.inverse_kinematics_2dof(x,y)
+    angle =algorithm.inverse_kinematics_2dof(x,y)
 
-    # FL_FEMUR_MOVE = 143 - angle[1]
-    # FL_TIBIA_MOVE = 124.8 - (angle[0]-45)
+    FL_FEMUR_MOVE = 143 - angle[1]
+    FL_TIBIA_MOVE = 124.8 - (angle[0]-45)
 
-    # FL_FEMUR.move(FL_FEMUR_MOVE,1000,False,False)
-    # FL_TIBIA.move(FL_TIBIA_MOVE,1000,False,False)
+    FL_FEMUR.move(FL_FEMUR_MOVE,1000,False,False)
+    FL_TIBIA.move(FL_TIBIA_MOVE,1000,False,False)
 
 except ServoTimeoutError as e:
     print(f"Servo {e.id_} is not responding. Exiting...")
