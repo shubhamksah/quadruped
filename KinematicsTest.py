@@ -28,7 +28,7 @@ try:
     BR_TIBIA.move(107,1000,False,False)
     BR_FEMUR.move(152,1000,False,False)
     BR_HIP.move(115,1000,False,False)
-    BL_TIBIA.move(144,1000,False,False)
+    BL_TIBIA.move(142,1000,False,False)
     BL_FEMUR.move(126,1000,False,False)
     BL_HIP.move(141,1000,False,False)
 
