@@ -19,7 +19,7 @@ try:
     BL_FEMUR = LX16A(11)
     BL_HIP = LX16A(12)
 
-    FL_TIBIA.move(140,1000,False,False)
+    FL_TIBIA.move(138,1000,False,False)
     FL_FEMUR.move(143,1000,False,False)
     FL_HIP.move(121.5,1000,False,False)
     FR_TIBIA.move(110,1000,False,False)
