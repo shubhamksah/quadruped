@@ -49,14 +49,14 @@ try:
 
     time.sleep(.1)
 
-    FL_TIBIA.move(155,1000,False,False)
-    FL_FEMUR.move(119,1000,False,False)
+    FL_TIBIA.move(149,1000,False,False)
+    FL_FEMUR.move(134,1000,False,False)
     FL_HIP.move(121.5,1000,False,False)
     FR_TIBIA.move(110,1000,False,False)
     FR_FEMUR.move(115,1000,False,False)
     FR_HIP.move(124,1000,False,False)
-    BR_TIBIA.move(75,1000,False,False)
-    BR_FEMUR.move(176,1000,False,False)
+    BR_TIBIA.move(92,1000,False,False)
+    BR_FEMUR.move(161,1000,False,False)
     BR_HIP.move(115,1000,False,False)
     BL_TIBIA.move(146,1000,False,False)
     BL_FEMUR.move(126,1000,False,False)

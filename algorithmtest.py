@@ -2,7 +2,7 @@ import math
 
 try:
 
-    x = 90
+    x = 80
     y = 160
 
     q1 = 70
