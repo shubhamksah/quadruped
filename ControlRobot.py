@@ -128,8 +128,8 @@ try:
                 BR_HIP_ANGLE = BR_HIP.get_physical_angle()
                 FL_HIP_MOVE = FL_HIP_ANGLE - 5
                 BL_HIP_MOVE = BL_HIP_ANGLE + 5
-                FR_HIP_MOVE = FR_HIP_ANGLE + 5
-                BR_HIP_MOVE = BR_HIP_ANGLE - 5                
+                FR_HIP_MOVE = FR_HIP_ANGLE - 5
+                BR_HIP_MOVE = BR_HIP_ANGLE + 5                
                 FL_HIP.move(FL_HIP_MOVE,50,False,False)
                 BL_HIP.move(BL_HIP_MOVE,50,False,False)
                 FR_HIP.move(FR_HIP_MOVE,50,False,False)
@@ -143,8 +143,8 @@ try:
                 BR_HIP_ANGLE = BR_HIP.get_physical_angle()                
                 FL_HIP_MOVE = FL_HIP_ANGLE + 5
                 BL_HIP_MOVE = BL_HIP_ANGLE - 5
-                FR_HIP_MOVE = FR_HIP_ANGLE - 5
-                BR_HIP_MOVE = BR_HIP_ANGLE + 5   
+                FR_HIP_MOVE = FR_HIP_ANGLE + 5
+                BR_HIP_MOVE = BR_HIP_ANGLE - 5   
                 FL_HIP.move(FL_HIP_MOVE,50,False,False)
                 BL_HIP.move(BL_HIP_MOVE,50,False,False)
                 FR_HIP.move(FR_HIP_MOVE,50,False,False)
