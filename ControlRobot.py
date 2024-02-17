@@ -63,8 +63,6 @@ try:
     BL_FEMUR.move(126,1000,False,False)
     BL_HIP.move(141,1000,False,False)
 
-    time.sleep(30)
-
     pygame.init()
     joy1 = pygame.joystick.Joystick(0)
     joy1.init()
