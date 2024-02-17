@@ -3,7 +3,7 @@ import math
 try:
 
     x = 80
-    y = 160
+    y = 130
 
     q1 = 70
     q2 = 114
