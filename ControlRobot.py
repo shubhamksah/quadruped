@@ -34,6 +34,34 @@ def resting_position(FL_TIBIA,FL_FEMUR,FL_HIP,FR_TIBIA,FR_FEMUR,FR_HIP,BR_TIBIA,
 
 t = 0
 
+FL_TIBIA = LX16A(1)
+FL_FEMUR = LX16A(2)
+FL_HIP = LX16A(3)
+FR_TIBIA = LX16A(4)
+FR_FEMUR = LX16A(5)
+FR_HIP = LX16A(6)
+BR_TIBIA = LX16A(7)
+BR_FEMUR = LX16A(8)
+BR_HIP = LX16A(9)
+BL_TIBIA = LX16A(10)
+BL_FEMUR = LX16A(11)
+BL_HIP = LX16A(12)
+
+FL_TIBIA.move(142,1000,False,False)
+FL_FEMUR.move(143,1000,False,False)
+FL_HIP.move(121.5,1000,False,False)
+FR_TIBIA.move(110,1000,False,False)
+FR_FEMUR.move(115,1000,False,False)
+FR_HIP.move(124,1000,False,False)
+BR_TIBIA.move(99,1000,False,False)
+BR_FEMUR.move(152,1000,False,False)
+BR_HIP.move(115,1000,False,False)
+BL_TIBIA.move(146,1000,False,False)
+BL_FEMUR.move(126,1000,False,False)
+BL_HIP.move(141,1000,False,False)
+
+time.sleep(15)
+
 pygame.init()
 joy1 = pygame.joystick.Joystick(0)
 joy1.init()
@@ -41,32 +69,6 @@ joy1.init()
 LX16A.initialize("/dev/ttyUSB0", 0.1)
 
 try:
-
-    FL_TIBIA = LX16A(1)
-    FL_FEMUR = LX16A(2)
-    FL_HIP = LX16A(3)
-    FR_TIBIA = LX16A(4)
-    FR_FEMUR = LX16A(5)
-    FR_HIP = LX16A(6)
-    BR_TIBIA = LX16A(7)
-    BR_FEMUR = LX16A(8)
-    BR_HIP = LX16A(9)
-    BL_TIBIA = LX16A(10)
-    BL_FEMUR = LX16A(11)
-    BL_HIP = LX16A(12)
-    
-    FL_TIBIA.move(142,1000,False,False)
-    FL_FEMUR.move(143,1000,False,False)
-    FL_HIP.move(121.5,1000,False,False)
-    FR_TIBIA.move(110,1000,False,False)
-    FR_FEMUR.move(115,1000,False,False)
-    FR_HIP.move(124,1000,False,False)
-    BR_TIBIA.move(99,1000,False,False)
-    BR_FEMUR.move(152,1000,False,False)
-    BR_HIP.move(115,1000,False,False)
-    BL_TIBIA.move(146,1000,False,False)
-    BL_FEMUR.move(126,1000,False,False)
-    BL_HIP.move(141,1000,False,False)
 
     while t == 0:
         try:
