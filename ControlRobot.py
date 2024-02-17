@@ -34,9 +34,6 @@ def resting_position(FL_TIBIA,FL_FEMUR,FL_HIP,FR_TIBIA,FR_FEMUR,FR_HIP,BR_TIBIA,
 
 t = 0
 
-pygame.init()
-
-
 LX16A.initialize("/dev/ttyUSB0", 0.1)
 
 try:
@@ -67,7 +64,8 @@ try:
     BL_HIP.move(141,1000,False,False)
 
     time.sleep(30)
-    
+
+    pygame.init()
     joy1 = pygame.joystick.Joystick(0)
     joy1.init()
 
