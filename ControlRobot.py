@@ -55,6 +55,19 @@ try:
     BL_FEMUR = LX16A(11)
     BL_HIP = LX16A(12)
     
+    FL_TIBIA.move(142,1000,False,False)
+    FL_FEMUR.move(143,1000,False,False)
+    FL_HIP.move(121.5,1000,False,False)
+    FR_TIBIA.move(110,1000,False,False)
+    FR_FEMUR.move(115,1000,False,False)
+    FR_HIP.move(124,1000,False,False)
+    BR_TIBIA.move(99,1000,False,False)
+    BR_FEMUR.move(152,1000,False,False)
+    BR_HIP.move(115,1000,False,False)
+    BL_TIBIA.move(146,1000,False,False)
+    BL_FEMUR.move(126,1000,False,False)
+    BL_HIP.move(141,1000,False,False)
+
     while t == 0:
         try:
             pygame.event.pump()
