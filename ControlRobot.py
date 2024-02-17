@@ -109,6 +109,8 @@ try:
             if joy1.get_axis(2) > 0.5:
                 FL_FEMUR_ANGLE = FL_FEMUR.get_physical_angle()
                 BL_FEMUR_ANGLE = BL_FEMUR.get_physical_angle()
+                FR_FEMUR_ANGLE = FR_FEMUR.get_physical_angle()
+                BR_FEMUR_ANGLE = BR_FEMUR.get_physical_angle()
                 FL_FEMUR_MOVE = FL_FEMUR_ANGLE + 5
                 BL_FEMUR_MOVE = BL_FEMUR_ANGLE + 5
                 FR_FEMUR_MOVE = FR_FEMUR_ANGLE - 5
