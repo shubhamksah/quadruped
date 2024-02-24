@@ -49,8 +49,6 @@ try:
     BL_FEMUR.move(152,1000,False,False)
     BL_HIP.move(141,1000,False,False)
 
-
-
 except ServoTimeoutError as e:
     print(f"Servo {e.id_} is not responding. Exiting...")
     quit()
