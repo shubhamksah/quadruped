@@ -4,7 +4,7 @@ import algorithm
 
 LX16A.initialize("/dev/ttyUSB0", 0.1)
 
-movetime = 300
+movetime = 1000
 timesleep = 2
 try:
 
@@ -40,13 +40,13 @@ try:
     FL_FEMUR.move(134,movetime,False,False)
     FL_HIP.move(121.5,movetime,False,False)
     FR_TIBIA.move(92,1000,False,False)
-    FR_FEMUR.move(84,1000,False,False)
+    FR_FEMUR.move(89,1000,False,False)
     FR_HIP.move(124,1000,False,False)
     BR_TIBIA.move(106,movetime,False,False)
     BR_FEMUR.move(161,movetime,False,False)
     BR_HIP.move(115,movetime,False,False)
     BL_TIBIA.move(164,1000,False,False)
-    BL_FEMUR.move(157,1000,False,False)
+    BL_FEMUR.move(152,1000,False,False)
     BL_HIP.move(141,1000,False,False)
 
 
