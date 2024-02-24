@@ -20,20 +20,19 @@ try:
     BL_TIBIA = LX16A(10)
     BL_FEMUR = LX16A(11)
     BL_HIP = LX16A(12)
-    
 
     FL_TIBIA.move(123,movetime,False,False)
     FL_FEMUR.move(190,movetime,False,False)
     FL_HIP.move(121.5,movetime,False,False)
-    FR_TIBIA.move(103,movetime,False,False)
-    FR_FEMUR.move(124,movetime,False,False)
-    FR_HIP.move(124,movetime,False,False)
+    FR_TIBIA.move(117,1000,False,False)
+    FR_FEMUR.move(124,1000,False,False)
+    FR_HIP.move(124,1000,False,False)
     BR_TIBIA.move(118,movetime,False,False)
     BR_FEMUR.move(105,movetime,False,False)
     BR_HIP.move(115,movetime,False,False)
-    BL_TIBIA.move(153,movetime,False,False)
-    BL_FEMUR.move(117,movetime,False,False)
-    BL_HIP.move(141,movetime,False,False)
+    BL_TIBIA.move(139,1000,False,False)
+    BL_FEMUR.move(117,1000,False,False)
+    BL_HIP.move(141,1000,False,False)
 
     # time.sleep(timesleep)
 
