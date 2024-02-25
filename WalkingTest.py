@@ -4,7 +4,7 @@ import algorithm
 
 LX16A.initialize("/dev/ttyUSB0", 0.1)
 
-movetime = 300
+movetime = 500
 movetime2 = 500
 timesleep = 10
 try:
