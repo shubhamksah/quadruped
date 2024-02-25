@@ -6,7 +6,7 @@ LX16A.initialize("/dev/ttyUSB0", 0.1)
 
 movetime = 500
 movetime2 = 500
-timesleep = 10
+timesleep = 20
 try:
 
     FL_TIBIA = LX16A(1)
