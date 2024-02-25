@@ -4,8 +4,8 @@ import algorithm
 
 LX16A.initialize("/dev/ttyUSB0", 0.1)
 
-movetime = 300
-timesleep = 0.3
+movetime = 2000
+timesleep = 2
 try:
 
     FL_TIBIA = LX16A(1)
@@ -80,7 +80,7 @@ try:
         BL_TIBIA.move(139,movetime,False,False)
         BL_FEMUR.move(117,movetime,False,False)
         BL_HIP.move(141,movetime,False,False) 
-        
+
         if( a == 4):
             break      
 
