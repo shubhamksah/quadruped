@@ -5,8 +5,8 @@ import algorithm
 LX16A.initialize("/dev/ttyUSB0", 0.1)
 
 movetime = 500
-movetime2 = 500
-timesleep = 20
+movetime2 = 00
+timesleep = 0.3
 try:
 
     FL_TIBIA = LX16A(1)
@@ -24,62 +24,62 @@ try:
 
     a=1
     while (a < 10) :
-        FL_TIBIA.move(135,movetime,False,False)
-        FL_FEMUR.move(134,movetime,False,False)
+        FL_TIBIA.move(135,movetime,False,False) #FL UP
+        FL_FEMUR.move(134,movetime,False,False) #FL UP
         FL_HIP.move(121.5,movetime,False,False)
-        FR_TIBIA.move(103,movetime,False,False)
-        FR_FEMUR.move(124,movetime,False,False)
+        FR_TIBIA.move(103,movetime,False,False) #FR DOWN
+        FR_FEMUR.move(124,movetime,False,False) #FR DOWN
         FR_HIP.move(124,movetime,False,False)
-        BR_TIBIA.move(106,movetime,False,False)
-        BR_FEMUR.move(161,movetime,False,False)
+        BR_TIBIA.move(106,movetime,False,False) #BR UP
+        BR_FEMUR.move(161,movetime,False,False) #BR UP
         BR_HIP.move(115,movetime,False,False)
-        BL_TIBIA.move(153,movetime,False,False)
-        BL_FEMUR.move(117,movetime,False,False)
+        BL_TIBIA.move(153,movetime,False,False) #BL Down
+        BL_FEMUR.move(117,movetime,False,False) #BL Down
         BL_HIP.move(141,movetime,False,False)
 
         time.sleep(timesleep)
 
-        FL_TIBIA.move(135,movetime,False,False)
-        FL_FEMUR.move(134,movetime,False,False)
+        FL_TIBIA.move(135,movetime,False,False) #FL UP
+        FL_FEMUR.move(134,movetime,False,False) #FL UP
         FL_HIP.move(121.5,movetime,False,False)
-        FR_TIBIA.move(82,movetime,False,False)
-        FR_FEMUR.move(89,movetime,False,False)
+        FR_TIBIA.move(82,movetime,False,False) #FR BACK
+        FR_FEMUR.move(89,movetime,False,False) #FR BACK
         FR_HIP.move(124,movetime,False,False)
-        BR_TIBIA.move(106,movetime,False,False)
-        BR_FEMUR.move(161,movetime,False,False)
+        BR_TIBIA.move(106,movetime,False,False) #BR UP
+        BR_FEMUR.move(161,movetime,False,False) #BR UP
         BR_HIP.move(115,movetime,False,False)
-        BL_TIBIA.move(174,movetime,False,False)
-        BL_FEMUR.move(152,movetime,False,False)
+        BL_TIBIA.move(174,movetime,False,False) #BL BACK
+        BL_FEMUR.move(152,movetime,False,False) #BL BACK
         BL_HIP.move(141,movetime,False,False)
 
         time.sleep(timesleep)
 
-        FL_TIBIA.move(149,movetime,False,False)
-        FL_FEMUR.move(134,movetime,False,False)
+        FL_TIBIA.move(149,movetime,False,False) #FL DOWN
+        FL_FEMUR.move(134,movetime,False,False) #FL DOWN
         FL_HIP.move(121.5,movetime,False,False)
-        FR_TIBIA.move(117,movetime,False,False)
-        FR_FEMUR.move(124,movetime,False,False)
+        FR_TIBIA.move(117,movetime,False,False) #FR UP
+        FR_FEMUR.move(124,movetime,False,False) #FR UP
         FR_HIP.move(124,movetime,False,False)
-        BR_TIBIA.move(92,movetime,False,False)
-        BR_FEMUR.move(161,movetime,False,False)
+        BR_TIBIA.move(92,movetime,False,False) #BR DOWN
+        BR_FEMUR.move(161,movetime,False,False) #BR DOWN
         BR_HIP.move(115,movetime,False,False)
-        BL_TIBIA.move(139,movetime,False,False)
-        BL_FEMUR.move(117,movetime,False,False)
+        BL_TIBIA.move(139,movetime,False,False) #BL UP
+        BL_FEMUR.move(117,movetime,False,False) #BL UP
         BL_HIP.move(141,movetime,False,False)
 
         time.sleep(timesleep)
 
-        FL_TIBIA.move(170,movetime,False,False)
-        FL_FEMUR.move(169,movetime,False,False)
+        FL_TIBIA.move(170,movetime,False,False) #FL BACK
+        FL_FEMUR.move(169,movetime,False,False) #FL BACK
         FL_HIP.move(121.5,movetime,False,False)
-        FR_TIBIA.move(117,movetime,False,False)
-        FR_FEMUR.move(124,movetime,False,False)
+        FR_TIBIA.move(117,movetime,False,False) #FR UP
+        FR_FEMUR.move(124,movetime,False,False) #FR UP
         FR_HIP.move(124,movetime,False,False)
-        BR_TIBIA.move(71,movetime,False,False)
-        BR_FEMUR.move(126,movetime,False,False)
+        BR_TIBIA.move(71,movetime,False,False) #BR BACK
+        BR_FEMUR.move(126,movetime,False,False) #BR BACK
         BR_HIP.move(115,movetime,False,False)
-        BL_TIBIA.move(139,movetime,False,False)
-        BL_FEMUR.move(117,movetime,False,False)
+        BL_TIBIA.move(139,movetime,False,False) #BL UP
+        BL_FEMUR.move(117,movetime,False,False) #BL UP
         BL_HIP.move(141,movetime,False,False)
 
         time.sleep(timesleep)
