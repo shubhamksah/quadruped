@@ -62,7 +62,22 @@ try:
     BR_HIP.move(115,1000,False,False)
     BL_TIBIA.move(139,1000,False,False)
     BL_FEMUR.move(117,1000,False,False)
-    BL_HIP.move(141,1000,False,False)        
+    BL_HIP.move(141,1000,False,False)
+
+    time.sleep(timesleep)    
+
+    FL_TIBIA.move(170,1000,False,False)
+    FL_FEMUR.move(169,1000,False,False)
+    FL_HIP.move(121.5,1000,False,False)
+    FR_TIBIA.move(117,1000,False,False)
+    FR_FEMUR.move(124,1000,False,False)
+    FR_HIP.move(124,1000,False,False)
+    BR_TIBIA.move(71,1000,False,False)
+    BR_FEMUR.move(126,1000,False,False)
+    BR_HIP.move(115,1000,False,False)
+    BL_TIBIA.move(139,1000,False,False)
+    BL_FEMUR.move(117,1000,False,False)
+    BL_HIP.move(141,1000,False,False)       
 
 except ServoTimeoutError as e:
     print(f"Servo {e.id_} is not responding. Exiting...")
