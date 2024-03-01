@@ -24,13 +24,13 @@ try:
 
     a=1
     while (a < 10) :
-        FL_TIBIA.move(135,movetime,False,False) #FL UP
+        FL_TIBIA.move(130,movetime,False,False) #FL UP
         FL_FEMUR.move(134,movetime,False,False) #FL UP
         FL_HIP.move(121.5,movetime,False,False)
         FR_TIBIA.move(103,movetime,False,False) #FR DOWN
         FR_FEMUR.move(124,movetime,False,False) #FR DOWN
         FR_HIP.move(124,movetime,False,False)
-        BR_TIBIA.move(106,movetime,False,False) #BR UP
+        BR_TIBIA.move(111,movetime,False,False) #BR UP
         BR_FEMUR.move(161,movetime,False,False) #BR UP
         BR_HIP.move(115,movetime,False,False)
         BL_TIBIA.move(153,movetime,False,False) #BL Down
@@ -39,13 +39,13 @@ try:
 
         time.sleep(timesleep)
 
-        FL_TIBIA.move(135,movetime,False,False) #FL UP
+        FL_TIBIA.move(130,movetime,False,False) #FL UP
         FL_FEMUR.move(134,movetime,False,False) #FL UP
         FL_HIP.move(121.5,movetime,False,False)
         FR_TIBIA.move(77,movetime,False,False) #FR BACK
         FR_FEMUR.move(89,movetime,False,False) #FR BACK
         FR_HIP.move(124,movetime,False,False)
-        BR_TIBIA.move(106,movetime,False,False) #BR UP
+        BR_TIBIA.move(111,movetime,False,False) #BR UP
         BR_FEMUR.move(161,movetime,False,False) #BR UP
         BR_HIP.move(115,movetime,False,False)
         BL_TIBIA.move(179,movetime,False,False) #BL BACK
@@ -57,13 +57,13 @@ try:
         FL_TIBIA.move(149,movetime,False,False) #FL DOWN
         FL_FEMUR.move(134,movetime,False,False) #FL DOWN
         FL_HIP.move(121.5,movetime,False,False)
-        FR_TIBIA.move(117,movetime,False,False) #FR UP
+        FR_TIBIA.move(123,movetime,False,False) #FR UP
         FR_FEMUR.move(124,movetime,False,False) #FR UP
         FR_HIP.move(124,movetime,False,False)
         BR_TIBIA.move(92,movetime,False,False) #BR DOWN
         BR_FEMUR.move(161,movetime,False,False) #BR DOWN
         BR_HIP.move(115,movetime,False,False)
-        BL_TIBIA.move(139,movetime,False,False) #BL UP
+        BL_TIBIA.move(134,movetime,False,False) #BL UP
         BL_FEMUR.move(117,movetime,False,False) #BL UP
         BL_HIP.move(141,movetime,False,False)
 
@@ -72,13 +72,13 @@ try:
         FL_TIBIA.move(175,movetime,False,False) #FL BACK
         FL_FEMUR.move(169,movetime,False,False) #FL BACK
         FL_HIP.move(121.5,movetime,False,False)
-        FR_TIBIA.move(117,movetime,False,False) #FR UP
+        FR_TIBIA.move(123,movetime,False,False) #FR UP
         FR_FEMUR.move(124,movetime,False,False) #FR UP
         FR_HIP.move(124,movetime,False,False)
         BR_TIBIA.move(66,movetime,False,False) #BR BACK
         BR_FEMUR.move(126,movetime,False,False) #BR BACK
         BR_HIP.move(115,movetime,False,False)
-        BL_TIBIA.move(139,movetime,False,False) #BL UP
+        BL_TIBIA.move(134,movetime,False,False) #BL UP
         BL_FEMUR.move(117,movetime,False,False) #BL UP
         BL_HIP.move(141,movetime,False,False)
 
