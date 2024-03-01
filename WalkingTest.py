@@ -4,9 +4,9 @@ import algorithm
 
 LX16A.initialize("/dev/ttyUSB0", 0.1)
 
-movetime = 500
+movetime = 300
 movetime2 = 300
-timesleep = 0.5
+timesleep = 0.3
 try:
 
     FL_TIBIA = LX16A(1)
