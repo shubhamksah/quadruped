@@ -7,7 +7,7 @@ angle = 90
 
 # kit.servo[1].angle = angle 
 # kit.servo[2].angle = 10
-kit.servo[3].angle = 90
+kit.servo[3].angle = 110
 # kit.servo[4].angle = angle 
 # kit.servo[5].angle = angle 
 # kit.servo[6].angle = angle 
