@@ -3,7 +3,7 @@ from adafruit_servokit import ServoKit
 
 kit = ServoKit(channels=16)
 
-angle = 90
+angle = 100
 
 kit.servo[1].angle = angle 
 kit.servo[2].angle = angle
