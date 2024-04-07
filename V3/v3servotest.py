@@ -20,7 +20,7 @@ kit.servo[10].angle = angle
 # kit.servo[11].angle = angle
 kit.servo[12].angle = 90
 
-time.sleep(1)
+time.sleep(0.5)
 
 kit.servo[1].angle = angle3
 # kit.servo[2].angle = angle3
@@ -50,7 +50,7 @@ kit.servo[10].angle = angle
 # kit.servo[11].angle = angle
 kit.servo[12].angle = 90
 
-time.sleep(1)
+time.sleep(0.5)
 
 kit.servo[1].angle = angle3
 # kit.servo[2].angle = angle3
@@ -65,7 +65,7 @@ kit.servo[10].angle = angle3
 # kit.servo[11].angle = angle3
 kit.servo[12].angle = 90
 
-time.sleep(1)
+time.sleep(0.5)
 
 kit.servo[1].angle = angle
 # kit.servo[2].angle = angle
@@ -80,7 +80,7 @@ kit.servo[10].angle = angle
 # kit.servo[11].angle = angle
 kit.servo[12].angle = 90
 
-time.sleep(1)
+time.sleep(0.5)
 
 kit.servo[1].angle = angle3
 # kit.servo[2].angle = angle3
@@ -95,7 +95,7 @@ kit.servo[10].angle = angle3
 # kit.servo[11].angle = angle3
 kit.servo[12].angle = 90
 
-time.sleep(1)
+time.sleep(0.5)
 
 kit.servo[1].angle = angle
 # kit.servo[2].angle = angle
