@@ -2,8 +2,8 @@ import math
 
 def inverse_kinematics_2dof(x,y):
 
-    q1 = 70
-    q2 = 114
+    q1 = 40
+    q2 = 69
 
     A = math.sqrt((math.pow(x,2)+math.pow(y,2)))
 

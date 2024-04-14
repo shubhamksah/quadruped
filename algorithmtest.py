@@ -2,11 +2,11 @@ import math
 
 try:
 
-    x = 80
-    y = 130
+    x = 69
+    y = 40
 
-    q1 = 70
-    q2 = 114
+    q1 = 40
+    q2 = 69
 
     A = math.sqrt((math.pow(x,2)+math.pow(y,2)))
 
@@ -27,11 +27,12 @@ try:
     print("TIBIA: ", Tibia_angle)
     print("FEMUR: ", Femur_angle)
 
-    TIBIA = (45 - Tibia_angle - Femur_angle)
+    TIBIA = (Tibia_angle)
     FEMUR = Femur_angle
 
-    print("tibia: ", TIBIA)
-    print("femur: ", FEMUR)
+    print("")
+    print("Tibia: ", TIBIA)
+    print("Femur: ", FEMUR)
 
 except:
     print("STOP")
