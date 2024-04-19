@@ -38,7 +38,7 @@ t = 0
 
 try:
 
-    resting_position(1,2,3,4,5,6,7,8,9,10,11,12)
+    standing_position(1,2,3,4,5,6,7,8,9,10,11,12)
 
     pygame.init()
     joy1 = pygame.joystick.Joystick(0)
