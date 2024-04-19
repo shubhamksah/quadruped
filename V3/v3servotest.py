@@ -18,4 +18,4 @@ kit.servo[8].angle = angle
 kit.servo[9].angle = 95
 kit.servo[10].angle = angle
 kit.servo[11].angle = angle
-kit.servo[12].angle = 85
+kit.servo[12].angle = 90
