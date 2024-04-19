@@ -8,7 +8,7 @@ angle2 = 135
 angle3 = 45
 
 
-kit.servo[1].angle = 90
+kit.servo[1].angle = 70
 kit.servo[2].angle = 125
 kit.servo[3].angle = 85
 kit.servo[4].angle = 90
