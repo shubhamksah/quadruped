@@ -56,7 +56,7 @@ try:
     FR_TIBIA.move(120,1000,False,False)
     FR_FEMUR.move(120,1000,False,False)
     FR_HIP.move(124.08,1000,False,False)
-    BR_TIBIA.move(118,1000,False,False)
+    BR_TIBIA.move(115,1000,False,False)
     BR_FEMUR.move(125,1000,False,False)
     BR_HIP.move(110.88,1000,False,False)
     BL_TIBIA.move(115,1000,False,False)
