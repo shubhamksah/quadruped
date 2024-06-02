@@ -37,11 +37,11 @@ t = 0
 LX16A.initialize("/dev/ttyUSB0", 0.1)
 
 try:
-    FL_TIBIA = LX16A(4)
-    FL_FEMUR = LX16A(5)
+    FL_TIBIA = LX16A(1)
+    FL_FEMUR = LX16A(2)
     FL_HIP = LX16A(3)
-    FR_TIBIA = LX16A(1)
-    FR_FEMUR = LX16A(2)
+    FR_TIBIA = LX16A(4)
+    FR_FEMUR = LX16A(5)
     FR_HIP = LX16A(6)
     BR_TIBIA = LX16A(7)
     BR_FEMUR = LX16A(8)
