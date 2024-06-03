@@ -5,10 +5,10 @@ LX16A.initialize("/dev/ttyUSB0", 0.1)
 
 try:
 
-    FL_TIBIA = LX16A(1)
+    FL_TIBIA = LX16A(4)
     FL_FEMUR = LX16A(2)
     FL_HIP = LX16A(3)
-    FR_TIBIA = LX16A(4)
+    FR_TIBIA = LX16A(1)
     FR_FEMUR = LX16A(5)
     FR_HIP = LX16A(6)
     BR_TIBIA = LX16A(7)
@@ -21,7 +21,7 @@ try:
     FL_TIBIA.move(120,1000,False,False)
     FL_FEMUR.move(120,1000,False,False)
     FL_HIP.move(121.92,1000,False,False)
-    FR_TIBIA.move(120,1000,False,False)
+    FR_TIBIA.move(130,1000,False,False)
     FR_FEMUR.move(120,1000,False,False)
     FR_HIP.move(124.08,1000,False,False)
     BR_TIBIA.move(120,1000,False,False)
