@@ -4,32 +4,32 @@ import time
 
 def standing_position(FL_TIBIA,FL_FEMUR,FL_HIP,FR_TIBIA,FR_FEMUR,FR_HIP,BR_TIBIA,BR_FEMUR,BR_HIP,BL_TIBIA,BL_FEMUR,BL_HIP):
 
-    FL_TIBIA.move(120,1000,False,False)
-    FL_FEMUR.move(120,1000,False,False)
-    FL_HIP.move(120,1000,False,False)
+    FL_TIBIA.move(115,1000,False,False)
+    FL_FEMUR.move(158,1000,False,False)
+    FL_HIP.move(121.92,1000,False,False)
     FR_TIBIA.move(120,1000,False,False)
-    FR_FEMUR.move(120,1000,False,False)
-    FR_HIP.move(120,1000,False,False)
+    FR_FEMUR.move(75,1000,False,False)
+    FR_HIP.move(124.08,1000,False,False)
     BR_TIBIA.move(120,1000,False,False)
-    BR_FEMUR.move(120,1000,False,False)
-    BR_HIP.move(120,1000,False,False)
-    BL_TIBIA.move(120,1000,False,False)
-    BL_FEMUR.move(120,1000,False,False)
-    BL_HIP.move(120,1000,False,False)
+    BR_FEMUR.move(75,1000,False,False)
+    BR_HIP.move(110.88,1000,False,False)
+    BL_TIBIA.move(117,1000,False,False)
+    BL_FEMUR.move(153,1000,False,False)
+    BL_HIP.move(141.84,1000,False,False)
 
 def resting_position(FL_TIBIA,FL_FEMUR,FL_HIP,FR_TIBIA,FR_FEMUR,FR_HIP,BR_TIBIA,BR_FEMUR,BR_HIP,BL_TIBIA,BL_FEMUR,BL_HIP):
     
     FL_TIBIA.move(115,1000,False,False)
-    FL_FEMUR.move(113,1000,False,False)
+    FL_FEMUR.move(158,1000,False,False)
     FL_HIP.move(121.92,1000,False,False)
     FR_TIBIA.move(120,1000,False,False)
-    FR_FEMUR.move(120,1000,False,False)
+    FR_FEMUR.move(75,1000,False,False)
     FR_HIP.move(124.08,1000,False,False)
     BR_TIBIA.move(120,1000,False,False)
-    BR_FEMUR.move(120,1000,False,False)
+    BR_FEMUR.move(75,1000,False,False)
     BR_HIP.move(110.88,1000,False,False)
     BL_TIBIA.move(117,1000,False,False)
-    BL_FEMUR.move(108,1000,False,False)
+    BL_FEMUR.move(153,1000,False,False)
     BL_HIP.move(141.84,1000,False,False)
 
 t = 0
