@@ -27,8 +27,8 @@ try:
     BR_TIBIA.move(120,1000,False,False)
     BR_FEMUR.move(120,1000,False,False)
     BR_HIP.move(110.88,1000,False,False)
-    BL_TIBIA.move(115,1000,False,False)
-    BL_FEMUR.move(110,1000,False,False)
+    BL_TIBIA.move(117,1000,False,False)
+    BL_FEMUR.move(108,1000,False,False)
     BL_HIP.move(141.84,1000,False,False)
 
     print("Resting")
