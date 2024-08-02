@@ -4,41 +4,42 @@ from adafruit_servokit import ServoKit
 
 kit = ServoKit(channels=16)
 
-def standing_position(one,two,three,four,five,six,seven,eight,nine,ten,eleven,twelve):
+def stand(FL1,FL2,FL3,FR1,FR2,FR3,BL1,BL2,BL3,BR1,BR2,BR3):
 
-    kit.servo[one].angle = 90
-    kit.servo[two].angle = 125
-    kit.servo[three].angle = 85
-    kit.servo[four].angle = 90
-    kit.servo[five].angle = 50
-    kit.servo[six].angle = 90
-    kit.servo[seven].angle = 90
-    kit.servo[eight].angle = 135
-    kit.servo[nine].angle = 95
-    kit.servo[ten].angle = 90
-    kit.servo[eleven].angle = 40
-    kit.servo[twelve].angle = 95  
+    kit.servo[FL1].angle = 90
+    kit.servo[FL2].angle = 90
+    kit.servo[FL3].angle = 90
+    kit.servo[FR1].angle = 90
+    kit.servo[FR2].angle = 90
+    kit.servo[FR3].angle = 90
+    kit.servo[BL1].angle = 90
+    kit.servo[BL2].angle = 90
+    kit.servo[BL3].angle = 90
+    kit.servo[BR1].angle = 90
+    kit.servo[BR2].angle = 90
+    kit.servo[BR3].angle = 90  
 
-def resting_position(one,two,three,four,five,six,seven,eight,nine,ten,eleven,twelve):
+def rest(FL1,FL2,FL3,FR1,FR2,FR3,BL1,BL2,BL3,BR1,BR2,BR3):
 
-    kit.servo[one].angle = 60
-    kit.servo[two].angle = 125
-    kit.servo[three].angle = 85
-    kit.servo[four].angle = 120
-    kit.servo[five].angle = 50
-    kit.servo[six].angle = 90
-    kit.servo[seven].angle = 60
-    kit.servo[eight].angle = 135
-    kit.servo[nine].angle = 95
-    kit.servo[ten].angle = 120
-    kit.servo[eleven].angle = 40
-    kit.servo[twelve].angle = 95  
+    kit.servo[FL1].angle = 90
+    kit.servo[FL2].angle = 125
+    kit.servo[FL3].angle = 85
+    kit.servo[FR1].angle = 90
+    kit.servo[FR2].angle = 50
+    kit.servo[FR3].angle = 90
+    kit.servo[BL1].angle = 90
+    kit.servo[BL2].angle = 135
+    kit.servo[BL3].angle = 95
+    kit.servo[BR1].angle = 90
+    kit.servo[BR2].angle = 40
+    kit.servo[BR3].angle = 95  
+
     
 t = 0
 
 try:
 
-    standing_position(1,2,3,4,5,6,7,8,9,10,11,12)
+    stand(1,2,3,4,5,6,7,8,9,10,11,12)
 
     pygame.init()
     joy1 = pygame.joystick.Joystick(0)
@@ -76,18 +77,18 @@ try:
 
             if joy1.get_button(1) > 0.5:
 
-                resting_position(1,2,3,4,5,6,7,8,9,10,11,12)
+                rest(1,2,3,4,5,6,7,8,9,10,11,12)
             
             if joy1.get_button(3) > 0.5:
                 
-                standing_position(1,2,3,4,5,6,7,8,9,10,11,12)
+                stand(1,2,3,4,5,6,7,8,9,10,11,12)
 
             t = joy1.get_button(0)
 
         finally:
             if t == 1:
                 print("STOP")
-                resting_position(1,2,3,4,5,6,7,8,9,10,11,12)
+                rest(1,2,3,4,5,6,7,8,9,10,11,12)
 
     
 except:
