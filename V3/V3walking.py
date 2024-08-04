@@ -25,7 +25,7 @@ def main():
 
     t = 0
 
-    while t == 0: 
+    while t <= 1: 
         
         try:
             kit.servo[0].angle = FLT + 30 #Up
