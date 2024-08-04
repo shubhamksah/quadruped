@@ -21,11 +21,13 @@ def main():
 
     kit = ServoKit(channels=16)
         
-    t = 0
+    
 
     try:
 
         rest(kit)
+
+        t = 0
 
         pygame.init()
         joy1 = pygame.joystick.Joystick(0)
@@ -91,7 +93,7 @@ def main():
             finally:
                 if t == 1:
                     print("STOP")
-                    rest()
+                    rest(kit)
 
         
     except:
