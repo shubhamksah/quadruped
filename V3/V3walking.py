@@ -93,10 +93,13 @@ def main():
 
             kit.servo[0].angle = FLT + 24  #Back
             kit.servo[9].angle = BRT - 24 #Back
+            time.sleep(1)
+            kit.servo[1].angle = FLF + 10 #Back
+            kit.servo[10].angle = BRF - 10 #Back
             time.sleep(0.1)
-            kit.servo[1].angle = FLF + 25 #Back
-            kit.servo[10].angle = BRF - 25 #Back
-            time.sleep(0.1)
+            kit.servo[1].angle = FLF + 15 #Back
+            kit.servo[10].angle = BRF - 15 #Back          
+            time.sleep(1)
             kit.servo[0].angle = FLT + 24  #Back
             kit.servo[9].angle = BRT - 24 #Back
 
