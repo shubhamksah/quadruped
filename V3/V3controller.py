@@ -126,10 +126,40 @@ def main():
 
             if joy1.get_axis(3) > 0.5:
             
+                FLH_move = FLH_angle + 2
+                FRH_move = FRH_angle - 2
+                BLH_move = BLH_angle + 2
+                BRH_move = BRH_angle - 2
+                
+                FLH_angle = FLH_move
+                FRH_angle = FRH_move
+                BLH_angle = BLH_move
+                BRH_angle = BRH_move
+
+                kit.servo[2].angle = FLH_move
+                kit.servo[5].angle = FRH_move
+                kit.servo[8].angle = BLH_move
+                kit.servo[11].angle = BRH_move
+            
                 time.sleep(0.05)
 
             if joy1.get_axis(3) < -0.5:
     
+                FLH_move = FLH_angle - 2
+                FRH_move = FRH_angle + 2
+                BLH_move = BLH_angle - 2
+                BRH_move = BRH_angle + 2
+                
+                FLH_angle = FLH_move
+                FRH_angle = FRH_move
+                BLH_angle = BLH_move
+                BRH_angle = BRH_move
+
+                kit.servo[2].angle = FLH_move
+                kit.servo[5].angle = FRH_move
+                kit.servo[8].angle = BLH_move
+                kit.servo[11].angle = BRH_move
+
                 time.sleep(0.05)
 
             if joy1.get_button(1) > 0.5:
