@@ -12,7 +12,7 @@ try:
     kit.servo[5].angle = 88
     kit.servo[6].angle = 90
     kit.servo[7].angle = 90
-    kit.servo[8].angle = 96
+    kit.servo[8].angle = 95
     kit.servo[9].angle = 90
     kit.servo[10].angle = 90
     kit.servo[11].angle = 90  
