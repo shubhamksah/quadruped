@@ -21,8 +21,18 @@ def main():
 
     kit = ServoKit(channels=16)
         
-    
-
+    global FLT_angle
+    global FLF_angle
+    global FLH_angle
+    global FRT_angle
+    global FRF_angle
+    global FRH_angle
+    global BLT_angle
+    global BLF_angle
+    global BLH_angle
+    global BRT_angle 
+    global BRF_angle 
+    global BRH_angle
 
     stand(kit)
 
@@ -39,11 +49,6 @@ def main():
             axis = [joy1.get_axis(0),joy1.get_axis(1),joy1.get_axis(2),joy1.get_axis(3),joy1.get_axis(4),joy1.get_axis(5)]
 
             if joy1.get_axis(1) < -0.5:
-                
-                global FLT_angle
-                global FRT_angle
-                global BLT_angle
-                global BRT_angle
 
                 FLT_move = FLT_angle + 2
                 FRT_move = FRT_angle - 2
@@ -63,11 +68,6 @@ def main():
                 time.sleep(0.05)
 
             if joy1.get_axis(1) > 0.5:
-
-                global FLT_angle
-                global FRT_angle
-                global BLT_angle
-                global BRT_angle
 
                 FLT_move = FLT_angle - 2
                 FRT_move = FRT_angle + 2
