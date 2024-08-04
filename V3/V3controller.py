@@ -39,6 +39,11 @@ def main():
             axis = [joy1.get_axis(0),joy1.get_axis(1),joy1.get_axis(2),joy1.get_axis(3),joy1.get_axis(4),joy1.get_axis(5)]
 
             if joy1.get_axis(1) < -0.5:
+                
+                global FLT_angle
+                global FRT_angle
+                global BLT_angle
+                global BRT_angle
 
                 FLT_move = FLT_angle + 5
                 FRT_move = FRT_angle + 5
