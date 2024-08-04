@@ -25,7 +25,7 @@ def main():
 
     try:
 
-        stand()
+        rest()
 
         pygame.init()
         joy1 = pygame.joystick.Joystick(0)
