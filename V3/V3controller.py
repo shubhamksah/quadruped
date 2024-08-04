@@ -214,7 +214,7 @@ def stand(kit):
     FRT_angle = 97
     FRF_angle = 45
     FRH_angle = 88
-    BLT_angle = 88
+    BLT_angle = 95
     BLF_angle = 130
     BLH_angle = 95
     BRT_angle = 94
