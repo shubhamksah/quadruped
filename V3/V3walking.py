@@ -2,22 +2,24 @@ import time
 import pygame
 from adafruit_servokit import ServoKit
 
-FLT = 90
-FLF = 135
+FLT = 88
+FLF = 137
 FLH = 100
-FRT = 97
-FRF = 45
+FRT = 84
+FRF = 42
 FRH = 88
-BLT = 88
-BLF = 130
+BLT = 100
+BLF = 131
 BLH = 95
-BRT = 94
-BRF = 45
+BRT = 93
+BRF = 41
 BRH = 95 
 
-#Position Down = Tibia (0), Femur (45 Back)
-#Position Back = Tibia (33 Up), Femur (63 Back)
-#Position Up = Tibia (30 Up), Femur (74 Back)
+#Position Down = Tibia (22 Down), Femur (31 Back) (35,75)
+
+#Position Back = Tibia (48 Up), Femur (70 Back) (-10,77)
+
+#Position Up = Tibia (26 Up), Femur (72 Back) (12,60)
 
 kit = ServoKit(channels=16)
 
@@ -28,69 +30,69 @@ def main():
     while t <= 1.1: 
         
         try:
-            # kit.servo[0].angle = FLT + 30 #Up
-            # kit.servo[1].angle = FLF + 29 #Up
-            # kit.servo[2].angle = FLH 
-            # kit.servo[3].angle = FRT + 0 #Down
-            # kit.servo[4].angle = FRF + 0 #Down
-            # kit.servo[5].angle = FRH
-            # kit.servo[6].angle = BLT + 0 #Down
-            # kit.servo[7].angle = BLF + 0 #Down
-            # kit.servo[8].angle = BLH 
-            # kit.servo[9].angle = BRT - 30 #Up
-            # kit.servo[10].angle = BRF - 16 #Up
-            # kit.servo[11].angle = BRH    
-
-            # print("Position 1")
-            # time.sleep(0.5)
-
-            # kit.servo[0].angle = FLT + 30 #Up
-            # kit.servo[1].angle = FLF + 29 #Up
-            # kit.servo[2].angle = FLH 
-            # kit.servo[3].angle = FRT - 33 #Back
-            # kit.servo[4].angle = FRF - 18 #Back
-            # kit.servo[5].angle = FRH
-            # kit.servo[6].angle = BLT + 33 #Back
-            # kit.servo[7].angle = BLF + 18 #Back
-            # kit.servo[8].angle = BLH
-            # kit.servo[9].angle = BRT - 30 #Up
-            # kit.servo[10].angle = BRF - 16 #Up
-            # kit.servo[11].angle = BRH 
-
-            # print("Position 2")
-            # time.sleep(0.5)
-
-            kit.servo[0].angle = FLT + 0 #Down
-            kit.servo[1].angle = FLF + 0 #Down
-            kit.servo[2].angle = FLH
-            kit.servo[3].angle = FRT - 30 #Up
-            kit.servo[4].angle = FRF - 29 #Up
+            kit.servo[0].angle = FLT + 26 #Up
+            kit.servo[1].angle = FLF + 27 #Up
+            kit.servo[2].angle = FLH 
+            kit.servo[3].angle = FRT + 22 #Down
+            kit.servo[4].angle = FRF + 14 #Down
             kit.servo[5].angle = FRH
-            kit.servo[6].angle = BLT + 30 #Up
-            kit.servo[7].angle = BLF + 29 #Up
+            kit.servo[6].angle = BLT - 22 #Down
+            kit.servo[7].angle = BLF - 14 #Down
+            kit.servo[8].angle = BLH 
+            kit.servo[9].angle = BRT - 26 #Up
+            kit.servo[10].angle = BRF - 27 #Up
+            kit.servo[11].angle = BRH    
+
+            print("Position 1")
+            time.sleep(0.2)
+
+            kit.servo[0].angle = FLT + 26 #Up
+            kit.servo[1].angle = FLF + 27 #Up
+            kit.servo[2].angle = FLH 
+            kit.servo[3].angle = FRT - 48 #Back
+            kit.servo[4].angle = FRF - 25 #Back
+            kit.servo[5].angle = FRH
+            kit.servo[6].angle = BLT + 48 #Back
+            kit.servo[7].angle = BLF + 25 #Back
             kit.servo[8].angle = BLH
-            kit.servo[9].angle = BRT + 0 #Down
-            kit.servo[10].angle = BRF + 0 #Down
+            kit.servo[9].angle = BRT - 26 #Up
+            kit.servo[10].angle = BRF - 27 #Up
+            kit.servo[11].angle = BRH 
+
+            print("Position 2")
+            time.sleep(0.2)
+
+            kit.servo[0].angle = FLT - 22 #Down
+            kit.servo[1].angle = FLF - 14 #Down
+            kit.servo[2].angle = FLH
+            kit.servo[3].angle = FRT - 26 #Up
+            kit.servo[4].angle = FRF - 27 #Up
+            kit.servo[5].angle = FRH
+            kit.servo[6].angle = BLT + 26 #Up
+            kit.servo[7].angle = BLF + 27 #Up
+            kit.servo[8].angle = BLH
+            kit.servo[9].angle = BRT + 22 #Down
+            kit.servo[10].angle = BRF + 14 #Down
             kit.servo[11].angle = BRH 
 
             print("Position 3")
-            time.sleep(0.5)
+            time.sleep(0.2)
 
-            kit.servo[0].angle = FLT + 25  #Back
-            kit.servo[1].angle = FLF + 10 #Back
+            kit.servo[0].angle = FLT + 48  #Back
+            kit.servo[1].angle = FLF + 25 #Back
             kit.servo[2].angle = FLH
-            kit.servo[3].angle = FRT - 30 #Up
-            kit.servo[4].angle = FRF - 29 #Up
+            kit.servo[3].angle = FRT - 26 #Up
+            kit.servo[4].angle = FRF - 27 #Up
             kit.servo[5].angle = FRH
-            kit.servo[6].angle = BLT + 30 #Up
-            kit.servo[7].angle = BLF + 29 #Up
+            kit.servo[6].angle = BLT + 26 #Up
+            kit.servo[7].angle = BLF + 27 #Up
             kit.servo[8].angle = BLH
-            kit.servo[9].angle = BRT - 25 #Back
-            kit.servo[10].angle = BRF - 10 #Back
+            kit.servo[9].angle = BRT - 48 #Back
+            kit.servo[10].angle = BRF - 25 #Back
             kit.servo[11].angle = BRH 
 
             print("Position 4")
-            time.sleep(0.5)
+            time.sleep(0.2)
 
             t += 0.1
             
