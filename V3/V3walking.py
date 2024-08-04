@@ -62,34 +62,41 @@ def main():
             # print("Position 2")
             # time.sleep(0.2)
 
-            kit.servo[0].angle = FLT - 7 #Down
-            kit.servo[1].angle = FLF - 3 #Down
             kit.servo[2].angle = FLH
+            kit.servo[5].angle = FRH
+            kit.servo[8].angle = BLH
+            kit.servo[11].angle = BRH 
+
             kit.servo[3].angle = FRT - 26 #Up
             kit.servo[4].angle = FRF - 27 #Up
-            kit.servo[5].angle = FRH
             kit.servo[6].angle = BLT + 26 #Up
             kit.servo[7].angle = BLF + 27 #Up
-            kit.servo[8].angle = BLH
+            
+
+            kit.servo[0].angle = FLT - 7 #Down
+            kit.servo[1].angle = FLF - 3 #Down
+
             kit.servo[9].angle = BRT + 7 #Down
             kit.servo[10].angle = BRF + 3 #Down
-            kit.servo[11].angle = BRH 
 
             print("Position 3")
             time.sleep(2)
 
-            kit.servo[0].angle = FLT + 48  #Back
-            kit.servo[1].angle = FLF + 25 #Back
-            kit.servo[2].angle = FLH
+
+
             kit.servo[3].angle = FRT - 26 #Up
             kit.servo[4].angle = FRF - 27 #Up
-            kit.servo[5].angle = FRH
+
             kit.servo[6].angle = BLT + 26 #Up
             kit.servo[7].angle = BLF + 27 #Up
-            kit.servo[8].angle = BLH
+
+
+            kit.servo[0].angle = FLT + 48  #Back
             kit.servo[9].angle = BRT - 48 #Back
+            time.sleep(0.1)
+            kit.servo[1].angle = FLF + 25 #Back
             kit.servo[10].angle = BRF - 25 #Back
-            kit.servo[11].angle = BRH 
+
 
             print("Position 4")
             time.sleep(2)
