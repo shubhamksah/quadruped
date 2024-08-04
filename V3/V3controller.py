@@ -24,7 +24,7 @@ def main():
     
 
 
-    rest(kit)
+    stand(kit)
 
     t = 0
 
