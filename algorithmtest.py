@@ -2,7 +2,7 @@ import math
 
 try:
 
-    x = 10
+    x = 40
     y = 60
 
     q1 = 40
