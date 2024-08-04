@@ -46,7 +46,7 @@ def main():
                 global BRT_angle
 
                 FLT_move = FLT_angle + 5
-                FRT_move = FRT_angle + 5
+                FRT_move = FRT_angle - 5
                 BLT_move = BLT_angle - 5
                 BRT_move = BRT_angle - 5
                 
