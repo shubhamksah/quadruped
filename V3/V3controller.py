@@ -86,7 +86,7 @@ def main():
 
                 time.sleep(0.05)
 
-            if joy1.get_axis(2) < -0.5:
+            if joy1.get_axis(2) < -0.5: #Femur Forward
 
                 FLF_move = FLF_angle - 2
                 FRF_move = FRF_angle + 2
@@ -105,7 +105,7 @@ def main():
 
                 time.sleep(0.05)
 
-            if joy1.get_axis(2) > 0.5:
+            if joy1.get_axis(2) > 0.5: #Femur Back
 
                 FLF_move = FLF_angle + 2
                 FRF_move = FRF_angle - 2
