@@ -45,10 +45,10 @@ def main():
                 global BLT_angle
                 global BRT_angle
 
-                FLT_move = FLT_angle + 5
-                FRT_move = FRT_angle - 5
-                BLT_move = BLT_angle + 5
-                BRT_move = BRT_angle - 5
+                FLT_move = FLT_angle + 2
+                FRT_move = FRT_angle - 2
+                BLT_move = BLT_angle + 2
+                BRT_move = BRT_angle - 2
                 
                 FLT_angle = FLT_move
                 FRT_angle = FRT_move
@@ -63,6 +63,26 @@ def main():
                 time.sleep(0.05)
 
             if joy1.get_axis(1) > 0.5:
+
+                global FLT_angle
+                global FRT_angle
+                global BLT_angle
+                global BRT_angle
+
+                FLT_move = FLT_angle - 2
+                FRT_move = FRT_angle + 2
+                BLT_move = BLT_angle - 2
+                BRT_move = BRT_angle + 2
+                
+                FLT_angle = FLT_move
+                FRT_angle = FRT_move
+                BLT_angle = BLT_move
+                BRT_angle = BRT_move
+
+                kit.servo[0].angle = FLT_move
+                kit.servo[3].angle = FRT_move
+                kit.servo[6].angle = BLT_move
+                kit.servo[9].angle = BRT_move
 
                 time.sleep(0.05)
 
