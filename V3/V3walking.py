@@ -15,7 +15,7 @@ BRT = 93
 BRF = 41
 BRH = 95 
 
-#Position Down = Tibia (22 Down), Femur (31 Back) (35,75)
+#Position Down = Tibia (7 Down), Femur (42 Back) (35,75)
 
 #Position Back = Tibia (48 Up), Femur (70 Back) (-10,77)
 
@@ -33,11 +33,11 @@ def main():
             # kit.servo[0].angle = FLT + 26 #Up
             # kit.servo[1].angle = FLF + 27 #Up
             # kit.servo[2].angle = FLH 
-            # kit.servo[3].angle = FRT + 22 #Down
-            # kit.servo[4].angle = FRF + 14 #Down
+            # kit.servo[3].angle = FRT + 7 #Down
+            # kit.servo[4].angle = FRF + 3 #Down
             # kit.servo[5].angle = FRH
-            # kit.servo[6].angle = BLT - 22 #Down
-            # kit.servo[7].angle = BLF - 14 #Down
+            # kit.servo[6].angle = BLT - 7 #Down
+            # kit.servo[7].angle = BLF - 3 #Down
             # kit.servo[8].angle = BLH 
             # kit.servo[9].angle = BRT - 26 #Up
             # kit.servo[10].angle = BRF - 27 #Up
@@ -62,8 +62,8 @@ def main():
             # print("Position 2")
             # time.sleep(0.2)
 
-            kit.servo[0].angle = FLT - 22 #Down
-            kit.servo[1].angle = FLF - 14 #Down
+            kit.servo[0].angle = FLT - 7 #Down
+            kit.servo[1].angle = FLF - 3 #Down
             kit.servo[2].angle = FLH
             kit.servo[3].angle = FRT - 26 #Up
             kit.servo[4].angle = FRF - 27 #Up
@@ -71,8 +71,8 @@ def main():
             kit.servo[6].angle = BLT + 26 #Up
             kit.servo[7].angle = BLF + 27 #Up
             kit.servo[8].angle = BLH
-            kit.servo[9].angle = BRT + 22 #Down
-            kit.servo[10].angle = BRF + 14 #Down
+            kit.servo[9].angle = BRT + 7 #Down
+            kit.servo[10].angle = BRF + 3 #Down
             kit.servo[11].angle = BRH 
 
             print("Position 3")

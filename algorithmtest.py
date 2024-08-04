@@ -2,8 +2,8 @@ import math
 
 try:
 
-    x = 12
-    y = 60
+    x = 25
+    y = 75
 
     q1 = 40
     q2 = 69
