@@ -25,7 +25,7 @@ def main():
 
     try:
 
-        rest()
+        rest(kit)
 
         pygame.init()
         joy1 = pygame.joystick.Joystick(0)
@@ -78,12 +78,12 @@ def main():
 
                 if joy1.get_button(1) > 0.5:
 
-                    rest()
+                    rest(kit)
                     time.sleep(0.05)
                 
                 if joy1.get_button(3) > 0.5:
                     
-                    stand()
+                    stand(kit)
                     time.sleep(0.05)
 
                 t = joy1.get_button(0)
@@ -98,7 +98,7 @@ def main():
         print("Exit")
         quit()
 
-def stand():
+def stand(kit):
 
     kit.servo[0].angle = 90
     kit.servo[1].angle = 135
@@ -140,7 +140,7 @@ def stand():
     BRH_angle = 95
 
 
-def rest():
+def rest(kit):
 
     kit.servo[0].angle = 50
     kit.servo[1].angle = 150
