@@ -23,82 +23,77 @@ def main():
         
     
 
-    try:
 
-        rest(kit)
+    rest(kit)
 
-        t = 0
+    t = 0
 
-        pygame.init()
-        joy1 = pygame.joystick.Joystick(0)
-        joy1.init()
+    pygame.init()
+    joy1 = pygame.joystick.Joystick(0)
+    joy1.init()
 
-        while t == 0:
-            try:
-                pygame.event.pump()
-                buttons = [joy1.get_button(0),joy1.get_button(1),joy1.get_button(2),joy1.get_button(3),joy1.get_button(4),joy1.get_button(5)]
-                axis = [joy1.get_axis(0),joy1.get_axis(1),joy1.get_axis(2),joy1.get_axis(3),joy1.get_axis(4),joy1.get_axis(5)]
+    while t == 0:
+        try:
+            pygame.event.pump()
+            buttons = [joy1.get_button(0),joy1.get_button(1),joy1.get_button(2),joy1.get_button(3),joy1.get_button(4),joy1.get_button(5)]
+            axis = [joy1.get_axis(0),joy1.get_axis(1),joy1.get_axis(2),joy1.get_axis(3),joy1.get_axis(4),joy1.get_axis(5)]
 
-                if joy1.get_axis(1) < -0.5:
+            if joy1.get_axis(1) < -0.5:
 
-                    FLT_move = FLT_angle + 5
-                    FRT_move = FRT_angle + 5
-                    BLT_move = BLT_angle - 5
-                    BRT_move = BRT_angle - 5
-                    
-                    FLT_angle = FLT_move
-                    FRT_angle = FRT_move
-                    BLT_angle = BLT_move
-                    BRT_angle = BRT_move
-
-                    kit.servo[0].angle = FLT_move
-                    kit.servo[3].angle = FRT_move
-                    kit.servo[6].angle = BLT_move
-                    kit.servo[9].angle = BRT_move
-
-                    time.sleep(0.05)
-
-                if joy1.get_axis(1) > 0.5:
-
-                    time.sleep(0.05)
-
-                if joy1.get_axis(2) < -0.5:
-
-                    time.sleep(0.05)
-
-                if joy1.get_axis(2) > 0.5:
-
-                    time.sleep(0.05)
-
-                if joy1.get_axis(3) > 0.5:
+                FLT_move = FLT_angle + 5
+                FRT_move = FRT_angle + 5
+                BLT_move = BLT_angle - 5
+                BRT_move = BRT_angle - 5
                 
-                    time.sleep(0.05)
+                FLT_angle = FLT_move
+                FRT_angle = FRT_move
+                BLT_angle = BLT_move
+                BRT_angle = BRT_move
 
-                if joy1.get_axis(3) < -0.5:
-        
-                    time.sleep(0.05)
+                kit.servo[0].angle = FLT_move
+                kit.servo[3].angle = FRT_move
+                kit.servo[6].angle = BLT_move
+                kit.servo[9].angle = BRT_move
 
-                if joy1.get_button(1) > 0.5:
+                time.sleep(0.05)
 
-                    rest(kit)
-                    time.sleep(0.05)
+            if joy1.get_axis(1) > 0.5:
+
+                time.sleep(0.05)
+
+            if joy1.get_axis(2) < -0.5:
+
+                time.sleep(0.05)
+
+            if joy1.get_axis(2) > 0.5:
+
+                time.sleep(0.05)
+
+            if joy1.get_axis(3) > 0.5:
+            
+                time.sleep(0.05)
+
+            if joy1.get_axis(3) < -0.5:
+    
+                time.sleep(0.05)
+
+            if joy1.get_button(1) > 0.5:
+
+                rest(kit)
+                time.sleep(0.05)
+            
+            if joy1.get_button(3) > 0.5:
                 
-                if joy1.get_button(3) > 0.5:
-                    
-                    stand(kit)
-                    time.sleep(0.05)
+                stand(kit)
+                time.sleep(0.05)
 
-                t = joy1.get_button(0)
+            t = joy1.get_button(0)
 
-            finally:
-                if t == 1:
-                    print("STOP")
-                    rest(kit)
+        finally:
+            if t == 1:
+                print("STOP")
+                rest(kit)
 
-        
-    except:
-        print("Exit")
-        quit()
 
 def stand(kit):
 
