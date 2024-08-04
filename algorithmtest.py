@@ -2,8 +2,8 @@ import math
 
 try:
 
-    x = 69
-    y = 40
+    x = 10
+    y = 60
 
     q1 = 40
     q2 = 69
@@ -23,9 +23,6 @@ try:
 
     Tibia_angle = math.degrees(theta2)
     Femur_angle = math.degrees(theta1)
-
-    print("TIBIA: ", Tibia_angle)
-    print("FEMUR: ", Femur_angle)
 
     TIBIA = (Tibia_angle)
     FEMUR = Femur_angle
