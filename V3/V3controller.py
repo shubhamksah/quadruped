@@ -88,9 +88,39 @@ def main():
 
             if joy1.get_axis(2) < -0.5:
 
+                FLF_move = FLF_angle - 2
+                FRF_move = FRF_angle + 2
+                BLF_move = BLF_angle - 2
+                BRF_move = BRF_angle + 2
+                
+                FLF_angle = FLF_move
+                FRF_angle = FRF_move
+                BLF_angle = BLF_move
+                BRF_angle = BRF_move
+
+                kit.servo[1].angle = FLF_move
+                kit.servo[4].angle = FRF_move
+                kit.servo[7].angle = BLF_move
+                kit.servo[10].angle = BRF_move
+
                 time.sleep(0.05)
 
             if joy1.get_axis(2) > 0.5:
+
+                FLF_move = FLF_angle + 2
+                FRF_move = FRF_angle - 2
+                BLF_move = BLF_angle + 2
+                BRF_move = BRF_angle - 2
+                
+                FLF_angle = FLF_move
+                FRF_angle = FRF_move
+                BLF_angle = BLF_move
+                BRF_angle = BRF_move
+
+                kit.servo[1].angle = FLF_move
+                kit.servo[4].angle = FRF_move
+                kit.servo[7].angle = BLF_move
+                kit.servo[10].angle = BRF_move
 
                 time.sleep(0.05)
 
