@@ -188,7 +188,7 @@ def stand(kit):
     kit.servo[3].angle = 97
     kit.servo[4].angle = 45
     kit.servo[5].angle = 88
-    kit.servo[6].angle = 88
+    kit.servo[6].angle = 95
     kit.servo[7].angle = 130
     kit.servo[8].angle = 95
     kit.servo[9].angle = 94
