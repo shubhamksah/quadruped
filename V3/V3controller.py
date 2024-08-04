@@ -126,10 +126,10 @@ def main():
 
             if joy1.get_axis(3) > 0.5:
             
-                FLH_move = FLH_angle + 2
-                FRH_move = FRH_angle + 2
-                BLH_move = BLH_angle - 2
-                BRH_move = BRH_angle - 2
+                FLH_move = FLH_angle - 2
+                FRH_move = FRH_angle - 2
+                BLH_move = BLH_angle + 2
+                BRH_move = BRH_angle + 2
                 
                 FLH_angle = FLH_move
                 FRH_angle = FRH_move
@@ -145,10 +145,10 @@ def main():
 
             if joy1.get_axis(3) < -0.5:
     
-                FLH_move = FLH_angle - 2
-                FRH_move = FRH_angle - 2
-                BLH_move = BLH_angle + 2
-                BRH_move = BRH_angle + 2
+                FLH_move = FLH_angle + 2
+                FRH_move = FRH_angle + 2
+                BLH_move = BLH_angle - 2
+                BRH_move = BRH_angle - 2
                 
                 FLH_angle = FLH_move
                 FRH_angle = FRH_move
