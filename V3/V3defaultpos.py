@@ -40,7 +40,7 @@ try:
         kit.servo[0].angle = FLT + pos2move
         kit.servo[9].angle = BRT - pos2move
         pos2move += 1.5625
-        time.sleep(0.025)
+        time.sleep(0.5)
 
 except:
     print("Exit")
