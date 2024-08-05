@@ -31,6 +31,13 @@ try:
     kit.servo[10].angle = 41
     kit.servo[11].angle = 95 
 
+    kit.servo[0].angle = FLT - 7 #Down
+    kit.servo[1].angle = FLF - 3 #Down
+
+    kit.servo[9].angle = BRT + 7 #Down
+    kit.servo[10].angle = BRF + 3 #Down
+
+
     pos1move = 1.5625
     pos2move = 3
     while pos2move <= 48:
