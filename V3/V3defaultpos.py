@@ -33,7 +33,7 @@ try:
 
     pos1move = 1.5625
     pos2move = 3
-    while pos1move <= 48:
+    while pos2move <= 48:
         kit.servo[1].angle = FLF + pos1move
         kit.servo[10].angle = BRF - pos1move
         pos1move += 1.5625
