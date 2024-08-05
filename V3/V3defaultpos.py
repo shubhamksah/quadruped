@@ -18,11 +18,16 @@ BRH = 95
 
 try:
 
-    kit.servo[0].angle = FLT - 7 #Down
-    kit.servo[1].angle = FLF - 3 #Down
-
-    kit.servo[9].angle = BRT + 7 #Down
-    kit.servo[10].angle = BRF + 3 #Down
+    pos1move = 0.75
+    pos2move = 1.75
+    while pos2move <= 7:
+        kit.servo[1].angle = FLF + pos1move
+        kit.servo[10].angle = BRF - pos1move
+        pos1move += 0.75
+        kit.servo[0].angle = FLT + pos2move
+        kit.servo[9].angle = BRT - pos2move
+        pos2move += 1.75
+        time.sleep(0.0025)
 
     time.sleep(0.5)
 
