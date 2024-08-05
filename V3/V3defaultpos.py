@@ -18,6 +18,19 @@ BRH = 95
 
 try:
 
+    pos1move = 1.5625
+    pos2move = 3
+    while pos2move <= 48:
+        kit.servo[1].angle = FLF + pos1move
+        kit.servo[10].angle = BRF - pos1move
+        pos1move += 1.5625
+        kit.servo[0].angle = FLT + pos2move
+        kit.servo[9].angle = BRT - pos2move
+        pos2move += 3
+        time.sleep(0.0025)
+
+    time.sleep(0.5) 
+    
     pos1move = 0.75
     pos2move = 1.75
     while pos2move <= 7:
@@ -54,19 +67,6 @@ try:
         kit.servo[0].angle = FLT + pos2move
         kit.servo[9].angle = BRT - pos2move
         pos2move += 1.75
-        time.sleep(0.0025)
-
-    time.sleep(0.5)
-
-    pos1move = 1.5625
-    pos2move = 3
-    while pos2move <= 48:
-        kit.servo[1].angle = FLF + pos1move
-        kit.servo[10].angle = BRF - pos1move
-        pos1move += 1.5625
-        kit.servo[0].angle = FLT + pos2move
-        kit.servo[9].angle = BRT - pos2move
-        pos2move += 3
         time.sleep(0.0025)
 
     time.sleep(0.5)
