@@ -18,18 +18,18 @@ BRH = 95
 
 try:
 
-    kit.servo[0].angle = 50
-    kit.servo[1].angle = 150
+    kit.servo[0].angle = 90
+    kit.servo[1].angle = 135
     kit.servo[2].angle = 100
-    kit.servo[3].angle = 137
-    kit.servo[4].angle = 35
+    kit.servo[3].angle = 97
+    kit.servo[4].angle = 45
     kit.servo[5].angle = 88
-    kit.servo[6].angle = 48
-    kit.servo[7].angle = 145
+    kit.servo[6].angle = 100
+    kit.servo[7].angle = 130
     kit.servo[8].angle = 95
-    kit.servo[9].angle = 134
-    kit.servo[10].angle = 30
-    kit.servo[11].angle = 95  
+    kit.servo[9].angle = 94
+    kit.servo[10].angle = 45
+    kit.servo[11].angle = 95   
 
 except:
     print("Exit")
