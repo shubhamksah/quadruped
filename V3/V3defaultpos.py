@@ -27,8 +27,8 @@ try:
     kit.servo[6].angle = 100
     kit.servo[7].angle = 131
     kit.servo[8].angle = 95
-    kit.servo[9].angle = 100
-    kit.servo[10].angle = 60
+    kit.servo[9].angle = 93
+    kit.servo[10].angle = 41
     kit.servo[11].angle = 95   
 
 except:
