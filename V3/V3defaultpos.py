@@ -18,58 +18,18 @@ BRH = 95
 
 try:
 
-    pos1move = 1.5625
-    pos2move = 3
-    while pos2move <= 48:
-        kit.servo[1].angle = FLF + pos1move
-        kit.servo[10].angle = BRF - pos1move
-        pos1move += 1.5625
-        kit.servo[0].angle = FLT + pos2move
-        kit.servo[9].angle = BRT - pos2move
-        pos2move += 3
-        time.sleep(0.0025)
-
-    time.sleep(0.5) 
-    
-    pos1move = 0.75
-    pos2move = 1.75
-    while pos2move <= 7:
-        kit.servo[1].angle = FLF + pos1move
-        kit.servo[10].angle = BRF - pos1move
-        pos1move += 0.75
-        kit.servo[0].angle = FLT + pos2move
-        kit.servo[9].angle = BRT - pos2move
-        pos2move += 1.75
-        time.sleep(0.0025)
-
-    time.sleep(0.5)
-
-
-    pos1move = 1.5625
-    pos2move = 3
-    while pos2move <= 48:
-        kit.servo[1].angle = FLF + pos1move
-        kit.servo[10].angle = BRF - pos1move
-        pos1move += 1.5625
-        kit.servo[0].angle = FLT + pos2move
-        kit.servo[9].angle = BRT - pos2move
-        pos2move += 3
-        time.sleep(0.0025)
-
-    time.sleep(0.5)
-
-    pos1move = 0.75
-    pos2move = 1.75
-    while pos2move <= 7:
-        kit.servo[1].angle = FLF + pos1move
-        kit.servo[10].angle = BRF - pos1move
-        pos1move += 0.75
-        kit.servo[0].angle = FLT + pos2move
-        kit.servo[9].angle = BRT - pos2move
-        pos2move += 1.75
-        time.sleep(0.0025)
-
-    time.sleep(0.5)
+    kit.servo[0].angle = 50
+    kit.servo[1].angle = 150
+    kit.servo[2].angle = 100
+    kit.servo[3].angle = 137
+    kit.servo[4].angle = 35
+    kit.servo[5].angle = 88
+    kit.servo[6].angle = 48
+    kit.servo[7].angle = 145
+    kit.servo[8].angle = 95
+    kit.servo[9].angle = 134
+    kit.servo[10].angle = 30
+    kit.servo[11].angle = 95  
 
 except:
     print("Exit")
