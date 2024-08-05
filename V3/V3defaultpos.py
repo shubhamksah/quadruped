@@ -31,15 +31,15 @@ try:
     kit.servo[10].angle = 41
     kit.servo[11].angle = 95 
 
-    pos1move = 3
-    pos2move = 1.5625
+    pos1move = 1.5625
+    pos2move = 3
     while pos1move <= 48:
         kit.servo[1].angle = FLF + pos1move
         kit.servo[10].angle = BRF - pos1move
-        pos1move += 3
+        pos1move += 1.5625
         kit.servo[0].angle = FLT + pos2move
         kit.servo[9].angle = BRT - pos2move
-        pos2move += 1.5625
+        pos2move += 3
         time.sleep(0.5)
 
 except:
