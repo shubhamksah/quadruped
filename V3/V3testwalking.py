@@ -15,11 +15,11 @@ BRT = 93
 BRF = 41
 BRH = 95 
 
-FLT1 = 68
-FLF1 = 116
+FLT1 = FLT - 20
+FLF1 = FLF - 13
 
-FRT1 = 84
-FRF1 = 42
+FRT1 = FRT + 20
+FRF1 = FRF + 13
 
 BLT1 = 100
 BLF1 = 131
@@ -63,7 +63,7 @@ def main():
 
             # time.sleep(0.1)  
 
-            # kit.servo[0].angle = 85
+            # kit.servo[0].angle = FLT - 3
 
             # time.sleep(0.1)
 
@@ -73,22 +73,22 @@ def main():
             kit.servo[4].angle = FRF + 13
             kit.servo[5].angle = FRH
 
-            # time.sleep(0.1)
+            time.sleep(0.1)
 
-            # pos1move = 0.23125
-            # pos2move = 0.4125
-            # while pos2move <= 66:
-            #     kit.servo[1].angle = FLF1 + pos1move
-            #     pos1move += 0.23125
-            #     kit.servo[0].angle = FLT1 + pos2move
-            #     pos2move += 0.4125
-            #     time.sleep(0.00001)
+            pos1move = 0.23125
+            pos2move = 0.4125
+            while pos2move <= 66:
+                kit.servo[4].angle = FRF1 - pos1move
+                pos1move += 0.23125
+                kit.servo[3].angle = FRT1 - pos2move
+                pos2move += 0.4125
+                time.sleep(0.00001)
 
-            # time.sleep(0.1)  
+            time.sleep(0.1)  
 
-            # kit.servo[0].angle = 85
+            kit.servo[3].angle = FRT + 3
 
-            # time.sleep(0.1)
+            time.sleep(0.1)
 
 
             t += 0.05
