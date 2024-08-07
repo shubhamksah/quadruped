@@ -18,7 +18,7 @@ def main():
 
     t = 0
 
-    while t <= 1.05: 
+    while t <= 2.05: 
         
         try:
 
@@ -26,7 +26,7 @@ def main():
             kit.servo[1].angle = 129
             kit.servo[2].angle = 100
 
-            time.sleep(1)
+            time.sleep(0.2)
 
             pos1move = 1.4
             pos2move = 3
@@ -37,11 +37,11 @@ def main():
                 pos2move += 3
                 time.sleep(0.005)
 
-            time.sleep(1)  
+            time.sleep(0.2)  
 
             kit.servo[0].angle = 85
 
-            time.sleep(1)
+            time.sleep(0.2)
 
             # kit.servo[0].angle = 88 - 35
             # kit.servo[1].angle = 120
@@ -82,7 +82,7 @@ def main():
             t += 0.05
             
         finally:
-            if t==1.05:
+            if t==2.05:
                 print ("STOP")
                 # kit.servo[0].angle = 88
                 # kit.servo[1].angle = 129
