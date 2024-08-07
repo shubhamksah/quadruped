@@ -5,9 +5,28 @@ from adafruit_servokit import ServoKit
 FLT = 88
 FLF = 129
 FLH = 100
+FRT = 84
+FRF = 42
+FRH = 88
+BLT = 100
+BLF = 131
+BLH = 95
+BRT = 93
+BRF = 41
+BRH = 95 
 
 FLT1 = 68
 FLF1 = 116
+
+FRT1 = 84
+FRF1 = 42
+
+BLT1 = 100
+BLF1 = 131
+
+BRT1 = 93
+BRF1 = 41
+
 
 #Position Down = Tibia (20 Down), Femur (13 Forward)
 
