@@ -28,11 +28,9 @@ def main():
 
             time.sleep(1)
 
-            kit.servo[0].angle = 88 + 15
+            kit.servo[0].angle = 88 + 20
             time.sleep(0.1)
-            kit.servo[1].angle = 129 + 20
-            time.sleep(0.1)
-            kit.servo[0].angle = 88 + 30
+            kit.servo[1].angle = 129 + 10
             kit.servo[2].angle = 100   
 
             time.sleep(1)  
