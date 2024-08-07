@@ -2,6 +2,8 @@ import time
 import pygame
 from adafruit_servokit import ServoKit
 
+#Default Standing
+
 FLT = 88
 FLF = 129
 FLH = 100
@@ -18,6 +20,8 @@ BRT = 93
 BRF = 41
 BRH = 95 
 
+#Position 2 Default
+
 FLT1 = FLT - 20
 FLF1 = FLF - 13
 
@@ -29,6 +33,8 @@ BLF1 = BLF - 13
 
 BRT1 = BRT + 20
 BRF1 = BRF + 13
+
+#Variables
 
 Pos1T = 20 #Position 1 Tibia Movement Down
 Pos1F = 13 #Position 1 Femur Movement Forward
@@ -51,13 +57,13 @@ MovementDelay = 0.1 #Full Movement Speed (Lower = Faster)
 
 #Position Up = Tibia (90 - 3 Down)
 
-kit = ServoKit(channels=16)
+kit = ServoKit(channels=16) #Initializes Servos
 
 def main():
 
     t = 0
 
-    while t <= 2.05: 
+    while t <= 2.05: #Movement Loop
         
         try:
 
@@ -178,7 +184,7 @@ def main():
             
         finally:
             if t==2.05:
-                print ("STOP")
+                print ("STOP") #Default Position Reset
                 kit.servo[0].angle = FLT
                 kit.servo[1].angle = FLF
                 kit.servo[2].angle = FLH
