@@ -5,12 +5,15 @@ from adafruit_servokit import ServoKit
 FLT = 88
 FLF = 129
 FLH = 100
+
 FRT = 82
 FRF = 45
 FRH = 88
+
 BLT = 100
 BLF = 131
 BLH = 95
+
 BRT = 93
 BRF = 41
 BRH = 95 
@@ -21,11 +24,11 @@ FLF1 = FLF - 13
 FRT1 = FRT + 20
 FRF1 = FRF + 13
 
-BLT1 = 100
-BLF1 = 131
+BLT1 = BLT - 20
+BLF1 = BLF - 13
 
-BRT1 = 93
-BRF1 = 41
+BRT1 = BRT + 20
+BRF1 = BRF + 13
 
 
 #Position Down = Tibia (20 Down), Femur (13 Forward)
@@ -69,26 +72,53 @@ def main():
 
             #FR Movement
 
-            kit.servo[3].angle = FRT + 20
-            kit.servo[4].angle = FRF + 13
-            kit.servo[5].angle = FRH
+            # kit.servo[3].angle = FRT + 20
+            # kit.servo[4].angle = FRF + 13
+            # kit.servo[5].angle = FRH
 
-            time.sleep(0.1)
+            # time.sleep(0.1)
 
-            pos1move = 0.23125
-            pos2move = 0.4125
-            while pos2move <= 66:
-                kit.servo[4].angle = FRF1 - pos1move
-                pos1move += 0.23125
-                kit.servo[3].angle = FRT1 - pos2move
-                pos2move += 0.4125
-                time.sleep(0.00001)
+            # pos1move = 0.23125
+            # pos2move = 0.4125
+            # while pos2move <= 66:
+            #     kit.servo[4].angle = FRF1 - pos1move
+            #     pos1move += 0.23125
+            #     kit.servo[3].angle = FRT1 - pos2move
+            #     pos2move += 0.4125
+            #     time.sleep(0.00001)
 
-            time.sleep(0.1)  
+            # time.sleep(0.1)  
 
-            kit.servo[3].angle = FRT - 3
+            # kit.servo[3].angle = FRT - 3
 
-            time.sleep(0.1)
+            # time.sleep(0.1)
+
+            #BL Movement
+
+            kit.servo[6].angle = BLT
+            kit.servo[7].angle = BLF
+            kit.servo[8].angle = BLH
+
+            # kit.servo[6].angle = BLT - 20
+            # kit.servo[7].angle = BLF - 13
+            # kit.servo[8].angle = BLH
+
+            # time.sleep(0.1)
+
+            # pos1move = 0.23125
+            # pos2move = 0.4125
+            # while pos2move <= 66:
+            #     kit.servo[7].angle = BLF1 + pos1move
+            #     pos1move += 0.23125
+            #     kit.servo[6].angle = BLT1 + pos2move
+            #     pos2move += 0.4125
+            #     time.sleep(0.00001)
+
+            # time.sleep(0.1)  
+
+            # kit.servo[6].angle = BLT - 3
+
+            # time.sleep(0.1)
 
 
             t += 0.05
