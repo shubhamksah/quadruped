@@ -70,7 +70,7 @@ def main():
             #FR Movement
 
             kit.servo[3].angle = 90
-            kit.servo[4].angle = 90
+            kit.servo[4].angle = 45
             kit.servo[5].angle = 88
 
             # time.sleep(0.1)
