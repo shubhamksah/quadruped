@@ -112,7 +112,7 @@ def main():
 
             time.sleep(3)  
 
-            kit.servo[6].angle = BLT - 3
+            kit.servo[6].angle = BLT - 6
 
             time.sleep(3)
 
