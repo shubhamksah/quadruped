@@ -23,7 +23,7 @@ def main():
         try:
 
             kit.servo[0].angle = 72
-            kit.servo[1].angle = 114
+            kit.servo[1].angle = 116
             kit.servo[2].angle = 100
 
             time.sleep(0.1)
