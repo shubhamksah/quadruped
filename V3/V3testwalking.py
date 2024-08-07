@@ -29,22 +29,22 @@ def main():
             kit.servo[1].angle = 116
             kit.servo[2].angle = 100
 
-            time.sleep(1)
+            time.sleep(0.2)
 
-            pos1move = 0.23125
-            pos2move = 0.4125
+            pos1move = 0.115625
+            pos2move = 0.20625
             while pos2move <= 66:
                 kit.servo[1].angle = FLF1 + pos1move
-                pos1move += 0.23125
+                pos1move += 0.115625
                 kit.servo[0].angle = FLT1 + pos2move
-                pos2move += 0.4125
-                time.sleep(0.0001)
+                pos2move += 0.20625
+                time.sleep(0.00005)
 
-            time.sleep(1)  
+            time.sleep(0.2)  
 
             kit.servo[0].angle = 85
 
-            time.sleep(1)
+            time.sleep(0.2)
 
             # kit.servo[0].angle = 88 - 35
             # kit.servo[1].angle = 120
