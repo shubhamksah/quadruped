@@ -8,9 +8,9 @@ FLH = 100
 
 #Position Down = Tibia (35 Down), Femur (36 Back) (40,60)
 
-#Position Back = Tibia (48 Up), Femur (70 Back) (-10,77)
+#Position Back = Tibia (50 Up), Femur (84 Back) (0,60)
 
-#Position Up = Tibia (26 Up), Femur (72 Back) (12,60)
+#Position Up = Tibia (18 Down), Femur (63 Back) (30,40)
 
 kit = ServoKit(channels=16)
 
@@ -26,6 +26,13 @@ def main():
             kit.servo[1].angle = 120
             kit.servo[2].angle = 100
 
+            kit.servo[0].angle = 88 + 50
+            kit.servo[1].angle = 129 + 39
+            kit.servo[2].angle = 100
+
+            kit.servo[0].angle = 88 - 18
+            kit.servo[1].angle = 129 + 18
+            kit.servo[2].angle = 100
 
             # pos1move = 1.5625
             # pos2move = 3
@@ -41,9 +48,9 @@ def main():
         finally:
             if t==1.05:
                 print ("STOP")
-                kit.servo[0].angle = 88
-                kit.servo[1].angle = 129
-                kit.servo[2].angle = 100
+                # kit.servo[0].angle = 88
+                # kit.servo[1].angle = 129
+                # kit.servo[2].angle = 100
 
 
 if __name__ == "__main__":
