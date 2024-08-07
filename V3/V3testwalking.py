@@ -41,6 +41,8 @@ def main():
 
             kit.servo[0].angle = 125
 
+            time.sleep(1)
+
             # kit.servo[0].angle = 88 - 35
             # kit.servo[1].angle = 120
             # kit.servo[2].angle = 100
