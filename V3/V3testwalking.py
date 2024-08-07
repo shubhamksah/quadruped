@@ -95,30 +95,26 @@ def main():
 
             #BL Movement
 
-            kit.servo[6].angle = BLT
-            kit.servo[7].angle = BLF
+            kit.servo[6].angle = BLT - 20
+            kit.servo[7].angle = BLF - 13
             kit.servo[8].angle = BLH
 
-            # kit.servo[6].angle = BLT - 20
-            # kit.servo[7].angle = BLF - 13
-            # kit.servo[8].angle = BLH
+            time.sleep(3)
 
-            # time.sleep(0.1)
+            pos1move = 0.23125
+            pos2move = 0.4125
+            while pos2move <= 66:
+                kit.servo[7].angle = BLF1 + pos1move
+                pos1move += 0.23125
+                kit.servo[6].angle = BLT1 + pos2move
+                pos2move += 0.4125
+                time.sleep(0.00001)
 
-            # pos1move = 0.23125
-            # pos2move = 0.4125
-            # while pos2move <= 66:
-            #     kit.servo[7].angle = BLF1 + pos1move
-            #     pos1move += 0.23125
-            #     kit.servo[6].angle = BLT1 + pos2move
-            #     pos2move += 0.4125
-            #     time.sleep(0.00001)
+            time.sleep(3)  
 
-            # time.sleep(0.1)  
+            kit.servo[6].angle = BLT - 3
 
-            # kit.servo[6].angle = BLT - 3
-
-            # time.sleep(0.1)
+            time.sleep(3)
 
 
             t += 0.05
