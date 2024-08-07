@@ -9,11 +9,11 @@ FLH = 100
 FLT1 = 68
 FLF1 = 116
 
-#Position Down = Tibia (35 Down), Femur (36 Back) (40,60)
+#Position Down = Tibia (20 Down), Femur (13 Forward)
 
-#Position Back = Tibia (50 Up), Femur (84 Back) (0,60)
+#Position Back = Tibia (66 Up + last pos), Femur (37 Back + last pos)
 
-#Position Up = Tibia (18 Down), Femur (63 Back) (30,40)
+#Position Up = Tibia (90 - 3 Down)
 
 kit = ServoKit(channels=16)
 
@@ -25,62 +25,52 @@ def main():
         
         try:
 
-            kit.servo[0].angle = 68
-            kit.servo[1].angle = 116
-            kit.servo[2].angle = 100
+            #FL Movement
 
-            time.sleep(0.1)
-
-            pos1move = 0.23125
-            pos2move = 0.4125
-            while pos2move <= 66:
-                kit.servo[1].angle = FLF1 + pos1move
-                pos1move += 0.23125
-                kit.servo[0].angle = FLT1 + pos2move
-                pos2move += 0.4125
-                time.sleep(0.00001)
-
-            time.sleep(0.1)  
-
-            kit.servo[0].angle = 85
-
-            time.sleep(0.1)
-
-            # kit.servo[0].angle = 88 - 35
-            # kit.servo[1].angle = 120
+            # kit.servo[0].angle = 68
+            # kit.servo[1].angle = 116
             # kit.servo[2].angle = 100
 
-            # time.sleep(1)
+            # time.sleep(0.1)
 
-            # pos1move = 4.5
-            # pos2move = 3
-            # while pos1move <= 43:
-            #     kit.servo[1].angle = FLF + pos1move
-            #     pos1move += 4.3
-            #     kit.servo[0].angle = FLT + pos2move
-            #     pos2move += 2.6
-            #     time.sleep(0.005)
+            # pos1move = 0.23125
+            # pos2move = 0.4125
+            # while pos2move <= 66:
+            #     kit.servo[1].angle = FLF1 + pos1move
+            #     pos1move += 0.23125
+            #     kit.servo[0].angle = FLT1 + pos2move
+            #     pos2move += 0.4125
+            #     time.sleep(0.00001)
 
-            # # kit.servo[0].angle = 88 + 50
-            # # kit.servo[1].angle = 129 + 39
-            # # kit.servo[2].angle = 100
+            # time.sleep(0.1)  
 
-            # time.sleep(1)
+            # kit.servo[0].angle = 85
 
-            # kit.servo[0].angle = 88 - 18
-            # kit.servo[1].angle = 129 + 18
-            # kit.servo[2].angle = 100
+            # time.sleep(0.1)
 
-            # time.sleep(3)
+            #FR Movement
 
-            # pos1move = 1.5625
-            # pos2move = 3
-            # while pos2move <= 48:
-            #     kit.servo[1].angle = FLF + pos1move
-            #     pos1move += 1.5625
-            #     kit.servo[0].angle = FLT + pos2move
-            #     pos2move += 3
-            #     time.sleep(0.0025)
+            kit.servo[3].angle = 90
+            kit.servo[4].angle = 90
+            kit.servo[5].angle = 88
+
+            # time.sleep(0.1)
+
+            # pos1move = 0.23125
+            # pos2move = 0.4125
+            # while pos2move <= 66:
+            #     kit.servo[1].angle = FLF1 + pos1move
+            #     pos1move += 0.23125
+            #     kit.servo[0].angle = FLT1 + pos2move
+            #     pos2move += 0.4125
+            #     time.sleep(0.00001)
+
+            # time.sleep(0.1)  
+
+            # kit.servo[0].angle = 85
+
+            # time.sleep(0.1)
+
 
             t += 0.05
             
