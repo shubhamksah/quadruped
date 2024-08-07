@@ -22,7 +22,7 @@ def main():
         
         try:
 
-            kit.servo[0].angle = 72
+            kit.servo[0].angle = 68
             kit.servo[1].angle = 116
             kit.servo[2].angle = 100
 
