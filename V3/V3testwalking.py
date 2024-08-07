@@ -29,12 +29,12 @@ def main():
             time.sleep(0.1)
 
             pos1move = 0.15
-            pos2move = 0.275
-            while pos2move <= 44:
+            pos2move = 0.2875
+            while pos2move <= 46:
                 kit.servo[1].angle = FLF + pos1move
                 pos1move += 0.15
                 kit.servo[0].angle = FLT + pos2move
-                pos2move += 0.275
+                pos2move += 0.2875
                 time.sleep(0.00025)
 
             time.sleep(0.1)  
