@@ -18,7 +18,7 @@ def main():
 
     t = 0
 
-    while t <= 1.05: 
+    while t <= 0.05: 
         
         try:
 
@@ -69,7 +69,7 @@ def main():
         finally:
             if t==1.05:
                 print ("STOP")
-                kit.servo[0].angle = 90
+                kit.servo[0].angle = 85
                 kit.servo[1].angle = 90
                 kit.servo[2].angle = 100
 
