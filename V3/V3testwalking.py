@@ -35,7 +35,7 @@ def main():
                 pos1move += 0.225
                 kit.servo[0].angle = FLT + pos2move
                 pos2move += 0.475
-                time.sleep(0.001)
+                time.sleep(0.0005)
 
             time.sleep(0.25)  
 
