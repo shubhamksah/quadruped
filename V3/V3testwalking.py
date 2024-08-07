@@ -99,7 +99,7 @@ def main():
             kit.servo[7].angle = BLF - 13
             kit.servo[8].angle = BLH
 
-            time.sleep(3)
+            time.sleep(0.1)
 
             pos1move = 0.23125
             pos2move = 0.4125
@@ -110,11 +110,11 @@ def main():
                 pos2move += 0.4125
                 time.sleep(0.00001)
 
-            time.sleep(3)  
+            time.sleep(0.1)  
 
             kit.servo[6].angle = BLT - 6
 
-            time.sleep(3)
+            time.sleep(0.1)
 
 
             t += 0.05
