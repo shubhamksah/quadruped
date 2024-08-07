@@ -22,8 +22,8 @@ def main():
         
         try:
 
-            kit.servo[0].angle = 85
-            kit.servo[1].angle = 90
+            kit.servo[0].angle = 90
+            kit.servo[1].angle = 85
             kit.servo[2].angle = 100
 
             # kit.servo[2].angle = FLH
@@ -69,7 +69,7 @@ def main():
         finally:
             if t==1.05:
                 print ("STOP")
-                kit.servo[0].angle = 85
+                kit.servo[0].angle = 90
                 kit.servo[1].angle = 90
                 kit.servo[2].angle = 100
 
