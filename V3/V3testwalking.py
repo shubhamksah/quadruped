@@ -6,6 +6,9 @@ FLT = 88
 FLF = 129
 FLH = 100
 
+FLT1 = 68
+FLF1 = 116
+
 #Position Down = Tibia (35 Down), Femur (36 Back) (40,60)
 
 #Position Back = Tibia (50 Up), Femur (84 Back) (0,60)
@@ -28,14 +31,14 @@ def main():
 
             time.sleep(1)
 
-            pos1move = 0.15
-            pos2move = 0.2875
-            while pos2move <= 46:
-                kit.servo[1].angle = FLF + pos1move
-                pos1move += 0.15
-                kit.servo[0].angle = FLT + pos2move
-                pos2move += 0.2875
-                time.sleep(0.00025)
+            pos1move = 0.23125
+            pos2move = 0.4125
+            while pos2move <= 66:
+                kit.servo[1].angle = FLF1 + pos1move
+                pos1move += 0.23125
+                kit.servo[0].angle = FLT1 + pos2move
+                pos2move += 0.4125
+                time.sleep(0.0001)
 
             time.sleep(1)  
 
