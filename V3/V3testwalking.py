@@ -26,7 +26,7 @@ def main():
             kit.servo[1].angle = 116
             kit.servo[2].angle = 100
 
-            time.sleep(0.1)
+            time.sleep(1)
 
             pos1move = 0.15
             pos2move = 0.2875
@@ -37,11 +37,11 @@ def main():
                 pos2move += 0.2875
                 time.sleep(0.00025)
 
-            time.sleep(0.1)  
+            time.sleep(1)  
 
             kit.servo[0].angle = 85
 
-            time.sleep(0.1)
+            time.sleep(1)
 
             # kit.servo[0].angle = 88 - 35
             # kit.servo[1].angle = 120
