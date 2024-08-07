@@ -5,8 +5,8 @@ from adafruit_servokit import ServoKit
 FLT = 88
 FLF = 129
 FLH = 100
-FRT = 84
-FRF = 42
+FRT = 82
+FRF = 45
 FRH = 88
 BLT = 100
 BLF = 131
@@ -46,9 +46,9 @@ def main():
 
             #FL Movement
 
-            # kit.servo[0].angle = 68
-            # kit.servo[1].angle = 116
-            # kit.servo[2].angle = 100
+            # kit.servo[0].angle = FLT - 20
+            # kit.servo[1].angle = FLF - 13
+            # kit.servo[2].angle = FLH
 
             # time.sleep(0.1)
 
@@ -69,9 +69,9 @@ def main():
 
             #FR Movement
 
-            kit.servo[3].angle = 82 + 20
-            kit.servo[4].angle = 45 + 13
-            kit.servo[5].angle = 88
+            kit.servo[3].angle = FRT + 20
+            kit.servo[4].angle = FRF + 13
+            kit.servo[5].angle = FRH
 
             # time.sleep(0.1)
 
