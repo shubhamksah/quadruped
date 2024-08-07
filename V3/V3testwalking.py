@@ -6,7 +6,7 @@ FLT = 88
 FLF = 129
 FLH = 100
 
-#Position Down = Tibia (7 Down), Femur (42 Back) (35,75)
+#Position Down = Tibia (35 Down), Femur (36 Back) (40,60)
 
 #Position Back = Tibia (48 Up), Femur (70 Back) (-10,77)
 
@@ -22,7 +22,7 @@ def main():
         
         try:
 
-            kit.servo[0].angle = 88
+            kit.servo[0].angle = 88 - 35
             kit.servo[1].angle = 120
             kit.servo[2].angle = 100
 
