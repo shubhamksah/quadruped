@@ -103,7 +103,7 @@ def main():
     kit.servo[11].angle = BRH  
 
     #Up FR & BL
-    kit.servo[3].angle = FRT - Pos3T
+    kit.servo[3].angle = FRT + Pos3T
     kit.servo[6].angle = BLT - Pos3T
 
     #Back FL & BR
