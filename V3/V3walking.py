@@ -98,8 +98,6 @@ def main():
 
             time.sleep(MovementDelay)
 
-
-
             t += 0.05
             
         finally:
