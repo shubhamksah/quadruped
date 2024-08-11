@@ -5,7 +5,7 @@ from adafruit_servokit import ServoKit
 #Default Standing
 
 FLT = 88
-FLF = 129
+FLF = 130
 FLH = 100
 
 FRT = 84
@@ -63,8 +63,8 @@ def main():
 
     t = 0
 
-    kit.servo[0].angle = 90
-    kit.servo[1].angle = 90 - 5 + 45
+    kit.servo[0].angle = 85
+    kit.servo[1].angle = 130
     kit.servo[2].angle = FLH
     kit.servo[3].angle = 90
     kit.servo[4].angle = 90
