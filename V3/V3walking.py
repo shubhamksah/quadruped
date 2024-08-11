@@ -63,7 +63,7 @@ def main():
 
     t = 0
 
-    kit.servo[0].angle = 87
+    kit.servo[0].angle = 88
     kit.servo[1].angle = 130
     kit.servo[2].angle = FLH
     kit.servo[3].angle = 90
