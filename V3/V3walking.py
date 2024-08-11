@@ -38,7 +38,7 @@ BRF1 = BRF + 13
 
 Pos1T = 20 #Position 1 Tibia Movement Down
 Pos1F = 13 #Position 1 Femur Movement Forward
-Pos3T = 10 #Position 3 Tibia Movement from Default
+Pos3T = 15 #Position 3 Tibia Movement from Default
 
 Pos2T = 66 #Tibia Movement in Position 2
 Pos2F = 37 #Femur Movement in Position 2
