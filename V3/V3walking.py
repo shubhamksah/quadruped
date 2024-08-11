@@ -46,7 +46,7 @@ Pos2F = 37 #Femur Movement in Position 2
 Pos2TIncrement = Pos2T/160 #Tibia Movement Increment Position 2
 Pos2FIncrement = Pos2F/160 #Femur Movement Increment Position 2
 
-Pos2delay = 0.0005 #Position 2 Speed (Lower = Faster)
+Pos2delay = 0.000000001 #Position 2 Speed (Lower = Faster)
 
 MovementDelay = 0.1 #Full Movement Speed (Lower = Faster)
 
