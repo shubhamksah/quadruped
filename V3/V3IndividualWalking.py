@@ -8,7 +8,7 @@ FLT = 88
 FLF = 129
 FLH = 100
 
-FRT = 82
+FRT = 85
 FRF = 45
 FRH = 88
 
