@@ -111,8 +111,10 @@ def main():
     pos2move = Pos2TIncrement
     while pos2move <= Pos2T: 
         kit.servo[1].angle = FLF1 + pos1move
+        kit.servo[10].angle = BRF1 - pos1move
         pos1move += Pos2FIncrement
         kit.servo[0].angle = FLT1 + pos2move
+        kit.servo[9].angle = BRT1 - pos2move
         pos2move += Pos2TIncrement
         kit.servo[2].angle = FLH
         time.sleep(Pos2delay)
