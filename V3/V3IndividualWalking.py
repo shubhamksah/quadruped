@@ -16,7 +16,7 @@ BLT = 100
 BLF = 131
 BLH = 95
 
-BRT = 90
+BRT = 88
 BRF = 38
 BRH = 95 
 
