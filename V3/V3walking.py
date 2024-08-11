@@ -94,6 +94,29 @@ def main():
     kit.servo[9].angle = BRT + Pos1T
     kit.servo[10].angle = BRF + Pos1F
 
+    time.sleep(1)
+
+    #Hip Lock
+    kit.servo[2].angle = FLH 
+    kit.servo[5].angle = FRH
+    kit.servo[8].angle = BLH
+    kit.servo[11].angle = BRH  
+
+    #Up FR & BL
+    kit.servo[3].angle = FRT - Pos3T
+    kit.servo[6].angle = BLT - Pos3T
+
+    #Back FL & BR
+    pos1move = Pos2FIncrement
+    pos2move = Pos2TIncrement
+    while pos2move <= Pos2T: 
+        kit.servo[1].angle = FLF1 + pos1move
+        pos1move += Pos2FIncrement
+        kit.servo[0].angle = FLT1 + pos2move
+        pos2move += Pos2TIncrement
+        kit.servo[2].angle = FLH
+        time.sleep(Pos2delay)
+
 
 
 
