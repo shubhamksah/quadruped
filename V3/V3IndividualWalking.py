@@ -153,7 +153,7 @@ def main():
 
             #BR Movement
 
-            kit.servo[9].angle = 90
+            kit.servo[9].angle = 85
             kit.servo[10].angle = 83 - 45
             kit.servo[11].angle = BRH
 
