@@ -128,8 +128,8 @@ def main():
     kit.servo[11].angle = BRH 
 
     #Up FL & BR
-    kit.servo[0].angle = FLT - Pos3T
-    kit.servo[9].angle = BRT + Pos3T
+    kit.servo[0].angle = FLT - 5
+    kit.servo[9].angle = BRT + 5
 
     time.sleep(1)
 
