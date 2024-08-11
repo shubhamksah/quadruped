@@ -16,8 +16,8 @@ BLT = 100
 BLF = 131
 BLH = 95
 
-BRT = 93
-BRF = 41
+BRT = 85
+BRF = 38
 BRH = 95 
 
 #Position 2 Default
@@ -153,14 +153,10 @@ def main():
 
             #BR Movement
 
-            kit.servo[9].angle = 85
-            kit.servo[10].angle = 83 - 45
-            kit.servo[11].angle = BRH
-
             #Down
-            # kit.servo[9].angle = BRT + Pos1T
-            # kit.servo[10].angle = BRF + Pos1F
-            # kit.servo[11].angle = BRH
+            kit.servo[9].angle = BRT + Pos1T
+            kit.servo[10].angle = BRF + Pos1F
+            kit.servo[11].angle = BRH
 
             # time.sleep(MovementDelay)
 
