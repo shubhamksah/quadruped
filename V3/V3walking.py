@@ -40,7 +40,7 @@ Pos1T = 20 #Position 1 Tibia Movement Down
 Pos1F = 13 #Position 1 Femur Movement Forward
 Pos3T = 30 #Position 3 Tibia Movement from Default
 
-Pos2T = 66 #Tibia Movement in Position 2
+Pos2T = 60 #Tibia Movement in Position 2
 Pos2F = 37 #Femur Movement in Position 2
 
 Pos2TIncrement = Pos2T/160 #Tibia Movement Increment Position 2
