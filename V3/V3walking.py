@@ -8,16 +8,16 @@ FLT = 88
 FLF = 129
 FLH = 100
 
-FRT = 82
+FRT = 84
 FRF = 45
 FRH = 88
 
-BLT = 100
+BLT = 85
 BLF = 131
 BLH = 95
 
-BRT = 93
-BRF = 41
+BRT = 88
+BRF = 38
 BRH = 95 
 
 #Position 2 Default
@@ -63,9 +63,42 @@ def main():
 
     t = 0
 
+    kit.servo[0].angle = FLT
+    kit.servo[1].angle = FLF
+    kit.servo[2].angle = FLH
+    kit.servo[3].angle = FRT
+    kit.servo[4].angle = FRF
+    kit.servo[5].angle = FRH
+    kit.servo[6].angle = BLT
+    kit.servo[7].angle = BLF
+    kit.servo[8].angle = BLH
+    kit.servo[9].angle = BRT
+    kit.servo[10].angle = BRF
+    kit.servo[11].angle = BRH  
+
     while t <= 2.05: #Movement Loop
         
         try:
+            
+            #HIPS Lock
+            kit.servo[2].angle = FLH
+            kit.servo[5].angle = FRH
+            kit.servo[8].angle = BLH
+            kit.servo[11].angle = BRH  
+
+            #BL & FR DOWN
+            kit.servo[3].angle = FRT + Pos1T
+            kit.servo[4].angle = FRF + Pos1F
+            kit.servo[6].angle = BLT - Pos1T
+            kit.servo[7].angle = BLF - Pos1F
+
+            #FL & BR UP
+            kit.servo[0].angle = FLT - Pos3T
+            kit.servo[9].angle = BRT + Pos3T
+
+            time.sleep(MovementDelay)
+
+
 
             t += 0.05
             
