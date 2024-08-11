@@ -63,7 +63,7 @@ def main():
 
     t = 0
 
-    while t <= 2.05: #Movement Loop
+    while t <= 0.05: #Movement Loop
         
         try:
 
@@ -154,22 +154,22 @@ def main():
             #BR Movement
 
             #Down
-            # kit.servo[9].angle = BRT + Pos1T
-            # kit.servo[10].angle = BRF + Pos1F
-            # kit.servo[11].angle = BRH
+            kit.servo[9].angle = BRT + Pos1T
+            kit.servo[10].angle = BRF + Pos1F
+            kit.servo[11].angle = BRH
 
             # time.sleep(MovementDelay)
 
             # #Back
-            pos1move = Pos2FIncrement
-            pos2move = Pos2TIncrement
-            while pos2move <= Pos2T:
-                kit.servo[10].angle = BRF1 - pos1move
-                pos1move += Pos2FIncrement
-                kit.servo[9].angle = BRT1 - pos2move
-                pos2move += Pos2TIncrement
-                kit.servo[11].angle = BRH
-                time.sleep(Pos2delay)
+            # pos1move = Pos2FIncrement
+            # pos2move = Pos2TIncrement
+            # while pos2move <= Pos2T:
+            #     kit.servo[10].angle = BRF1 - pos1move
+            #     pos1move += Pos2FIncrement
+            #     kit.servo[9].angle = BRT1 - pos2move
+            #     pos2move += Pos2TIncrement
+            #     kit.servo[11].angle = BRH
+            #     time.sleep(Pos2delay)
             
 
             # time.sleep(MovementDelay)  
@@ -183,7 +183,7 @@ def main():
             t += 0.05
             
         finally:
-            if t==2.05:
+            if t==0.05:
                 print ("STOP") #Default Position Reset
                 kit.servo[0].angle = FLT
                 kit.servo[1].angle = FLF
