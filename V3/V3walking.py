@@ -8,8 +8,8 @@ FLT = 88
 FLF = 130
 FLH = 100
 
-FRT = 84
-FRF = 45
+FRT = 90
+FRF = 50
 FRH = 88
 
 BLT = 85
@@ -17,7 +17,7 @@ BLF = 133
 BLH = 95
 
 BRT = 88
-BRF = 38
+BRF = 45
 BRH = 95 
 
 #Position 2 Default
@@ -66,14 +66,14 @@ def main():
     kit.servo[0].angle = FLT
     kit.servo[1].angle = FLF
     kit.servo[2].angle = FLH
-    kit.servo[3].angle = 90
-    kit.servo[4].angle = 95 - 45
+    kit.servo[3].angle = FRT
+    kit.servo[4].angle = FRF
     kit.servo[5].angle = FRH
     kit.servo[6].angle = BLT
     kit.servo[7].angle = BLF
     kit.servo[8].angle = BLH
     kit.servo[9].angle = 90
-    kit.servo[10].angle = 90
+    kit.servo[10].angle = 45
     kit.servo[11].angle = BRH  
 
 
