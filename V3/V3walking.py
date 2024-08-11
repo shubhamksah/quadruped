@@ -121,6 +121,20 @@ def main():
 
     time.sleep(1)
 
+    #Hip Lock
+    kit.servo[2].angle = FLH 
+    kit.servo[5].angle = FRH
+    kit.servo[8].angle = BLH
+    kit.servo[11].angle = BRH 
+
+    #Up FL & BR
+    kit.servo[0].angle = FLT - Pos3T
+    kit.servo[9].angle = BRT + Pos3T
+
+    time.sleep(1)
+
+
+
 
 
 
