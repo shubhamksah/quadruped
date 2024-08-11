@@ -46,9 +46,9 @@ Pos2F = 37 #Femur Movement in Position 2
 Pos2TIncrement = Pos2T/160 #Tibia Movement Increment Position 2
 Pos2FIncrement = Pos2F/160 #Femur Movement Increment Position 2
 
-Pos2delay = 0.00001 #Position 2 Speed (Lower = Faster)
+Pos2delay = 0.000005 #Position 2 Speed (Lower = Faster)
 
-MovementDelay = 0.03 #Full Movement Speed (Lower = Faster)
+MovementDelay = 0.01 #Full Movement Speed (Lower = Faster)
 
 
 #Position Down = Tibia (20 Down), Femur (13 Forward)
@@ -78,7 +78,7 @@ def main():
 
     time.sleep(1)
 
-    while t <= 2.05: #Movement Loop
+    while t <= 3.05: #Movement Loop
         
         try:
             #Hip Lock
@@ -176,7 +176,7 @@ def main():
             t += 0.05
     
         finally:
-            if t==2.05:
+            if t==3.05:
                 print ("STOP") #Default Position Reset
                 kit.servo[0].angle = FLT
                 kit.servo[1].angle = FLF
