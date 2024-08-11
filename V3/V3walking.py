@@ -173,7 +173,7 @@ def main():
 
             time.sleep(MovementDelay)
 
-            t += 0.5
+            t += 0.05
     
         finally:
             if t==2.05:
