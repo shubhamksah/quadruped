@@ -78,97 +78,118 @@ def main():
 
     time.sleep(1)
 
-    #Hip Lock
-    kit.servo[2].angle = FLH 
-    kit.servo[5].angle = FRH
-    kit.servo[8].angle = BLH
-    kit.servo[11].angle = BRH  
+    while t <= 2.05: #Movement Loop
+        
+        try:
+            #Hip Lock
+            kit.servo[2].angle = FLH 
+            kit.servo[5].angle = FRH
+            kit.servo[8].angle = BLH
+            kit.servo[11].angle = BRH  
 
-    #Up FR & BL
-    kit.servo[3].angle = FRT + Pos3T
-    kit.servo[4].angle = FRF
-    kit.servo[6].angle = BLT - Pos3T
-    kit.servo[7].angle = BLF
+            #Up FR & BL
+            kit.servo[3].angle = FRT + Pos3T
+            kit.servo[4].angle = FRF
+            kit.servo[6].angle = BLT - Pos3T
+            kit.servo[7].angle = BLF
+            
+            #Down FL & BR
+            kit.servo[0].angle = FLT - Pos1T 
+            kit.servo[1].angle = FLF - Pos1F
+            kit.servo[9].angle = BRT + Pos1T
+            kit.servo[10].angle = BRF + Pos1F
+
+            time.sleep(MovementDelay)
+
+            #Hip Lock
+            kit.servo[2].angle = FLH 
+            kit.servo[5].angle = FRH
+            kit.servo[8].angle = BLH
+            kit.servo[11].angle = BRH  
+
+            #Up FR & BL
+            kit.servo[3].angle = FRT + Pos3T
+            kit.servo[4].angle = FRF
+            kit.servo[6].angle = BLT - Pos3T
+            kit.servo[7].angle = BLF
+
+            #Back FL & BR
+            pos1move = Pos2FIncrement
+            pos2move = Pos2TIncrement
+            while pos2move <= Pos2T: 
+                kit.servo[1].angle = FLF1 + pos1move
+                kit.servo[10].angle = BRF1 - pos1move
+                pos1move += Pos2FIncrement
+                kit.servo[0].angle = FLT1 + pos2move
+                kit.servo[9].angle = BRT1 - pos2move
+                pos2move += Pos2TIncrement
+                time.sleep(Pos2delay)
+
+            time.sleep(MovementDelay)
+
+            #Hip Lock
+            kit.servo[2].angle = FLH 
+            kit.servo[5].angle = FRH
+            kit.servo[8].angle = BLH
+            kit.servo[11].angle = BRH 
+
+            #Up FL & BR
+            kit.servo[0].angle = FLT - Pos3T
+            kit.servo[1].angle = FLF
+            kit.servo[9].angle = BRT + Pos3T
+            kit.servo[10].angle = BRF
+
+            #Down FR & BL
+            kit.servo[3].angle = FRT + Pos1T
+            kit.servo[4].angle = FRF + Pos1F
+            kit.servo[6].angle = BLT - Pos1T
+            kit.servo[7].angle = BLF - Pos1F
+
+            time.sleep(MovementDelay)
+
+            #Hip Lock
+            kit.servo[2].angle = FLH 
+            kit.servo[5].angle = FRH
+            kit.servo[8].angle = BLH
+            kit.servo[11].angle = BRH 
+
+            #Up FL & BR
+            kit.servo[0].angle = FLT - Pos3T
+            kit.servo[1].angle = FLF
+            kit.servo[9].angle = BRT + Pos3T
+            kit.servo[10].angle = BRF
+
+            #Back FL & BR
+            pos1move = Pos2FIncrement
+            pos2move = Pos2TIncrement
+            while pos2move <= Pos2T:
+                kit.servo[4].angle = FRF1 - pos1move
+                kit.servo[7].angle = BLF1 + pos1move
+                pos1move += Pos2FIncrement
+                kit.servo[3].angle = FRT1 - pos2move
+                kit.servo[6].angle = BLT1 + pos2move
+                pos2move += Pos2TIncrement
+                time.sleep(Pos2delay)
+
+            time.sleep(MovementDelay)
+
+            t += 0.5
     
-    #Down FL & BR
-    kit.servo[0].angle = FLT - Pos1T 
-    kit.servo[1].angle = FLF - Pos1F
-    kit.servo[9].angle = BRT + Pos1T
-    kit.servo[10].angle = BRF + Pos1F
-
-    time.sleep(1)
-
-    #Hip Lock
-    kit.servo[2].angle = FLH 
-    kit.servo[5].angle = FRH
-    kit.servo[8].angle = BLH
-    kit.servo[11].angle = BRH  
-
-    #Up FR & BL
-    kit.servo[3].angle = FRT + Pos3T
-    kit.servo[4].angle = FRF
-    kit.servo[6].angle = BLT - Pos3T
-    kit.servo[7].angle = BLF
-
-    #Back FL & BR
-    pos1move = Pos2FIncrement
-    pos2move = Pos2TIncrement
-    while pos2move <= Pos2T: 
-        kit.servo[1].angle = FLF1 + pos1move
-        kit.servo[10].angle = BRF1 - pos1move
-        pos1move += Pos2FIncrement
-        kit.servo[0].angle = FLT1 + pos2move
-        kit.servo[9].angle = BRT1 - pos2move
-        pos2move += Pos2TIncrement
-        time.sleep(Pos2delay)
-
-    time.sleep(1)
-
-    #Hip Lock
-    kit.servo[2].angle = FLH 
-    kit.servo[5].angle = FRH
-    kit.servo[8].angle = BLH
-    kit.servo[11].angle = BRH 
-
-    #Up FL & BR
-    kit.servo[0].angle = FLT - Pos3T
-    kit.servo[1].angle = FLF
-    kit.servo[9].angle = BRT + Pos3T
-    kit.servo[10].angle = BRF
-
-    #Down FR & BL
-    kit.servo[3].angle = FRT + Pos1T
-    kit.servo[4].angle = FRF + Pos1F
-    kit.servo[6].angle = BLT - Pos1T
-    kit.servo[7].angle = BLF - Pos1F
-
-    time.sleep(1)
-
-    #Hip Lock
-    kit.servo[2].angle = FLH 
-    kit.servo[5].angle = FRH
-    kit.servo[8].angle = BLH
-    kit.servo[11].angle = BRH 
-
-    #Up FL & BR
-    kit.servo[0].angle = FLT - Pos3T
-    kit.servo[1].angle = FLF
-    kit.servo[9].angle = BRT + Pos3T
-    kit.servo[10].angle = BRF
-
-    #Back FL & BR
-    pos1move = Pos2FIncrement
-    pos2move = Pos2TIncrement
-    while pos2move <= Pos2T:
-        kit.servo[4].angle = FRF1 - pos1move
-        kit.servo[7].angle = BLF1 + pos1move
-        pos1move += Pos2FIncrement
-        kit.servo[3].angle = FRT1 - pos2move
-        kit.servo[6].angle = BLT1 + pos2move
-        pos2move += Pos2TIncrement
-        time.sleep(Pos2delay)
-
-    time.sleep(1)
+        finally:
+            if t==2.05:
+                print ("STOP") #Default Position Reset
+                kit.servo[0].angle = FLT
+                kit.servo[1].angle = FLF
+                kit.servo[2].angle = FLH
+                kit.servo[3].angle = FRT
+                kit.servo[4].angle = FRF
+                kit.servo[5].angle = FRH
+                kit.servo[6].angle = BLT
+                kit.servo[7].angle = BLF
+                kit.servo[8].angle = BLH
+                kit.servo[9].angle = BRT
+                kit.servo[10].angle = BRF
+                kit.servo[11].angle = BRH 
 
 if __name__ == "__main__":
     main()
