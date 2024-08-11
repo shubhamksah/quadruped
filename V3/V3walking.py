@@ -76,6 +76,21 @@ def main():
     kit.servo[10].angle = BRF
     kit.servo[11].angle = BRH  
 
+    time.sleep(1)
+
+    #Hip Lock
+    kit.servo[2].angle = FLH 
+    kit.servo[5].angle = FRH
+    kit.servo[8].angle = BLH
+    kit.servo[11].angle = BRH  
+    
+    #Down
+    kit.servo[0].angle = FLT - Pos1T 
+    kit.servo[1].angle = FLF - Pos1F
+    kit.servo[9].angle = BRT + Pos1T
+    kit.servo[10].angle = BRF + Pos1F
+
+
 
 if __name__ == "__main__":
     main()
