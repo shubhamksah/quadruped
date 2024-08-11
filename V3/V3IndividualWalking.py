@@ -12,7 +12,7 @@ FRT = 84
 FRF = 45
 FRH = 88
 
-BLT = 100
+BLT = 110
 BLF = 131
 BLH = 95
 
