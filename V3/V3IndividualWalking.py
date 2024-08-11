@@ -63,7 +63,7 @@ def main():
 
     t = 0
 
-    while t <= 0.05: #Movement Loop
+    while t <= 2.05: #Movement Loop
         
         try:
 
@@ -183,7 +183,7 @@ def main():
             t += 0.05
             
         finally:
-            if t==0.05:
+            if t==2.05:
                 print ("STOP") #Default Position Reset
                 kit.servo[0].angle = FLT
                 kit.servo[1].angle = FLF
