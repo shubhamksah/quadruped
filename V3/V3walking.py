@@ -38,7 +38,7 @@ BRF1 = BRF + 13
 
 Pos1T = 20 #Position 1 Tibia Movement Down
 Pos1F = 13 #Position 1 Femur Movement Forward
-Pos3T = 15 #Position 3 Tibia Movement from Default
+Pos3T = 25 #Position 3 Tibia Movement from Default
 
 Pos2T = 66 #Tibia Movement in Position 2
 Pos2F = 37 #Femur Movement in Position 2
@@ -85,7 +85,7 @@ def main():
     kit.servo[11].angle = BRH  
 
     #Up FR & BL
-    kit.servo[3].angle = FRT - Pos3T
+    kit.servo[3].angle = FRT + Pos3T
     kit.servo[6].angle = BLT - Pos3T
     
     #Down FL & BR
