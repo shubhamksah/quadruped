@@ -67,13 +67,13 @@ def main():
     kit.servo[1].angle = FLF
     kit.servo[2].angle = FLH
     kit.servo[3].angle = FRT
-    kit.servo[4].angle = FRF + 1
+    kit.servo[4].angle = FRF
     kit.servo[5].angle = FRH
     kit.servo[6].angle = BLT
     kit.servo[7].angle = BLF - 4
     kit.servo[8].angle = BLH
     kit.servo[9].angle = BRT
-    kit.servo[10].angle = BRF + 2
+    kit.servo[10].angle = BRF + 1
     kit.servo[11].angle = BRH  
 
     # while t <= 3.05:
