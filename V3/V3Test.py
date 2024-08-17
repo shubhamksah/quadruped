@@ -23,16 +23,16 @@ BRH = 95
 #Position 2 Default
 
 FLT1 = FLT + 20
-FLF1 = FLF - 13
+FLF1 = FLF + 13
 
 FRT1 = FRT - 20
-FRF1 = FRF + 13
+FRF1 = FRF - 13
 
 BLT1 = BLT + 20
-BLF1 = BLF - 13
+BLF1 = BLF + 13
 
 BRT1 = BRT - 20
-BRF1 = BRF + 13
+BRF1 = BRF - 13
 
 #Variables
 
@@ -79,16 +79,16 @@ def main():
     time.sleep(2)
 
     kit.servo[0].angle = FLT1
-    kit.servo[1].angle = FLF
+    kit.servo[1].angle = FLF1
     kit.servo[2].angle = FLH
     kit.servo[3].angle = FRT1
-    kit.servo[4].angle = FRF
+    kit.servo[4].angle = FRF1
     kit.servo[5].angle = FRH
     kit.servo[6].angle = BLT1
-    kit.servo[7].angle = BLF
+    kit.servo[7].angle = BLF1
     kit.servo[8].angle = BLH
     kit.servo[9].angle = BRT1
-    kit.servo[10].angle = BRF
+    kit.servo[10].angle = BRF1
     kit.servo[11].angle = BRH  
 
 
