@@ -37,7 +37,7 @@ BRF1 = BRF - 20
 #Variables
 
 Pos2T = 25 #Tibia Movement in Position 2
-Pos2F = 15 #Femur Movement in Position 2
+Pos2F = 12 #Femur Movement in Position 2
 
 Pos2TIncrement = Pos2T/80 #Tibia Movement Increment Position 2
 Pos2FIncrement = Pos2F/80 #Femur Movement Increment Position 2
