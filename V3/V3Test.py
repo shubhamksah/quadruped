@@ -69,7 +69,7 @@ def main():
     kit.servo[3].angle = FRT
     kit.servo[4].angle = FRF
     kit.servo[5].angle = FRH
-    kit.servo[6].angle = 100
+    kit.servo[6].angle = 98
     kit.servo[7].angle = BLF
     kit.servo[8].angle = BLH
     kit.servo[9].angle = 90
