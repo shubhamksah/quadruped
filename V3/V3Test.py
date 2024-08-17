@@ -17,7 +17,7 @@ BLF = 133
 BLH = 95
 
 BRT = 88
-BRF = 38
+BRF = 50
 BRH = 95 
 
 #Position 2 Default
@@ -72,8 +72,8 @@ def main():
     kit.servo[6].angle = BLT
     kit.servo[7].angle = BLF
     kit.servo[8].angle = BLH
-    kit.servo[9].angle = 88
-    kit.servo[10].angle = 95 - 45
+    kit.servo[9].angle = BRT
+    kit.servo[10].angle = BRF
     kit.servo[11].angle = BRH  
 
     # while t <= 3.05:
