@@ -22,16 +22,16 @@ BRH = 95
 
 #Position 2 Default
 
-FLT1 = FLT - 20
+FLT1 = FLT + 20
 FLF1 = FLF - 13
 
-FRT1 = FRT + 20
+FRT1 = FRT - 20
 FRF1 = FRF + 13
 
-BLT1 = BLT - 20
+BLT1 = BLT + 20
 BLF1 = BLF - 13
 
-BRT1 = BRT + 20
+BRT1 = BRT - 20
 BRF1 = BRF + 13
 
 #Variables
