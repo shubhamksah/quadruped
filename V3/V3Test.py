@@ -63,53 +63,53 @@ def main():
 
     t = 0
 
-    kit.servo[0].angle = FLT
-    kit.servo[1].angle = FLF
+    kit.servo[0].angle = 90
+    kit.servo[1].angle = 90
     kit.servo[2].angle = FLH
-    kit.servo[3].angle = FRT
-    kit.servo[4].angle = FRF
+    kit.servo[3].angle = 90
+    kit.servo[4].angle = 90
     kit.servo[5].angle = FRH
-    kit.servo[6].angle = BLT
-    kit.servo[7].angle = BLF
+    kit.servo[6].angle = 90
+    kit.servo[7].angle = 90
     kit.servo[8].angle = BLH
-    kit.servo[9].angle = BRT
-    kit.servo[10].angle = BRF
+    kit.servo[9].angle = 90
+    kit.servo[10].angle = 90
     kit.servo[11].angle = BRH  
 
-    while t <= 3.05:
-        try:
-            #FL Movement
+    # while t <= 3.05:
+    #     try:
+    #         #FL Movement
 
-            #Down
-            kit.servo[0].angle = FLT - Pos1T 
-            kit.servo[1].angle = FLF - Pos1F
-            kit.servo[2].angle = FLH 
+    #         #Down
+    #         kit.servo[0].angle = FLT - Pos1T 
+    #         kit.servo[1].angle = FLF - Pos1F
+    #         kit.servo[2].angle = FLH 
 
-            time.sleep(MovementDelay)
+    #         time.sleep(MovementDelay)
 
-            #Back
-            pos1move = Pos2FIncrement
-            pos2move = Pos2TIncrement
-            while pos2move <= Pos2T: 
-                kit.servo[1].angle = FLF1 + pos1move
-                pos1move += Pos2FIncrement
-                kit.servo[0].angle = FLT1 + pos2move
-                pos2move += Pos2TIncrement
-                kit.servo[2].angle = FLH
-                time.sleep(Pos2delay)
+    #         #Back
+    #         pos1move = Pos2FIncrement
+    #         pos2move = Pos2TIncrement
+    #         while pos2move <= Pos2T: 
+    #             kit.servo[1].angle = FLF1 + pos1move
+    #             pos1move += Pos2FIncrement
+    #             kit.servo[0].angle = FLT1 + pos2move
+    #             pos2move += Pos2TIncrement
+    #             kit.servo[2].angle = FLH
+    #             time.sleep(Pos2delay)
 
-            time.sleep(MovementDelay)  
+    #         time.sleep(MovementDelay)  
 
-            #Up
-            kit.servo[0].angle = FLT - Pos3T
-            kit.servo[2].angle = FLH
+    #         #Up
+    #         kit.servo[0].angle = FLT - Pos3T
+    #         kit.servo[2].angle = FLH
 
-            time.sleep(MovementDelay)
+    #         time.sleep(MovementDelay)
 
-            t += 0.05
+    #         t += 0.05
 
-        finally:
-            print("STOP")
+    #     finally:
+    #         print("STOP")
 
 if __name__ == "__main__":
     main()

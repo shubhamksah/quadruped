@@ -34,7 +34,7 @@ BLF1 = BLF - 13
 BRT1 = BRT + 20
 BRF1 = BRF + 13
 
-#Variables
+#Variables 
 
 Pos1T = 20 #Position 1 Tibia Movement Down
 Pos1F = 13 #Position 1 Femur Movement Forward
