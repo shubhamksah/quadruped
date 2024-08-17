@@ -78,18 +78,18 @@ def main():
 
     time.sleep(2)
 
-    # kit.servo[0].angle = FLT1
-    # kit.servo[1].angle = FLF1
-    # kit.servo[2].angle = FLH
-    # kit.servo[3].angle = FRT1
-    # kit.servo[4].angle = FRF1
-    # kit.servo[5].angle = FRH
-    # kit.servo[6].angle = BLT1
-    # kit.servo[7].angle = BLF1
-    # kit.servo[8].angle = BLH
-    # kit.servo[9].angle = BRT1
-    # kit.servo[10].angle = BRF1
-    # kit.servo[11].angle = BRH  
+    kit.servo[0].angle = FLT1
+    kit.servo[1].angle = FLF
+    kit.servo[2].angle = FLH
+    kit.servo[3].angle = FRT1
+    kit.servo[4].angle = FRF
+    kit.servo[5].angle = FRH
+    kit.servo[6].angle = BLT1
+    kit.servo[7].angle = BLF
+    kit.servo[8].angle = BLH
+    kit.servo[9].angle = BRT1
+    kit.servo[10].angle = BRF
+    kit.servo[11].angle = BRH  
 
 
     # while t <= 3.05:
