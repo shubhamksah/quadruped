@@ -13,11 +13,11 @@ FRF = 43
 FRH = 88
 
 BLT = 100
-BLF = 126
+BLF = 129
 BLH = 95
 
 BRT = 86
-BRF = 54
+BRF = 51
 BRH = 95 
 
 #Variables
@@ -29,10 +29,10 @@ FRT1 = 92 - 68
 FRF1 = 43 - 30
 
 BLT1 = 100 + 68
-BLF1 = 126 + 30
+BLF1 = 129 + 30
 
 BRT1 = 86 - 68
-BRF1 = 54 - 30
+BRF1 = 51 - 30
 
 Pos2T = 68 #Tibia Movement in Position 2
 Pos2F = 30 #Femur Movement in Position 2
