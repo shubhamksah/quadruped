@@ -22,6 +22,18 @@ BRH = 95
 
 #Variables
 
+FLT1 = 88 + 65
+FLF1 = 129 + 30
+
+FRT1 = 92 - 65
+FRF1 = 43 - 30
+
+BLT1 = 100 + 65
+BLF1 = 129 + 30
+
+BRT1 = 86 - 65
+BRF1 = 51 - 30
+
 Pos2T = 65 #Tibia Movement in Position 2
 Pos2F = 30 #Femur Movement in Position 2
 
@@ -75,6 +87,26 @@ def main():
         time.sleep(Pos2delay)
 
     time.sleep(1)
+
+    pos1move = Pos2FIncrement
+    pos2move = Pos2TIncrement
+
+    while pos2move <= Pos2T: 
+        kit.servo[1].angle = FLF1 - pos1move
+        kit.servo[4].angle = FRF1 + pos1move
+        kit.servo[7].angle = BLF1 - pos1move
+        kit.servo[10].angle = BRF1 + pos1move
+        pos1move += Pos2FIncrement
+        kit.servo[0].angle = FLT1 - pos2move
+        kit.servo[3].angle = FRT1 + pos2move
+        kit.servo[6].angle = BLT1 - pos2move
+        kit.servo[9].angle = BRT1 + pos2move
+        pos2move += Pos2TIncrement
+        kit.servo[2].angle = FLH
+        kit.servo[5].angle = FRH
+        kit.servo[8].angle = BLH
+        kit.servo[11].angle = BRH  
+        time.sleep(Pos2delay)
 
     # kit.servo[2].angle = FLH
     # kit.servo[5].angle = FRH
