@@ -54,11 +54,11 @@ Pos2F = 30 #Femur Movement in Position 2
 Pos3T = 34 #Tibia Movement in Position 3
 Pos3F = 15 #Femur Movement in Position 3
 
-Pos2TIncrement = Pos2T/60 #Tibia Movement Increment Position 2
-Pos2FIncrement = Pos2F/60 #Femur Movement Increment Position 2
+Pos2TIncrement = Pos2T/30 #Tibia Movement Increment Position 2
+Pos2FIncrement = Pos2F/30 #Femur Movement Increment Position 2
 
-Pos3TIncrement = Pos3T/60 #Tibia Movement Increment Position 2
-Pos3FIncrement = Pos3F/60 #Femur Movement Increment Position 2
+Pos3TIncrement = Pos3T/30 #Tibia Movement Increment Position 2
+Pos3FIncrement = Pos3F/30 #Femur Movement Increment Position 2
 
 Posdelay = 0.000000000001 #Position 2 Speed (Lower = Faster)
 
