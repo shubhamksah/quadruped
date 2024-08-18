@@ -51,21 +51,6 @@ def main():
 
     t = 0
 
-    kit.servo[0].angle = FLT
-    kit.servo[1].angle = FLF
-    kit.servo[2].angle = FLH
-    kit.servo[3].angle = FRT
-    kit.servo[4].angle = FRF
-    kit.servo[5].angle = FRH
-    kit.servo[6].angle = BLT
-    kit.servo[7].angle = BLF
-    kit.servo[8].angle = BLH
-    kit.servo[9].angle = BRT
-    kit.servo[10].angle = BRF
-    kit.servo[11].angle = BRH  
-
-    time.sleep(1)
-
     pos1move = Pos2FIncrement
     pos2move = Pos2TIncrement
 
