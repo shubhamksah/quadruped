@@ -17,7 +17,7 @@ BLF = 127
 BLH = 95
 
 BRT = 86
-BRF = 53
+BRF = 54
 BRH = 95 
 
 #Variables
@@ -32,7 +32,7 @@ BLT1 = 100 + 68
 BLF1 = 127 + 30
 
 BRT1 = 86 - 68
-BRF1 = 53 - 30
+BRF1 = 54 - 30
 
 Pos2T = 68 #Tibia Movement in Position 2
 Pos2F = 30 #Femur Movement in Position 2
