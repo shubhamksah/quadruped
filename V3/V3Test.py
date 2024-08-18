@@ -79,24 +79,24 @@ def main():
     kit.servo[10].angle = BRF
     kit.servo[11].angle = BRH  
 
-    time.sleep(2)
+    time.sleep(1)
 
     kit.servo[2].angle = FLH
     kit.servo[5].angle = FRH
     kit.servo[8].angle = BLH
     kit.servo[11].angle = BRH 
 
-    kit.servo[0].angle = FLT + 12 + 50
-    kit.servo[1].angle = FLF + 9 + 21
+    kit.servo[0].angle = FLT + 62
+    kit.servo[1].angle = FLF + 30
 
-    kit.servo[3].angle = FRT - 10 - 50
-    kit.servo[4].angle = FRF - 9 - 21
+    kit.servo[3].angle = FRT - 60
+    kit.servo[4].angle = FRF - 30
 
-    kit.servo[6].angle = BLT + 10 + 50
-    kit.servo[7].angle = BLF + 10 + 21
+    kit.servo[6].angle = BLT + 60
+    kit.servo[7].angle = BLF + 31
 
-    kit.servo[9].angle = BRT - 10 - 50
-    kit.servo[10].angle = BRF - 10 - 21
+    kit.servo[9].angle = BRT - 60
+    kit.servo[10].angle = BRF - 31
 
 
 
