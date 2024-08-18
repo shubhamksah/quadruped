@@ -37,8 +37,8 @@ BRF1 = 51 - 30
 Pos2T = 65 #Tibia Movement in Position 2
 Pos2F = 30 #Femur Movement in Position 2
 
-Pos2TIncrement = Pos2T/100 #Tibia Movement Increment Position 2
-Pos2FIncrement = Pos2F/100 #Femur Movement Increment Position 2
+Pos2TIncrement = Pos2T/60 #Tibia Movement Increment Position 2
+Pos2FIncrement = Pos2F/60 #Femur Movement Increment Position 2
 
 Pos2delay = 0.000000000001 #Position 2 Speed (Lower = Faster)
 Pos3delay = 0.0000000001 #Position 3 Speed (Lower = Faster)
