@@ -34,7 +34,7 @@ BLF1 = 126 + 30
 BRT1 = 86 - 68
 BRF1 = 54 - 30
 
-Pos2T = 66 #Tibia Movement in Position 2
+Pos2T = 68 #Tibia Movement in Position 2
 Pos2F = 30 #Femur Movement in Position 2
 
 Pos2TIncrement = Pos2T/40 #Tibia Movement Increment Position 2
