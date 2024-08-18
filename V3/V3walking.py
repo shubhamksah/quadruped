@@ -5,57 +5,70 @@ from adafruit_servokit import ServoKit
 #Default Standing
 
 FLT = 88
-FLF = 130
+FLF = 129
 FLH = 100
 
-FRT = 90
-FRF = 50
+FRT = 92
+FRF = 43
 FRH = 88
 
-BLT = 85
-BLF = 128
+BLT = 100
+BLF = 129
 BLH = 95
 
-BRT = 90
-BRF = 45
+BRT = 86
+BRF = 51
 BRH = 95 
 
-#Position 2 Default
+#Variables
 
-FLT1 = FLT - 20
-FLF1 = FLF - 13
+FLT1 = 88 + 68
+FLF1 = 129 + 30
 
-FRT1 = FRT + 20
-FRF1 = FRF + 13
+FRT1 = 92 - 68
+FRF1 = 43 - 30
 
-BLT1 = BLT - 20
-BLF1 = BLF - 13
+BLT1 = 100 + 68
+BLF1 = 129 + 30
 
-BRT1 = BRT + 20
-BRF1 = BRF + 13
+BRT1 = 86 - 68
+BRF1 = 51 - 30
 
-#Variables 
+#Variables
 
-Pos1T = 20 #Position 1 Tibia Movement Down
-Pos1F = 13 #Position 1 Femur Movement Forward
-Pos3T = 15 #Position 3 Tibia Movement from Default
+FLT2 = FLT1 - 48
+FLF2 = FLF1 - 15
 
-Pos2T = 60 #Tibia Movement in Position 2
-Pos2F = 37 #Femur Movement in Position 2
+FRT2 = FRT1 + 48
+FRF2 = FRF1 + 15
 
-Pos2TIncrement = Pos2T/160 #Tibia Movement Increment Position 2
-Pos2FIncrement = Pos2F/160 #Femur Movement Increment Position 2
+BLT2 = BLT1 - 48
+BLF2 = BLF1 - 15
 
-Pos2delay = 0.000000001 #Position 2 Speed (Lower = Faster)
+BRT2 = BRT1 + 48
+BRF2 = BRF1 + 15
 
-MovementDelay = 0.01 #Full Movement Speed (Lower = Faster)
+Pos1T = 20 #Tibia Movement in Position 1
+Pos1F = 15 #Femur Movement in Position 1
 
+Pos2T = 68 #Tibia Movement in Position 2
+Pos2F = 30 #Femur Movement in Position 2
 
-#Position Down = Tibia (20 Down), Femur (13 Forward)
+Pos3T = 48 #Tibia Movement in Position 3
+Pos3F = 15 #Femur Movement in Position 3
 
-#Position Back = Tibia (66 Up + last pos), Femur (37 Back + last pos)
+Pos1TIncrement = Pos1T/40 #Tibia Movement Increment Position 2
+Pos1FIncrement = Pos1F/40 #Femur Movement Increment Position 2
 
-#Position Up = Tibia (90 - 3 Down)
+Pos2TIncrement = Pos2T/40 #Tibia Movement Increment Position 2
+Pos2FIncrement = Pos2F/40 #Femur Movement Increment Position 2
+
+Pos3TIncrement = Pos3T/40 #Tibia Movement Increment Position 2
+Pos3FIncrement = Pos3F/40 #Femur Movement Increment Position 2
+
+Posdelay = 0.000000000001 #Position 2 Speed (Lower = Faster)
+
+MovementDelay = 0.0 #Full Movement Speed (Lower = Faster)
 
 kit = ServoKit(channels=16) #Initializes Servos
 
@@ -81,97 +94,7 @@ def main():
     while t <= 3.05: #Movement Loop
         
         try:
-            #Hip Lock
-            kit.servo[2].angle = FLH 
-            kit.servo[5].angle = FRH
-            kit.servo[8].angle = BLH
-            kit.servo[11].angle = BRH  
-
-            #Up FR & BL
-            kit.servo[3].angle = FRT + Pos3T
-            kit.servo[4].angle = FRF
-            kit.servo[6].angle = BLT - Pos3T
-            kit.servo[7].angle = BLF
             
-            #Down FL & BR
-            kit.servo[0].angle = FLT - Pos1T 
-            kit.servo[1].angle = FLF - Pos1F
-            kit.servo[9].angle = BRT + Pos1T
-            kit.servo[10].angle = BRF + Pos1F
-
-            time.sleep(MovementDelay)
-
-            #Hip Lock
-            kit.servo[2].angle = FLH 
-            kit.servo[5].angle = FRH
-            kit.servo[8].angle = BLH
-            kit.servo[11].angle = BRH  
-
-            #Up FR & BL
-            kit.servo[3].angle = FRT + Pos3T
-            kit.servo[4].angle = FRF
-            kit.servo[6].angle = BLT - Pos3T
-            kit.servo[7].angle = BLF
-
-            #Back FL & BR
-            pos1move = Pos2FIncrement
-            pos2move = Pos2TIncrement
-            while pos2move <= Pos2T: 
-                kit.servo[1].angle = FLF1 + pos1move
-                kit.servo[10].angle = BRF1 - pos1move
-                pos1move += Pos2FIncrement
-                kit.servo[0].angle = FLT1 + pos2move
-                kit.servo[9].angle = BRT1 - pos2move
-                pos2move += Pos2TIncrement
-                time.sleep(Pos2delay)
-
-            time.sleep(MovementDelay)
-
-            #Hip Lock
-            kit.servo[2].angle = FLH 
-            kit.servo[5].angle = FRH
-            kit.servo[8].angle = BLH
-            kit.servo[11].angle = BRH 
-
-            #Up FL & BR
-            kit.servo[0].angle = FLT - Pos3T
-            kit.servo[1].angle = FLF
-            kit.servo[9].angle = BRT + Pos3T
-            kit.servo[10].angle = BRF
-
-            #Down FR & BL
-            kit.servo[3].angle = FRT + Pos1T
-            kit.servo[4].angle = FRF + Pos1F
-            kit.servo[6].angle = BLT - Pos1T
-            kit.servo[7].angle = BLF - Pos1F
-
-            time.sleep(MovementDelay)
-
-            #Hip Lock
-            kit.servo[2].angle = FLH 
-            kit.servo[5].angle = FRH
-            kit.servo[8].angle = BLH
-            kit.servo[11].angle = BRH 
-
-            #Up FL & BR
-            kit.servo[0].angle = FLT - Pos3T
-            kit.servo[1].angle = FLF
-            kit.servo[9].angle = BRT + Pos3T
-            kit.servo[10].angle = BRF
-
-            #Back FL & BR
-            pos1move = Pos2FIncrement
-            pos2move = Pos2TIncrement
-            while pos2move <= Pos2T:
-                kit.servo[4].angle = FRF1 - pos1move
-                kit.servo[7].angle = BLF1 + pos1move
-                pos1move += Pos2FIncrement
-                kit.servo[3].angle = FRT1 - pos2move
-                kit.servo[6].angle = BLT1 + pos2move
-                pos2move += Pos2TIncrement
-                time.sleep(Pos2delay)
-
-            time.sleep(MovementDelay)
 
             t += 0.05
     
