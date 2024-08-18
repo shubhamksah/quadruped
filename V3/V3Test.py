@@ -13,11 +13,11 @@ FRF = 43
 FRH = 88
 
 BLT = 100
-BLF = 129
+BLF = 124
 BLH = 95
 
 BRT = 86
-BRF = 51
+BRF = 56
 BRH = 95 
 
 #Variables
@@ -29,16 +29,16 @@ FRT1 = 92 - 65
 FRF1 = 43 - 30
 
 BLT1 = 100 + 65
-BLF1 = 129 + 30
+BLF1 = 124 + 30
 
 BRT1 = 86 - 65
-BRF1 = 51 - 30
+BRF1 = 56 - 30
 
 Pos2T = 65 #Tibia Movement in Position 2
 Pos2F = 30 #Femur Movement in Position 2
 
-Pos2TIncrement = Pos2T/60 #Tibia Movement Increment Position 2
-Pos2FIncrement = Pos2F/60 #Femur Movement Increment Position 2
+Pos2TIncrement = Pos2T/40 #Tibia Movement Increment Position 2
+Pos2FIncrement = Pos2F/40 #Femur Movement Increment Position 2
 
 Pos2delay = 0.000000000001 #Position 2 Speed (Lower = Faster)
 Pos3delay = 0.0000000001 #Position 3 Speed (Lower = Faster)
