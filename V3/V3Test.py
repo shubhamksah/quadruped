@@ -22,19 +22,19 @@ BRH = 95
 
 #Variables
 
-FLT1 = 88 + 65
+FLT1 = 88 + 68
 FLF1 = 129 + 30
 
-FRT1 = 92 - 65
+FRT1 = 92 - 68
 FRF1 = 43 - 30
 
-BLT1 = 100 + 65
+BLT1 = 100 + 68
 BLF1 = 127 + 30
 
-BRT1 = 86 - 65
+BRT1 = 86 - 68
 BRF1 = 53 - 30
 
-Pos2T = 65 #Tibia Movement in Position 2
+Pos2T = 68 #Tibia Movement in Position 2
 Pos2F = 30 #Femur Movement in Position 2
 
 Pos2TIncrement = Pos2T/40 #Tibia Movement Increment Position 2
