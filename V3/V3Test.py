@@ -76,20 +76,20 @@ def main():
 
     t = 0
 
-    pos1move = Pos1FIncrement
-    pos2move = Pos1TIncrement
+    posFmove = Pos1FIncrement
+    posTmove = Pos1TIncrement
 
-    while pos2move <= Pos1T: 
-        kit.servo[1].angle = FLF2 - pos1move
-        kit.servo[4].angle = FRF2 + pos1move
-        kit.servo[7].angle = BLF2 - pos1move
-        kit.servo[10].angle = BRF2 + pos1move
-        pos1move += Pos1FIncrement
-        kit.servo[0].angle = FLT2 - pos2move
-        kit.servo[3].angle = FRT2 + pos2move
-        kit.servo[6].angle = BLT2 - pos2move
-        kit.servo[9].angle = BRT2 + pos2move
-        pos2move += Pos1TIncrement
+    while posTmove <= Pos1T: 
+        kit.servo[1].angle = FLF2 - posFmove
+        kit.servo[4].angle = FRF2 + posFmove
+        kit.servo[7].angle = BLF2 - posFmove
+        kit.servo[10].angle = BRF2 + posFmove
+        posFmove += Pos1FIncrement
+        kit.servo[0].angle = FLT2 - posTmove
+        kit.servo[3].angle = FRT2 + posTmove
+        kit.servo[6].angle = BLT2 - posTmove
+        kit.servo[9].angle = BRT2 + posTmove
+        posTmove += Pos1TIncrement
         kit.servo[2].angle = FLH
         kit.servo[5].angle = FRH
         kit.servo[8].angle = BLH
@@ -98,20 +98,20 @@ def main():
 
     time.sleep(1)
 
-    pos1move = Pos2FIncrement
-    pos2move = Pos2TIncrement
+    posFmove = Pos2FIncrement
+    posTmove = Pos2TIncrement
 
-    while pos2move <= Pos2T: 
-        kit.servo[1].angle = FLF + pos1move
-        kit.servo[4].angle = FRF - pos1move
-        kit.servo[7].angle = BLF + pos1move
-        kit.servo[10].angle = BRF - pos1move
-        pos1move += Pos2FIncrement
-        kit.servo[0].angle = FLT + pos2move
-        kit.servo[3].angle = FRT - pos2move
-        kit.servo[6].angle = BLT + pos2move
-        kit.servo[9].angle = BRT - pos2move
-        pos2move += Pos2TIncrement
+    while posTmove <= Pos2T: 
+        kit.servo[1].angle = FLF + posFmove
+        kit.servo[4].angle = FRF - posFmove
+        kit.servo[7].angle = BLF + posFmove
+        kit.servo[10].angle = BRF - posFmove
+        posFmove += Pos2FIncrement
+        kit.servo[0].angle = FLT + posTmove
+        kit.servo[3].angle = FRT - posTmove
+        kit.servo[6].angle = BLT + posTmove
+        kit.servo[9].angle = BRT - posTmove
+        posTmove += Pos2TIncrement
         kit.servo[2].angle = FLH
         kit.servo[5].angle = FRH
         kit.servo[8].angle = BLH
@@ -120,20 +120,20 @@ def main():
 
     time.sleep(1)
 
-    pos1move = Pos3FIncrement
-    pos2move = Pos3TIncrement
+    posFmove = Pos3FIncrement
+    posTmove = Pos3TIncrement
 
-    while pos2move <= Pos3T: 
-        kit.servo[1].angle = FLF1 - pos1move
-        kit.servo[4].angle = FRF1 + pos1move
-        kit.servo[7].angle = BLF1 - pos1move
-        kit.servo[10].angle = BRF1 + pos1move
-        pos1move += Pos3FIncrement
-        kit.servo[0].angle = FLT1 - pos2move
-        kit.servo[3].angle = FRT1 + pos2move
-        kit.servo[6].angle = BLT1 - pos2move
-        kit.servo[9].angle = BRT1 + pos2move
-        pos2move += Pos3TIncrement
+    while posTmove <= Pos3T: 
+        kit.servo[1].angle = FLF1 - posFmove
+        kit.servo[4].angle = FRF1 + posFmove
+        kit.servo[7].angle = BLF1 - posFmove
+        kit.servo[10].angle = BRF1 + posFmove
+        posFmove += Pos3FIncrement
+        kit.servo[0].angle = FLT1 - posTmove
+        kit.servo[3].angle = FRT1 + posTmove
+        kit.servo[6].angle = BLT1 - posTmove
+        kit.servo[9].angle = BRT1 + posTmove
+        posTmove += Pos3TIncrement
         kit.servo[2].angle = FLH
         kit.servo[5].angle = FRH
         kit.servo[8].angle = BLH
