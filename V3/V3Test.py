@@ -22,7 +22,7 @@ BRH = 95
 
 #Variables
 
-Pos2T = 62 #Tibia Movement in Position 2
+Pos2T = 65 #Tibia Movement in Position 2
 Pos2F = 30 #Femur Movement in Position 2
 
 Pos2TIncrement = Pos2T/100 #Tibia Movement Increment Position 2
