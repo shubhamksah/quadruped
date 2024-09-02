@@ -15,7 +15,7 @@ FRT = 94
 FRF = 44
 
 BLT = 90
-BLF = 137 - 3
+BLF = 137 - 5
 
 BRT = 89
 BRF = 49 + 3
