@@ -37,7 +37,7 @@ try:
     kit.servo[7].angle = 90 + 2 + 45
 
     kit.servo[9].angle = 90
-    kit.servo[10].angle = 90 + 6
+    kit.servo[10].angle = 90 + 4
 
 except:
     print("Exit")
