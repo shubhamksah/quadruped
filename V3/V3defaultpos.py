@@ -46,16 +46,16 @@ try:
     kit.servo[8].angle = BLH
     kit.servo[11].angle = BRH 
 
-    kit.servo[0].angle = FLT - 30
+    kit.servo[0].angle = FLT - 40
     kit.servo[1].angle = FLF
 
-    kit.servo[3].angle = FRT + 30
+    kit.servo[3].angle = FRT + 40
     kit.servo[4].angle = FRF
 
-    kit.servo[6].angle = BLT - 30
+    kit.servo[6].angle = BLT - 40
     kit.servo[7].angle = BLF
 
-    kit.servo[9].angle = BRT + 30 
+    kit.servo[9].angle = BRT + 40
     kit.servo[10].angle = BRF
 
 
