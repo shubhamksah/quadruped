@@ -4,32 +4,35 @@ from adafruit_servokit import ServoKit
 kit = ServoKit(channels=16)
 
 FLT = 88
-FLF = 137
+FLF = 129
 FLH = 100
-FRT = 84
-FRF = 42
+
+FRT = 92
+FRF = 43
 FRH = 88
+
 BLT = 100
-BLF = 131
+BLF = 129
 BLH = 95
-BRT = 93
-BRF = 41
+
+BRT = 86
+BRF = 51
 BRH = 95 
 
 try:
 
-    kit.servo[0].angle = 90
-    kit.servo[1].angle = 137
-    kit.servo[2].angle = 100
-    kit.servo[3].angle = 84
-    kit.servo[4].angle = 42
-    kit.servo[5].angle = 88
-    kit.servo[6].angle = 100
-    kit.servo[7].angle = 131
-    kit.servo[8].angle = 95
-    kit.servo[9].angle = 93
-    kit.servo[10].angle = 41
-    kit.servo[11].angle = 95   
+    kit.servo[0].angle = FLT
+    kit.servo[1].angle = FLF
+    kit.servo[2].angle = FLH
+    kit.servo[3].angle = FRT
+    kit.servo[4].angle = FRF
+    kit.servo[5].angle = FRH
+    kit.servo[6].angle = BLT
+    kit.servo[7].angle = BLF
+    kit.servo[8].angle = BLH
+    kit.servo[9].angle = BRT
+    kit.servo[10].angle = BRF
+    kit.servo[11].angle = BRH   
 
 except:
     print("Exit")
