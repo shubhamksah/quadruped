@@ -8,17 +8,17 @@ FRH = 88
 BLH = 95
 BRH = 95 
 
-FLT = 88
-FLF = 129
+FLT = 83
+FLF = 139
 
 FRT = 92
-FRF = 43
+FRF = 44
 
-BLT = 100
-BLF = 129
+BLT = 88
+BLF = 137
 
-BRT = 86
-BRF = 51
+BRT = 90
+BRF = 49
 
 try:
 
@@ -28,16 +28,16 @@ try:
     kit.servo[11].angle = BRH 
 
     kit.servo[0].angle = 83
-    kit.servo[1].angle = 94 + 45
+    kit.servo[1].angle = 139
 
-    kit.servo[3].angle = 90 + 2
-    kit.servo[4].angle = 90 - 1 - 45
+    kit.servo[3].angle = 92
+    kit.servo[4].angle = 44
 
-    kit.servo[6].angle = 90 - 2
-    kit.servo[7].angle = 90 + 2 + 45
+    kit.servo[6].angle = 88
+    kit.servo[7].angle = 137
 
     kit.servo[9].angle = 90
-    kit.servo[10].angle = 90 + 4 - 45
+    kit.servo[10].angle = 49
 
 except:
     print("Exit")
