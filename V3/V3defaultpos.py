@@ -9,7 +9,7 @@ BLH = 95
 BRH = 95 
 
 FLT = 84
-FLF = 139
+FLF = 137
 
 FRT = 94
 FRF = 44
