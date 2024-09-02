@@ -15,10 +15,10 @@ FRT = 94
 FRF = 44
 
 BLT = 90
-BLF = 137 - 5
+BLF = 132
 
 BRT = 89
-BRF = 49 + 3
+BRF = 52
 
 try:
 
