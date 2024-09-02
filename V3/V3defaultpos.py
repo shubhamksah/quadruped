@@ -30,8 +30,8 @@ try:
     kit.servo[0].angle = 83
     kit.servo[1].angle = 94 + 45
 
-    kit.servo[3].angle = 90
-    kit.servo[4].angle = 90
+    kit.servo[3].angle = 90 
+    kit.servo[4].angle = 90 - 2
 
     kit.servo[6].angle = 90 - 2
     kit.servo[7].angle = 90 + 2 + 45
