@@ -28,7 +28,7 @@ try:
     kit.servo[11].angle = BRH 
 
     kit.servo[0].angle = 90
-    kit.servo[1].angle = 95
+    kit.servo[1].angle = 93
 
     kit.servo[3].angle = 90
     kit.servo[4].angle = 90
