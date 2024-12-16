@@ -7,14 +7,14 @@ FLH = 100
 FRH = 88
 BLH = 95
 BRH = 95 
-FLT = 84
-FLF = 137
-FRT = 94
-FRF = 44
+FLT = 90
+FLF = 90
+FRT = 90
+FRF = 90
 BLT = 90
-BLF = 132
-BRT = 89
-BRF = 52
+BLF = 90
+BRT = 90
+BRF = 90
 
 def main():
 
