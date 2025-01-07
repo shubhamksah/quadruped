@@ -14,9 +14,9 @@ BRH = 95
 FLT = 90
 FLF = 95 + 45
 FRT = rest
-FRF = 90 + 45
+FRF = 90 - 45
 BLT = 82
-BLF = 85 - 45
+BLF = 85 + 45
 BRT = rest
 BRF = 85 - 45
 
