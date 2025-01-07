@@ -4,7 +4,7 @@ from adafruit_servokit import ServoKit
 
 kit = ServoKit(channels=16)
 
-rest=120
+rest=90
 
 #Default Positions
 FLH = 100
