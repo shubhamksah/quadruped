@@ -2,6 +2,8 @@ import time
 import pygame
 from adafruit_servokit import ServoKit
 
+kit = ServoKit(channels=16)
+
 rest=120
 
 #Default Positions
