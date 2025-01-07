@@ -179,10 +179,10 @@ def main():
             #     rest(kit)
             #     time.sleep(0.05)
             
-            # if joy1.get_button(3) > 0.5:
+            if joy1.get_button(3) > 0.5:
                 
-            #     stand(kit)
-            #     time.sleep(0.05)
+                stand(kit)
+                time.sleep(0.05)
 
             t = joy1.get_button(0)
 
@@ -191,46 +191,46 @@ def main():
                 print("STOP")
 
 
-# def stand(kit):
+def stand(kit):
 
-#     kit.servo[0].angle = 84
-#     kit.servo[1].angle = 137
-#     kit.servo[2].angle = 100
-#     kit.servo[3].angle = 94
-#     kit.servo[4].angle = 44
-#     kit.servo[5].angle = 88
-#     kit.servo[6].angle = 90
-#     kit.servo[7].angle = 132
-#     kit.servo[8].angle = 95
-#     kit.servo[9].angle = 89
-#     kit.servo[10].angle = 52
-#     kit.servo[11].angle = 95  
+    kit.servo[0].angle = 90
+    kit.servo[1].angle = 140
+    kit.servo[2].angle = 100
+    kit.servo[3].angle = 90
+    kit.servo[4].angle = 45
+    kit.servo[5].angle = 88
+    kit.servo[6].angle = 87
+    kit.servo[7].angle = 130
+    kit.servo[8].angle = 95
+    kit.servo[9].angle = 85
+    kit.servo[10].angle = 43
+    kit.servo[11].angle = 95
 
-#     global FLT_angle
-#     global FLF_angle
-#     global FLH_angle
-#     global FRT_angle
-#     global FRF_angle
-#     global FRH_angle
-#     global BLT_angle
-#     global BLF_angle
-#     global BLH_angle
-#     global BRT_angle 
-#     global BRF_angle 
-#     global BRH_angle  
+    global FLT_angle
+    global FLF_angle
+    global FLH_angle
+    global FRT_angle
+    global FRF_angle
+    global FRH_angle
+    global BLT_angle
+    global BLF_angle
+    global BLH_angle
+    global BRT_angle 
+    global BRF_angle 
+    global BRH_angle  
 
-#     FLT_angle = 90
-#     FLF_angle = 135
-#     FLH_angle = 100
-#     FRT_angle = 97
-#     FRF_angle = 45
-#     FRH_angle = 88
-#     BLT_angle = 100
-#     BLF_angle = 130
-#     BLH_angle = 95
-#     BRT_angle = 94
-#     BRF_angle = 45
-#     BRH_angle = 95
+    FLH_angle = 100
+    FRH_angle = 88
+    BLH_angle = 95
+    BRH_angle = 95 
+    FLT_angle = 90
+    FLF_angle = 140
+    FRT_angle = 90
+    FRF_angle = 45
+    BLT_angle = 87
+    BLF_angle = 130
+    BRT_angle = 85
+    BRF_angle = 43
 
 
 # def rest(kit):
