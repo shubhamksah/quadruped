@@ -14,11 +14,11 @@ BRH = 95
 FLT = 90
 FLF = 95 + 45
 FRT = rest
-FRF = rest
+FRF = 90 + 45
 BLT = 82
 BLF = 85 + 45
 BRT = rest
-BRF = 85
+BRF = 85 - 45
 
 try:
 
