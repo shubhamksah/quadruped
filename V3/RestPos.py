@@ -12,11 +12,11 @@ FRH = 88
 BLH = 95
 BRH = 95 
 FLT = rest
-FLF = 95
+FLF = 95 + 45
 FRT = rest
 FRF = rest
 BLT = rest
-BLF = 85
+BLF = 85 + 45
 BRT = rest
 BRF = rest
 
