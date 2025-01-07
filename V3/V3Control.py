@@ -3,18 +3,19 @@ import pygame
 from adafruit_servokit import ServoKit
 
 # Initializing servo angle variables
+FLH_angle = 100
+FRH_angle = 88
+BLH_angle = 95
+BRH_angle = 95 
 FLT_angle = 90
-FLF_angle = 90
-FLH_angle = 90
+FLF_angle = 140
 FRT_angle = 90
-FRF_angle = 90
-FRH_angle = 90
-BLT_angle = 90
-BLF_angle = 90
-BLH_angle = 90
-BRT_angle = 90
-BRF_angle = 90
-BRH_angle = 90
+FRF_angle = 45
+BLT_angle = 87
+BLF_angle = 130
+BRT_angle = 85
+BRF_angle = 43
+
 
 def main():
     print("Running Quadruped")
@@ -34,8 +35,19 @@ def main():
     global BRF_angle 
     global BRH_angle
 
-    stand(kit)
-
+    kit.servo[0].angle = FLT_angle
+    kit.servo[1].angle = FLF_angle
+    kit.servo[2].angle = FLH_angle
+    kit.servo[3].angle = FRT_angle
+    kit.servo[4].angle = FRF_angle
+    kit.servo[5].angle = FRH_angle
+    kit.servo[6].angle = BLT_angle
+    kit.servo[7].angle = BLF_angle
+    kit.servo[8].angle = BLH_angle
+    kit.servo[9].angle = BRT_angle
+    kit.servo[10].angle = BRF_angle
+    kit.servo[11].angle = BRH_angle
+    
     t = 0
 
     pygame.init()
@@ -162,106 +174,105 @@ def main():
 
                 time.sleep(0.05)
 
-            if joy1.get_button(1) > 0.5:
+            # if joy1.get_button(1) > 0.5:
 
-                rest(kit)
-                time.sleep(0.05)
+            #     rest(kit)
+            #     time.sleep(0.05)
             
-            if joy1.get_button(3) > 0.5:
+            # if joy1.get_button(3) > 0.5:
                 
-                stand(kit)
-                time.sleep(0.05)
+            #     stand(kit)
+            #     time.sleep(0.05)
 
             t = joy1.get_button(0)
 
         finally:
             if t == 1:
                 print("STOP")
-                rest(kit)
 
 
-def stand(kit):
+# def stand(kit):
 
-    kit.servo[0].angle = 84
-    kit.servo[1].angle = 137
-    kit.servo[2].angle = 100
-    kit.servo[3].angle = 94
-    kit.servo[4].angle = 44
-    kit.servo[5].angle = 88
-    kit.servo[6].angle = 90
-    kit.servo[7].angle = 132
-    kit.servo[8].angle = 95
-    kit.servo[9].angle = 89
-    kit.servo[10].angle = 52
-    kit.servo[11].angle = 95  
+#     kit.servo[0].angle = 84
+#     kit.servo[1].angle = 137
+#     kit.servo[2].angle = 100
+#     kit.servo[3].angle = 94
+#     kit.servo[4].angle = 44
+#     kit.servo[5].angle = 88
+#     kit.servo[6].angle = 90
+#     kit.servo[7].angle = 132
+#     kit.servo[8].angle = 95
+#     kit.servo[9].angle = 89
+#     kit.servo[10].angle = 52
+#     kit.servo[11].angle = 95  
 
-    global FLT_angle
-    global FLF_angle
-    global FLH_angle
-    global FRT_angle
-    global FRF_angle
-    global FRH_angle
-    global BLT_angle
-    global BLF_angle
-    global BLH_angle
-    global BRT_angle 
-    global BRF_angle 
-    global BRH_angle  
+#     global FLT_angle
+#     global FLF_angle
+#     global FLH_angle
+#     global FRT_angle
+#     global FRF_angle
+#     global FRH_angle
+#     global BLT_angle
+#     global BLF_angle
+#     global BLH_angle
+#     global BRT_angle 
+#     global BRF_angle 
+#     global BRH_angle  
 
-    FLT_angle = 90
-    FLF_angle = 135
-    FLH_angle = 100
-    FRT_angle = 97
-    FRF_angle = 45
-    FRH_angle = 88
-    BLT_angle = 100
-    BLF_angle = 130
-    BLH_angle = 95
-    BRT_angle = 94
-    BRF_angle = 45
-    BRH_angle = 95
+#     FLT_angle = 90
+#     FLF_angle = 135
+#     FLH_angle = 100
+#     FRT_angle = 97
+#     FRF_angle = 45
+#     FRH_angle = 88
+#     BLT_angle = 100
+#     BLF_angle = 130
+#     BLH_angle = 95
+#     BRT_angle = 94
+#     BRF_angle = 45
+#     BRH_angle = 95
 
 
-def rest(kit):
+# def rest(kit):
 
-    kit.servo[0].angle = 50
-    kit.servo[1].angle = 150
-    kit.servo[2].angle = 100
-    kit.servo[3].angle = 137
-    kit.servo[4].angle = 35
-    kit.servo[5].angle = 88
-    kit.servo[6].angle = 48
-    kit.servo[7].angle = 145
-    kit.servo[8].angle = 95
-    kit.servo[9].angle = 134
-    kit.servo[10].angle = 30
-    kit.servo[11].angle = 95  
+#     kit.servo[0].angle = 50
+#     kit.servo[1].angle = 150
+#     kit.servo[2].angle = 100
+#     kit.servo[3].angle = 137
+#     kit.servo[4].angle = 35
+#     kit.servo[5].angle = 88
+#     kit.servo[6].angle = 48
+#     kit.servo[7].angle = 145
+#     kit.servo[8].angle = 95
+#     kit.servo[9].angle = 134
+#     kit.servo[10].angle = 30
+#     kit.servo[11].angle = 95  
 
-    global FLT_angle
-    global FLF_angle
-    global FLH_angle
-    global FRT_angle
-    global FRF_angle
-    global FRH_angle
-    global BLT_angle
-    global BLF_angle
-    global BLH_angle
-    global BRT_angle 
-    global BRF_angle 
-    global BRH_angle     
+#     global FLT_angle
+#     global FLF_angle
+#     global FLH_angle
+#     global FRT_angle
+#     global FRF_angle
+#     global FRH_angle
+#     global BLT_angle
+#     global BLF_angle
+#     global BLH_angle
+#     global BRT_angle 
+#     global BRF_angle 
+#     global BRH_angle     
     
-    FLT_angle = 50
-    FLF_angle = 150
-    FLH_angle = 100
-    FRT_angle = 137
-    FRF_angle = 35
-    FRH_angle = 88
-    BLT_angle = 48
-    BLF_angle = 145
-    BLH_angle = 95
-    BRT_angle = 134
-    BRF_angle = 30
-    BRH_angle = 95  
+#     FLT_angle = 50
+#     FLF_angle = 150
+#     FLH_angle = 100
+#     FRT_angle = 137
+#     FRF_angle = 35
+#     FRH_angle = 88
+#     BLT_angle = 48
+#     BLF_angle = 145
+#     BLH_angle = 95
+#     BRT_angle = 134
+#     BRF_angle = 30
+#     BRH_angle = 95  
 
 if __name__ == "__main__":
     main()
