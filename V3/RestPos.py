@@ -18,7 +18,7 @@ FRF = 90 - 45
 BLT = 82
 BLF = 85 + 45
 BRT = rest
-BRF = 85 - 45
+BRF = 85 - 42
 
 try:
 
